@@ -895,7 +895,7 @@ include "%L"
 
 # Keystrokes okay?
 <Multi_key> <f> <d> <l>   	        : "⚜"	U269C	  # FLEUR-DE-LIS
-<Multi_key> <a> <t> <o> <m>	        : "⚛"	U269B		# ATOM SYMBOL
+<Multi_key> <ampersand> <a> <t> <o> <m>	        : "⚛"	U269B		# ATOM SYMBOL
 <Multi_key> <slash> <exclam> <backslash> : "⚠"  U26A0           # WARNING SIGN
 <Multi_key> <exclam> <asciicircum>	: "⚠"	U26A0		# WARNING SIGN  (INTENTIONAL CONFLICT)
 <Multi_key> <z> <a> <p>	  		: "⚡"	U26A1		# HIGH VOLTAGE SIGN 
@@ -906,12 +906,12 @@ include "%L"
 # Changing this from ⚝
 # FIXME: conflict
 #<Multi_key> <A> <A> <A> <A> <A>	:	"⛤" U26E4 # PENTAGRAM (pentalpha, get it?)
-<Multi_key> <p> <l> <a> <n> <e>	: "✈"   U2708	  # AIRPLANE
-<Multi_key> <m> <a> <i> <l>		: "✉"	U2709	  # ENVELOPE
-<Multi_key> <w> <h> <l> <c> <h>	: "♿"	U267F	  # WHEELCHAIR SYMBOL
-<Multi_key> <m> <e> <d> 		: "☤"	U2624	  # CADEUCEUS
+<Multi_key> <ampersand> <p> <l> <a> <n> <e>	: "✈"   U2708	  # AIRPLANE
+<Multi_key> <ampersand> <m> <a> <i> <l>		: "✉"	U2709	  # ENVELOPE
+<Multi_key> <ampersand> <w> <h> <l> <c> <h>	: "♿"	U267F	  # WHEELCHAIR SYMBOL
+<Multi_key> <ampersand> <m> <e> <d> 		: "☤"	U2624	  # CADEUCEUS
 # Something different for STAFF OF AESCULAPIUS?
-<Multi_key> <1> <m> <e> <d>		: "⚕"	U2695	# STAFF OF AESCULAPIUS
+<Multi_key> <ampersand> <1> <m> <e> <d>		: "⚕"	U2695	# STAFF OF AESCULAPIUS
 # Maybe something different that isn't lousy.
 # 26B0 COFFIN ?
 # One of the SNOWFLAKEs?
@@ -937,11 +937,11 @@ include "%L"
 # FIXME: prefix conflict
 # <Multi_key> <O> <minus> <plus>		: "♀"	U2640		# FEMALE SIGN
 # <Multi_key> <O> <minus> <greater>	: "♂"	U2642		# MALE SIGN
-<Multi_key> <g> <a> <y>                 :   "⚣"     U26A3   # DOUBLED MALE SIGN
-<Multi_key> <l> <e> <s> <b> <i> <a> <n> :   "⚢"     U26A2   # DOUBLED FEMALE SIGN
-<Multi_key> <h> <e> <t> <e> <r> <o>     :   "⚤"     U26A4   # INTERLOCKED FEMALE AND MALE SIGN
-<Multi_key> <t> <r> <a> <n> <s>         :   "⚥"     U26A5   # MALE AND FEMALE SIGN
-<Multi_key> <g> <e> <n> <d> <e> <r> <q> :   "⚧"     U26A7   # MALE WITH STROKE AND MALE AND FEMALE SIGN
+<Multi_key> <ampersand> <g> <a> <y>                 :   "⚣"     U26A3   # DOUBLED MALE SIGN
+<Multi_key> <ampersand> <l> <e> <s> <b>	            :   "⚢"     U26A2   # DOUBLED FEMALE SIGN
+<Multi_key> <ampersand> <h> <e> <t> <e> <r> <o>     :   "⚤"     U26A4   # INTERLOCKED FEMALE AND MALE SIGN
+<Multi_key> <ampersand> <t> <r> <a> <n> <s>         :   "⚥"     U26A5   # MALE AND FEMALE SIGN
+<Multi_key> <ampersand> <g> <q> <u> <e> <e> <r>	    :   "⚧"     U26A7   # MALE WITH STROKE AND MALE AND FEMALE SIGN
 
 
 <Multi_key> <O> <X>: 			"☠" U2620 # SKULL AND CROSSBONES (INTENTIONAL CONFLICT)
@@ -1072,41 +1072,41 @@ include "%L"
 
 # Planets
 #FIXME: Improve these
-# <Multi_key> <s> <u> <n>	: "☉"	U2609	# SUN (Sunday)
-# <Multi_key> <m> <o> <o> <n>	: "☽"	U263D	# FIRST QUARTER MOON (Monday)
-# <Multi_key> <m> <e> <r> <c> <u> <r> <y> : "☿" U263F	# MERCURY (Wednesday)
-# <Multi_key> <v> <e> <n> <u> <s>  : "♀" U2640    # FEMALE SIGN
-# <Multi_key> <j> <u> <p> <i> <t> <e> <r> : "♃" U2643	# JUPITER (Thursday)
-# <Multi_key> <s> <a> <t> <u> <r> <n>     : "♄" U2644	# SATURN (Saturday)
-# <Multi_key> <u> <r> <a> <n> <u> <s>	    : "♅" U2645	# URANUS (FIXME: or ⛢ U26E2?)
-# <Multi_key> <n> <e> <p> <t> <u> <n> <e> : "♆" U2646	# NEPTUNE
-# <Multi_key> <p> <l> <u> <t> <o> 	    : "♇" U2647	# PLUTO (ok, it isn't a planet anymore, but we still love it.)
+<Multi_key> <ampersand> <s> <u> <n>	: "☉"	U2609	# SUN (Sunday)
+<Multi_key> <ampersand> <m> <o> <o> <n>	: "☽"	U263D	# FIRST QUARTER MOON (Monday)
+<Multi_key> <ampersand> <m> <e> <r> <c> <u> <r> : "☿" U263F	# MERCURY (Wednesday)
+<Multi_key> <ampersand> <v> <e> <n> <u> <s>  : "♀" U2640    # FEMALE SIGN
+<Multi_key> <ampersand> <j> <u> <p> <i> <t> <e>  : "♃" U2643	# JUPITER (Thursday)
+<Multi_key> <ampersand> <s> <a> <t> <u> <r> <n>     : "♄" U2644	# SATURN (Saturday)
+<Multi_key> <ampersand> <u> <r> <a> <n> <u> <s>	    : "♅" U2645	# URANUS (FIXME: or ⛢ U26E2?)
+<Multi_key> <ampersand> <n> <e> <p> <t> <u> <n> : "♆" U2646	# NEPTUNE
+<Multi_key> <ampersand> <p> <l> <u> <t> <o> 	    : "♇" U2647	# PLUTO (ok, it isn't a planet anymore, but we still love it.)
 
 # Minor planets
 #FIXME: Improve these
-# <Multi_key> <c> <e> <r> <e> <s>	: "⚳"	U26B3	# CERES
-# <Multi_key> <p> <a> <l> <l> <a> <s>	: "⚴"	U26B4	# PALLAS
-# <Multi_key> <j> <u> <n> <o>     	: "⚵"	U26B5	# JUNO
-# <Multi_key> <v> <e> <s> <t> <a>    	: "⚶"	U26B6	# VESTA
-# <Multi_key> <c> <h> <i> <r> <o> <n>	: "⚷"	U26B7	# CHIRON
-# <Multi_key> <l> <i> <l> <i> <t> <h>	: "⚸"	U26B8	# BLACK MOON LILITH
+<Multi_key> <ampersand> <c> <e> <r> <e> <s>	: "⚳"	U26B3	# CERES
+<Multi_key> <ampersand> <p> <a> <l> <l> <a> <s>	: "⚴"	U26B4	# PALLAS
+<Multi_key> <ampersand> <j> <u> <n> <o>     	: "⚵"	U26B5	# JUNO
+<Multi_key> <ampersand> <v> <e> <s> <t> <a>    	: "⚶"	U26B6	# VESTA
+<Multi_key> <ampersand> <c> <h> <i> <r> <o> <n>	: "⚷"	U26B7	# CHIRON
+<Multi_key> <ampersand> <l> <i> <l> <i> <t> <h>	: "⚸"	U26B8	# BLACK MOON LILITH
 
 # Zodiac signs
 #FIXME: Improve these
-# <Multi_key> <a> <r> <i> <e> <s>	: "♈"	U2648	# ARIES
-# <Multi_key> <t> <a> <u> <r> <u> <s>	: "♉"	U2649	# TAURUS
-# <Multi_key> <g> <e> <m> <i> <n> <i>	: "♊"	U264A	# GEMINI
-# <Multi_key> <c> <a> <n> <c> <e> <r>	: "♋"	U264B	# CANCER
-# <Multi_key> <l> <e> <o> 		: "♌"	U264C	# LEO
-# <Multi_key> <v> <i> <r> <g> <o>	: "♍"	U264D	# VIRGO
-# <Multi_key> <l> <i> <b> <r> <a>	: "♎"	U264E	# LIBRA
-# <Multi_key> <s> <c> <o> <r> <p>	: "♏"	U264F	# SCORPIUS
-# <Multi_key> <s> <a> <g> <i> <t>	: "♐"	U2650	# SAGITTARIUS
-# <Multi_key> <c> <a> <p> <r> <i> <c>	: "♑"	U2651	# CAPRICORN
-# <Multi_key> <a> <q> <u> <a> <r>	: "♒"	U2652	# AQUARIUS
-# <Multi_key> <p> <i> <s> <c> <e> <s>	: "♓"	U2653	# PISCES
+<Multi_key> <ampersand> <a> <r> <i> <e> <s>	: "♈"	U2648	# ARIES
+<Multi_key> <ampersand> <t> <a> <u> <r> <u> <s>	: "♉"	U2649	# TAURUS
+<Multi_key> <ampersand> <g> <e> <m> <i> <n> <i>	: "♊"	U264A	# GEMINI
+<Multi_key> <ampersand> <c> <a> <n> <c> <e> <r>	: "♋"	U264B	# CANCER
+<Multi_key> <ampersand> <l> <e> <o> 		: "♌"	U264C	# LEO
+<Multi_key> <ampersand> <v> <i> <r> <g> <o>	: "♍"	U264D	# VIRGO
+<Multi_key> <ampersand> <l> <i> <b> <r> <a>	: "♎"	U264E	# LIBRA
+<Multi_key> <ampersand> <s> <c> <o> <r> <p>	: "♏"	U264F	# SCORPIUS
+<Multi_key> <ampersand> <s> <a> <g> <i> <t>	: "♐"	U2650	# SAGITTARIUS
+<Multi_key> <ampersand> <c> <a> <p> <r> <i> <c>	: "♑"	U2651	# CAPRICORN
+<Multi_key> <ampersand> <a> <q> <u> <a> <r>	: "♒"	U2652	# AQUARIUS
+<Multi_key> <ampersand> <p> <i> <s> <c> <e> <s>	: "♓"	U2653	# PISCES
 # # Really, this should be SERPENTARIUS.  All the other signs are in Latin.
-# <Multi_key> <o> <p> <h> <i> <u> <c> : "⛎"	U26CE	# OPHIUCHUS
+<Multi_key> <ampersand> <o> <p> <h> <i> <u> <c> : "⛎"	U26CE	# OPHIUCHUS
 
 
 ## Games
