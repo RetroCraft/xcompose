@@ -1,0 +1,11 @@
+#!/bin/bash
+
+> xcompose
+echo "Building file..."
+find src/ -type f -name "*.xcompose" -print0 | while IFS= read -r -d $'\0' line; do
+  echo "Add $line"
+  cat $line >> xcompose
+done
+
+echo "Checking file for errors..."
+cat xcompose | python bin/scan4dups.py
