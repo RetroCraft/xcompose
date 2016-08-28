@@ -5,14 +5,13 @@
 ##################
 # File is for pictogram-type symbols. Mnemonic is & for most words.
 
-<Multi_key> <F> <less>			: "☚"	U261A		# BLACK LEFT POINTING INDEX
-<Multi_key> <F> <greater>		: "☛"	U261B		# BLACK RIGHT POINTING INDEX
+<Multi_key> <f> <exclam> <less>			: "☚"	U261A		# BLACK LEFT POINTING INDEX
+<Multi_key> <f> <exclam> <greater>		: "☛"	U261B		# BLACK RIGHT POINTING INDEX
 <Multi_key> <f> <less>			: "☜"	U261C		# WHITE LEFT POINTING INDEX
 <Multi_key> <f> <asciicircum>		: "☝"	U261D		# WHITE UP POINTING INDEX
 <Multi_key> <f> <greater>		: "☞"	U261E		# WHITE RIGHT POINTING INDEX
 <Multi_key> <f> <v>			: "☟"	U261F		# WHITE DOWN POINTING INDEX
-# FIXME: f v is WHITE DOWN POINTING INDEX
-#<Multi_key> <f> <v>   			: "✌"   U270C   	# VICTORY HAND
+<Multi_key> <f> <V>   			: "✌"   U270C   	# VICTORY HAND
 <Multi_key> <f> <w>   			: "✍"   U270D   	# WRITING HAND
 <Multi_key> <f> <p> <v>			: "✎"   U270E   	# LOWER RIGHT PENCIL
 <Multi_key> <f> <p> <greater>		: "✏"   U270F   	# PENCIL
@@ -54,7 +53,8 @@
 # And now that we are into hearts...
 # FIXME: clash with system Compose file
 #<Multi_key> <less> <less> <3>           : "❥"  U2765            # ROTATED HEAVY BLACK HEART BULLET
-<Multi_key> <exclam> <less> <3>         : "❣"  U2763            # HEAVY HEART EXCLAMATION MARK ORNAMENT
+# FIXME: conflict
+#<Multi_key> <exclam> <less> <3>         : "❣"  U2763            # HEAVY HEART EXCLAMATION MARK ORNAMENT
 <Multi_key> <less> <f> <3>              : "❦"  U2766            # FLORAL HEART
 <Multi_key> <less> <f> <less> <3>       : "❧"  U2767            # ROTATED FLORAL HEART BULLET
 <Multi_key> <greater> <f> <less> <3>    : "☙"  U2619            # REVERSED ROTATED FLORAL HEART BULLET
@@ -124,9 +124,6 @@
 
 <Multi_key> <O> <X>: 			"☠" U2620 # SKULL AND CROSSBONES (INTENTIONAL CONFLICT)
 <Multi_key> <k> <b> <d> :	"⌨"	  U2328	    # KEYBOARD
-# Can we get better keycodes for these?
-<Multi_key> <equal> <minus>	: "☞" U261E # WHITE RIGHT POINTING INDEX
-<Multi_key> <minus> <equal>	: "☜" U261C # WHITE LEFT POINTING INDEX
 # FIXME: conflict
 #<Multi_key> <asterisk> <asterisk>	:"★" U2605 # BLACK STAR
 <Multi_key> <asterisk> <0>	:"☆" U2606 # WHITE STAR (INTENTIONAL CONFLICT)
@@ -196,8 +193,8 @@
 <Multi_key> <numbersign> <G>              : "𝄞"  U0001d11e # MUSICAL SYMBOL G CLEF
 <Multi_key> <numbersign> <F>              : "𝄢"  U0001d122 # MUSICAL SYMBOL F CLEF
 <Multi_key> <numbersign> <C>              : "𝄡" U0001d121 # MUSICAL SYMBOL C CLEF
-<Multi_key> <numbersign> <numbersign>     : "♭" U266D # MUSIC FLAT SIGN
-<Multi_key> <numbersign> <b>              : "♯" U266F # MUSIC SHARP SIGN
+<Multi_key> <numbersign> <b>              : "♭" U266D # MUSIC FLAT SIGN
+<Multi_key> <numbersign> <numbersign>     : "♯" U266F # MUSIC SHARP SIGN
 
 ## Games
 
