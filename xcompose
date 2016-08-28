@@ -181,7 +181,7 @@ include "%L"
 
 <Multi_key> <R> <x>			: "℞"	U211E		# PRESCRIPTION TAKE
 <Multi_key> <o> <z> <period>		: "℥"	U2125		# OUNCE SIGN
-<Multi_key> <s> <c> <r> <period>	: "℈"	U2108		# SCRUPLE
+<Multi_key> <s> <r> <period>	: "℈"	U2108		# SCRUPLE
 # There are all kinds of awesome combining characters in the U+0300 page.
 # There are a bunch of other awesome combining characters like U+20E0
 # FIXME: conflict
@@ -274,7 +274,7 @@ include "%L"
 # MATH.XCOMPOSE
 ###############
 # File is for mathematics/smart things-related symbols.
-# Prefix = <equal> (=)
+# Prefix { <braceleft> ({)
 
 ## Arithmetic operators
 # Notice the “<minus>” X name refers to the ASCII hyphen‐minus, not to
@@ -299,7 +299,7 @@ include "%L"
 <Multi_key> <asciitilde> <equal> : "≅" U2245 # APPROXIMATELY EQUAL TO
 <Multi_key> <slash> <less>    : "≮" U226E # NOT LESS THAN (INTENTIONAL CONFLICT)
 <Multi_key> <slash> <greater> : "≯" U226F # NOT GREATER THAN
-<Multi_key> <exclam> <less>    : "≮" U226E # NOT LESS THAN (INTENTIONAL CONFLICT)
+<Multi_key> <exclam> <less>    : "≮" U226E # NOT LESS THAN
 <Multi_key> <exclam> <greater> : "≯" U226F # NOT GREATER THAN
 <Multi_key> <asciitilde> <asciitilde>        : "≈"  U2248           # ALMOST EQUAL TO
 

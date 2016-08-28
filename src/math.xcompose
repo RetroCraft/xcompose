@@ -4,7 +4,7 @@
 # MATH.XCOMPOSE
 ###############
 # File is for mathematics/smart things-related symbols.
-# Prefix = <equal> (=)
+# Prefix { <braceleft> ({)
 
 ## Arithmetic operators
 # Notice the “<minus>” X name refers to the ASCII hyphen‐minus, not to
@@ -29,7 +29,7 @@
 <Multi_key> <asciitilde> <equal> : "≅" U2245 # APPROXIMATELY EQUAL TO
 <Multi_key> <slash> <less>    : "≮" U226E # NOT LESS THAN (INTENTIONAL CONFLICT)
 <Multi_key> <slash> <greater> : "≯" U226F # NOT GREATER THAN
-<Multi_key> <exclam> <less>    : "≮" U226E # NOT LESS THAN (INTENTIONAL CONFLICT)
+<Multi_key> <exclam> <less>    : "≮" U226E # NOT LESS THAN
 <Multi_key> <exclam> <greater> : "≯" U226F # NOT GREATER THAN
 <Multi_key> <asciitilde> <asciitilde>        : "≈"  U2248           # ALMOST EQUAL TO
 
