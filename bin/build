@@ -1,11 +1,16 @@
 #!/bin/bash
 
+# Clear current output file
 > xcompose
+
+# Add all .xcompose files in src/ into output file
 echo "Building file..."
 find src/ -type f -name "*.xcompose" -print0 | while IFS= read -r -d $'\0' line; do
   echo "Add $line"
   cat $line >> xcompose
 done
 
+# Check for duplicates/errors/bad things
 echo "Checking file for errors..."
-cat xcompose | python bin/scan4dups.py
+# Using the en_US.UTF-8 locale for default Compose
+cat /usr/share/X11/locale/en_US.UTF-8/Compose xcompose | python bin/scan4dups.py
