@@ -1,0 +1,359 @@
+
+
+##################
+# SYMBOLS.XCOMPOSE
+##################
+# File is for pictogram-type symbols. Mnemonic is & for most words.
+
+<Multi_key> <F> <less>			: "☚"	U261A		# BLACK LEFT POINTING INDEX
+<Multi_key> <F> <greater>		: "☛"	U261B		# BLACK RIGHT POINTING INDEX
+<Multi_key> <f> <less>			: "☜"	U261C		# WHITE LEFT POINTING INDEX
+<Multi_key> <f> <asciicircum>		: "☝"	U261D		# WHITE UP POINTING INDEX
+<Multi_key> <f> <greater>		: "☞"	U261E		# WHITE RIGHT POINTING INDEX
+<Multi_key> <f> <v>			: "☟"	U261F		# WHITE DOWN POINTING INDEX
+# FIXME: f v is WHITE DOWN POINTING INDEX
+#<Multi_key> <f> <v>   			: "✌"   U270C   	# VICTORY HAND
+<Multi_key> <f> <w>   			: "✍"   U270D   	# WRITING HAND
+<Multi_key> <f> <p> <v>			: "✎"   U270E   	# LOWER RIGHT PENCIL
+<Multi_key> <f> <p> <greater>		: "✏"   U270F   	# PENCIL
+<Multi_key> <f> <p> <asciicircum>	: "✐"   U2710   	# UPPER RIGHT PENCIL
+
+# Custom additions: for chat (kragen)
+<Multi_key> <parenleft> <colon>         : "☻"   U263B           # BLACK SMILING FACE
+<Multi_key> <colon> <asciitilde>	: "⍨"   U2368		# APL FUNCTIONAL SYMBOL TILDE DIAERESIS
+<Multi_key> <colon> <bar>		: "⸚"   U2E1A		# HYPHEN WITH DIAERESIS
+<Multi_key> <colon> <o> <o> <parenright>  :  "°͜°"    # Funny smiley-face.
+# Those are archaic Cyrillic letters... but look so _perfect_ for use
+# in chat. And about the last, the "multiocular O"... Well, I don't
+# know what it can be used for, but given the description, how could I
+# leave it out‽
+# (I guess using U+1F440 EYES would be more straightforward, but not as funny?)
+<Multi_key> <O> <period> <O>		: "Ꙭ"	UA66C		# CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O * used in the dual of words based on the root for 'eye'
+<Multi_key> <o> <period> <o>		: "ꙭ"  UA66D		# CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
+<Multi_key> <O> <colon>	 		: "Ꙫ"  UA66A		# CYRILLIC CAPITAL LETTER BINOCULAR O * used in the dual of words based on the root for 'eye'
+<Multi_key> <o> <colon> 		: "ꙫ"  UA66B 		# CYRILLIC SMALL LETTER BINOCULAR O
+<Multi_key> <o> <plus>			: "ꙮ"  UA66E		# CYRILLIC LETTER MULTIOCULAR O * used in the epithet 'many-eyed'
+# While we're doing stacks of circles with dots.
+<Multi_key> <o> <3>			: "߷"	U07F7		# NKO SYMBOL GBAKURUNEN
+<Multi_key> <question> <less>	      : "⸮"	  U2E2E		# REVERSED QUESTION MARK
+<Multi_key> <question> <ampersand> <exclam>	  : "⁈"	 U2048	# QUESTION EXCLAMATION MARK
+<Multi_key> <exclam> <ampersand> <question>	  : "⁉"	 U2049	# EXCLAMATION QUESTION MARK
+<Multi_key> <2> <colon>		  : "∷"	 U2237	# PROPORTION -- not strictly 2 times COLON
+<Multi_key> <semicolon> <less>	 		  : "⁏"	 U204F	# REVERSED SEMICOLON
+# Keep looking into big hunks of Latin Extended-D, A720- et seq.
+<Multi_key> <3> <3>			: "♣" U2663		# BLACK CLUB SUIT
+<Multi_key> <D> <greater>		: "♢" U2662		# WHITE DIAMOND SUIT (<> is ↔)
+<Multi_key> <3> <minus>		: "♠" U2660		# BLACK SPADE SUIT
+<Multi_key> <E> <greater>		: "♡" U2661		# WHITE HEART SUIT (INTENTIONAL CONFLICT)
+# "shamrock" is too long; there IS a limit to these!
+# FIXME: conflict
+#<Multi_key> <s> <h> <m> <r> <c> <k>		: "☘" U2618   # SHAMROCK
+<Multi_key> <p> <c>         : "☮"   U262E           # PEACE SYMBOL
+# FIXME: conflict
+#<Multi_key> <y> <y>		: "☯" U262F		# YIN YANG
+# And now that we are into hearts...
+# FIXME: clash with system Compose file
+#<Multi_key> <less> <less> <3>           : "❥"  U2765            # ROTATED HEAVY BLACK HEART BULLET
+<Multi_key> <exclam> <less> <3>         : "❣"  U2763            # HEAVY HEART EXCLAMATION MARK ORNAMENT
+<Multi_key> <less> <f> <3>              : "❦"  U2766            # FLORAL HEART
+<Multi_key> <less> <f> <less> <3>       : "❧"  U2767            # ROTATED FLORAL HEART BULLET
+<Multi_key> <greater> <f> <less> <3>    : "☙"  U2619            # REVERSED ROTATED FLORAL HEART BULLET
+# For some reason, I don't really like these word-based mnemonics.  But until we have something better... -clsn
+# are the ampersand versions better? -kragen
+<Multi_key> <t> <e> <l>			: "☎" 	U260E		# BLACK TELEPHONE
+<Multi_key> <t> <e> <a>		: "☕"	U2615		# HOT BEVERAGE
+# These last two bother me less, though they can still be improved.
+# Other possibly useful symbols:
+# 2668 HOT SPRINGS (for chat, for running off to shower?)
+# I want 2713-2714 and 2717-2718
+# We need a Dingbats prefix, for ❛❜❝❞❢
+<Multi_key> <bracketleft> <space> <bracketright> :	"☐"	U2610	# BALLOT BOX
+# FIXME: Better keystrokes anyone?  This one breaks the pattern. [c]? [v]? [y]? [/]?
+#<Multi_key> <bracketleft> <slash> <bracketright>     :	 "☑"  U2611		# BALLOT BOX WITH CHECK
+# FIXME: conflict
+#<Multi_key> <bracketleft> <x> <bracketright>  :	 "☒"  U2612		# BALLOT BOX WITH X
+# How about dice?
+# FIXME: conflicts
+# <Multi_key> <bracketleft> <1> <bracketright>  :  "⚀"  U2680	# DIE FACE-1
+# <Multi_key> <bracketleft> <2> <bracketright>  :  "⚁"  U2681	# DIE FACE-2
+# <Multi_key> <bracketleft> <3> <bracketright>  :  "⚂"  U2682	# DIE FACE-3
+# <Multi_key> <bracketleft> <4> <bracketright>  :  "⚃"  U2683	# DIE FACE-4
+# <Multi_key> <bracketleft> <5> <bracketright>  :  "⚄"  U2684	# DIE FACE-5
+# <Multi_key> <bracketleft> <6> <bracketright>  :  "⚅"  U2685	# DIE FACE-6
+# 267B BLACK UNIVERSAL RECYCLING SYMBOL
+
+# Keystrokes okay?
+<Multi_key> <f> <d> <l>   	        : "⚜"	U269C	  # FLEUR-DE-LIS
+<Multi_key> <ampersand> <a> <t> <o> <m>	        : "⚛"	U269B		# ATOM SYMBOL
+<Multi_key> <slash> <exclam> <backslash> : "⚠"  U26A0           # WARNING SIGN
+<Multi_key> <exclam> <asciicircum>	: "⚠"	U26A0		# WARNING SIGN  (INTENTIONAL CONFLICT)
+<Multi_key> <z> <a> <p>	  		: "⚡"	U26A1		# HIGH VOLTAGE SIGN 
+# Shouldn't use just <r><a> because it's too likely to be a prefix for
+# a useful word.
+<Multi_key> <r> <a> <d>	: "☢"	U2622		# RADIOACTIVE SIGN
+<Multi_key> <b> <h>		: "☣"	U2623		# BIOHAZARD SIGN
+# Changing this from ⚝
+# FIXME: conflict
+#<Multi_key> <A> <A> <A> <A> <A>	:	"⛤" U26E4 # PENTAGRAM (pentalpha, get it?)
+<Multi_key> <ampersand> <p> <l> <a> <n> <e>	: "✈"   U2708	  # AIRPLANE
+<Multi_key> <ampersand> <m> <a> <i> <l>		: "✉"	U2709	  # ENVELOPE
+<Multi_key> <ampersand> <w> <h> <l> <c> <h>	: "♿"	U267F	  # WHEELCHAIR SYMBOL
+<Multi_key> <ampersand> <m> <e> <d> 		: "☤"	U2624	  # CADEUCEUS
+# Something different for STAFF OF AESCULAPIUS?
+<Multi_key> <ampersand> <1> <m> <e> <d>		: "⚕"	U2695	# STAFF OF AESCULAPIUS
+# Maybe something different that isn't lousy.
+# 26B0 COFFIN ?
+# One of the SNOWFLAKEs?
+# SNOWMAN? COMET? ANCHOR?
+# I already have STAR OF DAVID on another map.
+# 231A, 231B -- WATCH and HOURGLASS -- one should be &-w-a-i-t
+# 23D4 METRICAL LONG OVER TWO SHORTS a.k.a. METRICAL BOOBS
+# 0950 DEVANAGARI OM?
+# 214C PER SIGN?
+# 212E ESTIMATED SYMBOL?
+# 2324 UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS a.k.a. NOT AMUSED
+
+# FIXME: prefix conflict
+# <Multi_key> <O> <minus> <plus>		: "♀"	U2640		# FEMALE SIGN
+# <Multi_key> <O> <minus> <greater>	: "♂"	U2642		# MALE SIGN
+<Multi_key> <ampersand> <g> <a> <y>                 :   "⚣"     U26A3   # DOUBLED MALE SIGN
+<Multi_key> <ampersand> <l> <e> <s> <b>	            :   "⚢"     U26A2   # DOUBLED FEMALE SIGN
+<Multi_key> <ampersand> <h> <e> <t> <e> <r> <o>     :   "⚤"     U26A4   # INTERLOCKED FEMALE AND MALE SIGN
+<Multi_key> <ampersand> <t> <r> <a> <n> <s>         :   "⚥"     U26A5   # MALE AND FEMALE SIGN
+<Multi_key> <ampersand> <g> <q> <u> <e> <e> <r>	    :   "⚧"     U26A7   # MALE WITH STROKE AND MALE AND FEMALE SIGN
+
+<Multi_key> <O> <X>: 			"☠" U2620 # SKULL AND CROSSBONES (INTENTIONAL CONFLICT)
+<Multi_key> <k> <b> <d> :	"⌨"	  U2328	    # KEYBOARD
+# Can we get better keycodes for these?
+<Multi_key> <equal> <minus>	: "☞" U261E # WHITE RIGHT POINTING INDEX
+<Multi_key> <minus> <equal>	: "☜" U261C # WHITE LEFT POINTING INDEX
+# FIXME: conflict
+#<Multi_key> <asterisk> <asterisk>	:"★" U2605 # BLACK STAR
+<Multi_key> <asterisk> <0>	:"☆" U2606 # WHITE STAR (INTENTIONAL CONFLICT)
+# FIXME: conflict
+#<Multi_key> <asterisk> <minus>	:"✪" U272A # CIRCLED WHITE STAR
+<Multi_key> <2> <asterisk>	:"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
+<Multi_key> <asterisk> <4>      :"✢"  U2722  # FOUR TEARDROP-SPOKED ASTERISK
+<Multi_key> <asterisk> <6>	:"✡" U2721 # STAR OF DAVID
+<Multi_key> <asterisk> <numbersign>	:"✯" U272F # PINWHEEL STAR
+<Multi_key> <asterisk> <exclam>	:"✱" U2731 # HEAVY ASTERISK
+<Multi_key> <at> <numbersign>	: "⌘" U2318	# PLACE OF INTEREST SIGN
+# Using backslash-minus-slash etc. conflicts with combining accents.
+<Multi_key> <grave> <minus> <apostrophe>	 : "⚞"	U269E  # THREE LINES CONVERGING RIGHT
+<Multi_key> <apostrophe> <minus> <grave>	 : "⚟"	U269F  # THREE LINES CONVERGING LEFT
+# FIXME: prefix conflict
+#<Multi_key> <b> <e> <l> <l>		: "⍾" U237E  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
+# Other monstery characters... ѪꙚ (alien abductions?) 
+# ඏൠഋ & others from Kannada et al...? 
+# Can't use -^- for this; conflicts with -^ for ↑, and getting those arrows
+# workable was complicated enough.  How about this?
+# FIXME: prefix conflict
+#<Multi_key> <underscore> <asciicircum> <underscore>	: "⌤" U2324  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
+<Multi_key> <w> <a> <i> <t>		: "⌛" U231B   # HOURGLASS
+<Multi_key> <t> <i> <m> <e>		: "⌚" U231A   # WATCH
+
+## Astrological signs
+
+# Planets
+#FIXME: Improve these
+<Multi_key> <ampersand> <s> <u> <n>	: "☉"	U2609	# SUN (Sunday)
+<Multi_key> <ampersand> <m> <o> <o> <n>	: "☽"	U263D	# FIRST QUARTER MOON (Monday)
+<Multi_key> <ampersand> <m> <e> <r> <c> <u> <r> : "☿" U263F	# MERCURY (Wednesday)
+<Multi_key> <ampersand> <v> <e> <n> <u> <s>  : "♀" U2640    # FEMALE SIGN
+<Multi_key> <ampersand> <j> <u> <p> <i> <t> <e>  : "♃" U2643	# JUPITER (Thursday)
+<Multi_key> <ampersand> <s> <a> <t> <u> <r> <n>     : "♄" U2644	# SATURN (Saturday)
+<Multi_key> <ampersand> <u> <r> <a> <n> <u> <s>	    : "♅" U2645	# URANUS (FIXME: or ⛢ U26E2?)
+<Multi_key> <ampersand> <n> <e> <p> <t> <u> <n> : "♆" U2646	# NEPTUNE
+<Multi_key> <ampersand> <p> <l> <u> <t> <o> 	    : "♇" U2647	# PLUTO (ok, it isn't a planet anymore, but we still love it.)
+
+# Minor planets
+#FIXME: Improve these
+<Multi_key> <ampersand> <c> <e> <r> <e> <s>	: "⚳"	U26B3	# CERES
+<Multi_key> <ampersand> <p> <a> <l> <l> <a> <s>	: "⚴"	U26B4	# PALLAS
+<Multi_key> <ampersand> <j> <u> <n> <o>     	: "⚵"	U26B5	# JUNO
+<Multi_key> <ampersand> <v> <e> <s> <t> <a>    	: "⚶"	U26B6	# VESTA
+<Multi_key> <ampersand> <c> <h> <i> <r> <o> <n>	: "⚷"	U26B7	# CHIRON
+<Multi_key> <ampersand> <l> <i> <l> <i> <t> <h>	: "⚸"	U26B8	# BLACK MOON LILITH
+
+# Zodiac signs
+#FIXME: Improve these
+<Multi_key> <ampersand> <a> <r> <i> <e> <s>	: "♈"	U2648	# ARIES
+<Multi_key> <ampersand> <t> <a> <u> <r> <u> <s>	: "♉"	U2649	# TAURUS
+<Multi_key> <ampersand> <g> <e> <m> <i> <n> <i>	: "♊"	U264A	# GEMINI
+<Multi_key> <ampersand> <c> <a> <n> <c> <e> <r>	: "♋"	U264B	# CANCER
+<Multi_key> <ampersand> <l> <e> <o> 		: "♌"	U264C	# LEO
+<Multi_key> <ampersand> <v> <i> <r> <g> <o>	: "♍"	U264D	# VIRGO
+<Multi_key> <ampersand> <l> <i> <b> <r> <a>	: "♎"	U264E	# LIBRA
+<Multi_key> <ampersand> <s> <c> <o> <r> <p>	: "♏"	U264F	# SCORPIUS
+<Multi_key> <ampersand> <s> <a> <g> <i> <t>	: "♐"	U2650	# SAGITTARIUS
+<Multi_key> <ampersand> <c> <a> <p> <r> <i> <c>	: "♑"	U2651	# CAPRICORN
+<Multi_key> <ampersand> <a> <q> <u> <a> <r>	: "♒"	U2652	# AQUARIUS
+<Multi_key> <ampersand> <p> <i> <s> <c> <e> <s>	: "♓"	U2653	# PISCES
+# # Really, this should be SERPENTARIUS.  All the other signs are in Latin.
+<Multi_key> <ampersand> <o> <p> <h> <i> <u> <c> : "⛎"	U26CE	# OPHIUCHUS
+
+## Music.  # is the music mnemonic.
+<Multi_key> <numbersign> <G>              : "𝄞"  U0001d11e # MUSICAL SYMBOL G CLEF
+<Multi_key> <numbersign> <F>              : "𝄢"  U0001d122 # MUSICAL SYMBOL F CLEF
+<Multi_key> <numbersign> <C>              : "𝄡" U0001d121 # MUSICAL SYMBOL C CLEF
+<Multi_key> <numbersign> <numbersign>     : "♭" U266D # MUSIC FLAT SIGN
+<Multi_key> <numbersign> <b>              : "♯" U266F # MUSIC SHARP SIGN
+
+## Games
+
+# Playing Cards
+# The convention is more or less established, except for the Knight.  I'm
+# using N for that, like in Chess, since K would conflict with King of course.
+<Multi_key> <bracketleft> <A> <S> <bracketright>  : "🂡"	U1F0A1	# PLAYING CARD ACE OF SPADES
+<Multi_key> <bracketleft> <2> <S> <bracketright>  : "🂢"	U1F0A2	# PLAYING CARD TWO OF SPADES
+<Multi_key> <bracketleft> <3> <S> <bracketright>  : "🂣"	U1F0A3	# PLAYING CARD THREE OF SPADES
+<Multi_key> <bracketleft> <4> <S> <bracketright>  : "🂤"	U1F0A4	# PLAYING CARD FOUR OF SPADES
+<Multi_key> <bracketleft> <5> <S> <bracketright>  : "🂥"	U1F0A5	# PLAYING CARD FIVE OF SPADES
+<Multi_key> <bracketleft> <6> <S> <bracketright>  : "🂦"	U1F0A6	# PLAYING CARD SIX OF SPADES
+<Multi_key> <bracketleft> <7> <S> <bracketright>  : "🂧"	U1F0A7	# PLAYING CARD SEVEN OF SPADES
+<Multi_key> <bracketleft> <8> <S> <bracketright>  : "🂨"	U1F0A8	# PLAYING CARD EIGHT OF SPADES
+<Multi_key> <bracketleft> <9> <S> <bracketright>  : "🂩"	U1F0A9	# PLAYING CARD NINE OF SPADES
+<Multi_key> <bracketleft> <T> <S> <bracketright>  : "🂪"	U1F0AA	# PLAYING CARD TEN OF SPADES
+<Multi_key> <bracketleft> <J> <S> <bracketright>  : "🂫"	U1F0AB	# PLAYING CARD JACK OF SPADES
+<Multi_key> <bracketleft> <N> <S> <bracketright>  : "🂬"	U1F0AC	# PLAYING CARD KNIGHT OF SPADES
+<Multi_key> <bracketleft> <Q> <S> <bracketright>  : "🂭"	U1F0AD	# PLAYING CARD QUEEN OF SPADES
+<Multi_key> <bracketleft> <K> <S> <bracketright>  : "🂮"	U1F0AE	# PLAYING CARD KING OF SPADES
+
+<Multi_key> <bracketleft> <A> <H> <bracketright>  : "🂱"	U1F0B1	# PLAYING CARD ACE OF HEARTS
+<Multi_key> <bracketleft> <2> <H> <bracketright>  : "🂲"	U1F0B2	# PLAYING CARD TWO OF HEARTS
+<Multi_key> <bracketleft> <3> <H> <bracketright>  : "🂳"	U1F0B3	# PLAYING CARD THREE OF HEARTS
+<Multi_key> <bracketleft> <4> <H> <bracketright>  : "🂴"	U1F0B4	# PLAYING CARD FOUR OF HEARTS
+<Multi_key> <bracketleft> <5> <H> <bracketright>  : "🂵"	U1F0B5	# PLAYING CARD FIVE OF HEARTS
+<Multi_key> <bracketleft> <6> <H> <bracketright>  : "🂶"	U1F0B6	# PLAYING CARD SIX OF HEARTS
+<Multi_key> <bracketleft> <7> <H> <bracketright>  : "🂷"	U1F0B7	# PLAYING CARD SEVEN OF HEARTS
+<Multi_key> <bracketleft> <8> <H> <bracketright>  : "🂸"	U1F0B8	# PLAYING CARD EIGHT OF HEARTS
+<Multi_key> <bracketleft> <9> <H> <bracketright>  : "🂹"	U1F0B9	# PLAYING CARD NINE OF HEARTS
+<Multi_key> <bracketleft> <T> <H> <bracketright>  : "🂺"	U1F0BA	# PLAYING CARD TEN OF HEARTS
+<Multi_key> <bracketleft> <J> <H> <bracketright>  : "🂻"	U1F0BB	# PLAYING CARD JACK OF HEARTS
+<Multi_key> <bracketleft> <N> <H> <bracketright>  : "🂼"	U1F0BC	# PLAYING CARD KNIGHT OF HEARTS
+<Multi_key> <bracketleft> <Q> <H> <bracketright>  : "🂽"	U1F0BD	# PLAYING CARD QUEEN OF HEARTS
+<Multi_key> <bracketleft> <K> <H> <bracketright>  : "🂾"	U1F0BE	# PLAYING CARD KING OF HEARTS
+
+<Multi_key> <bracketleft> <A> <D> <bracketright>  : "🃁"	U1F0C1	# PLAYING CARD ACE OF DIAMONDS
+<Multi_key> <bracketleft> <2> <D> <bracketright>  : "🃂"	U1F0C2	# PLAYING CARD TWO OF DIAMONDS
+<Multi_key> <bracketleft> <3> <D> <bracketright>  : "🃃"	U1F0C3	# PLAYING CARD THREE OF DIAMONDS
+<Multi_key> <bracketleft> <4> <D> <bracketright>  : "🃄"	U1F0C4	# PLAYING CARD FOUR OF DIAMONDS
+<Multi_key> <bracketleft> <5> <D> <bracketright>  : "🃅"	U1F0C5	# PLAYING CARD FIVE OF DIAMONDS
+<Multi_key> <bracketleft> <6> <D> <bracketright>  : "🃆"	U1F0C6	# PLAYING CARD SIX OF DIAMONDS
+<Multi_key> <bracketleft> <7> <D> <bracketright>  : "🃇"	U1F0C7	# PLAYING CARD SEVEN OF DIAMONDS
+<Multi_key> <bracketleft> <8> <D> <bracketright>  : "🃈"	U1F0C8	# PLAYING CARD EIGHT OF DIAMONDS
+<Multi_key> <bracketleft> <9> <D> <bracketright>  : "🃉"	U1F0C9	# PLAYING CARD NINE OF DIAMONDS
+<Multi_key> <bracketleft> <T> <D> <bracketright>  : "🃊"	U1F0CA	# PLAYING CARD TEN OF DIAMONDS
+<Multi_key> <bracketleft> <J> <D> <bracketright>  : "🃋"	U1F0CB	# PLAYING CARD JACK OF DIAMONDS
+<Multi_key> <bracketleft> <N> <D> <bracketright>  : "🃌"	U1F0CC	# PLAYING CARD KNIGHT OF DIAMONDS
+<Multi_key> <bracketleft> <Q> <D> <bracketright>  : "🃍"	U1F0CD	# PLAYING CARD QUEEN OF DIAMONDS
+<Multi_key> <bracketleft> <K> <D> <bracketright>  : "🃎"	U1F0CE	# PLAYING CARD KING OF DIAMONDS
+
+<Multi_key> <bracketleft> <A> <C> <bracketright>  : "🃑"	U1F0D1	# PLAYING CARD ACE OF CLUBS
+<Multi_key> <bracketleft> <2> <C> <bracketright>  : "🃒"	U1F0D2	# PLAYING CARD TWO OF CLUBS
+<Multi_key> <bracketleft> <3> <C> <bracketright>  : "🃓"	U1F0D3	# PLAYING CARD THREE OF CLUBS
+<Multi_key> <bracketleft> <4> <C> <bracketright>  : "🃔"	U1F0D4	# PLAYING CARD FOUR OF CLUBS
+<Multi_key> <bracketleft> <5> <C> <bracketright>  : "🃕"	U1F0D5	# PLAYING CARD FIVE OF CLUBS
+<Multi_key> <bracketleft> <6> <C> <bracketright>  : "🃖"	U1F0D6	# PLAYING CARD SIX OF CLUBS
+<Multi_key> <bracketleft> <7> <C> <bracketright>  : "🃗"	U1F0D7	# PLAYING CARD SEVEN OF CLUBS
+<Multi_key> <bracketleft> <8> <C> <bracketright>  : "🃘"	U1F0D8	# PLAYING CARD EIGHT OF CLUBS
+<Multi_key> <bracketleft> <9> <C> <bracketright>  : "🃙"	U1F0D9	# PLAYING CARD NINE OF CLUBS
+<Multi_key> <bracketleft> <T> <C> <bracketright>  : "🃚"	U1F0DA	# PLAYING CARD TEN OF CLUBS
+<Multi_key> <bracketleft> <J> <C> <bracketright>  : "🃛"	U1F0DB	# PLAYING CARD JACK OF CLUBS
+<Multi_key> <bracketleft> <N> <C> <bracketright>  : "🃜"	U1F0DC	# PLAYING CARD KNIGHT OF CLUBS
+<Multi_key> <bracketleft> <Q> <C> <bracketright>  : "🃝"	U1F0DD	# PLAYING CARD QUEEN OF CLUBS
+<Multi_key> <bracketleft> <K> <C> <bracketright>  : "🃞"	U1F0DE	# PLAYING CARD KING OF CLUBS
+
+<Multi_key> <bracketleft> <C> <B> <bracketright>  : "🂠"	U1F0A0	# PLAYING CARD BACK
+<Multi_key> <bracketleft> <B> <J> <bracketright>  : "🃏"	U1F0CF	# PLAYING CARD BLACK JOKER
+<Multi_key> <bracketleft> <W> <J> <bracketright>  : "🃟"	U1F0DF	# PLAYING CARD WHITE JOKER
+
+# TODO: Dominoes
+# I'm thinking [ 1 1 ], etc, maybe use ] 1 1 [ for vertical
+
+# Chess
+# FIXME: <bar> will be an issue when we want double-struck W or B... replace with <equal>?
+<Multi_key> <bar> <W> <K>	 : "♔" U2654	# WHITE CHESS KING
+<Multi_key> <bar> <W> <Q>	 : "♕" U2655	# WHITE CHESS QUEEN
+<Multi_key> <bar> <W> <R>	 : "♖" U2656	# WHITE CHESS ROOK
+<Multi_key> <bar> <W> <B>	 : "♗" U2657	# WHITE CHESS BISHOP
+<Multi_key> <bar> <W> <N>	 : "♘" U2658	# WHITE CHESS KNIGHT
+<Multi_key> <bar> <W> <P>	 : "♙" U2659	# WHITE CHESS PAWN
+<Multi_key> <bar> <B> <K>	 : "♚" U265A	# BLACK CHESS KING
+<Multi_key> <bar> <B> <Q>	 : "♛" U265B	# BLACK CHESS QUEEN
+<Multi_key> <bar> <B> <R>	 : "♜" U265C	# BLACK CHESS ROOK
+<Multi_key> <bar> <B> <B>	 : "♝" U265D	# BLACK CHESS BISHOP
+<Multi_key> <bar> <B> <N>	 : "♞" U265E	# BLACK CHESS KNIGHT
+<Multi_key> <bar> <B> <P>	 : "♟" U265F	# BLACK CHESS PAWN
+
+# Checkers/Draughts
+<Multi_key> <bar> <W> <D> <M>	 : "⛀" U26C0	# WHITE DRAUGHTS MAN
+<Multi_key> <bar> <W> <D> <K>	 : "⛁" U26C1	# WHITE DRAUGHTS KING
+<Multi_key> <bar> <B> <D> <M>	 : "⛂" U26C2	# BLACK DRAUGHTS MAN
+<Multi_key> <bar> <B> <D> <K>	 : "⛃" U26C3	# BLACK DRAUGHTS KING
+
+# Shogi
+<Multi_key> <bar> <W> <S>	 : "☖" U2616	# WHITE SHOGI PIECE
+<Multi_key> <bar> <B> <S>	 : "☗" U2617	# BLACK SHOGI PIECE
+<Multi_key> <bar> <less> <W> <S> : "⛉" U26C9	# TURNED WHITE SHOGI PIECE
+<Multi_key> <bar> <less> <B> <S> : "⛊" U26CA	# TURNED BLACK SHOGI PIECE
+
+
+## Temperature
+<Multi_key> <d> <e> <g> <C> 		: "℃"   U2103 	# DEGREE CELSIUS
+<Multi_key> <d> <e> <g> <F> 		: "℉"   U2109   # DEGREE FAHRENHEIT
+
+
+## Emoji
+<Multi_key> <i> <d> <e> <a>		: "💡"    U1F4A1 # ELECTRIC LIGHT BULB
+<Multi_key> <a> <n> <g> <e> <r>		: "💢"    U1F4A2 # ANGER SYMBOL
+# FIXME: conflict
+# <Multi_key> <b> <o> <m> <b>		: "💣"    U1F4A3 # BOMB
+<Multi_key> <z> <z> <z>			: "💤"    U1F4A4 # SLEEPING SYMBOL
+<Multi_key> <p> <o> <w>			: "💥"    U1F4A5 # COLLISION SYMBOL
+<Multi_key> <s> <w> <e> <a> <t>		: "💦"    U1F4A6 # SPLASHING SWEAT SYMBOL
+<Multi_key> <d> <r> <o> <p>		: "💧"    U1F4A7 # DROPLET
+<Multi_key> <z> <i> <p>			: "💨"    U1F4A8 # DASH SYMBOL
+<Multi_key> <p> <o> <o>			: "💩"    U1F4A9 # PILE OF POO
+# FIXME: prefix conflict
+#<Multi_key> <d> <i> <z> <z> <y>		: "💫"    U1F4AB # DIZZY SYMBOL
+<Multi_key> <dollar> <b> <a> <g>	: "💰"    U1F4B0 # MONEY BAG
+# FIXME: prefix conflict
+#<Multi_key> <c> <a> <k> <e>		: "🍰"    U1F370 # SHORTCAKE
+<Multi_key> <b> <d> <a> <y>		: "🎂"    U1F382 # BIRTHDAY CAKE
+<Multi_key> <A> <O> <K>			: "👌"    U1F44C # OK HAND SIGN
+# FIXME: Next is conflict, second needs to be fixed in the same way
+#<Multi_key> <t> <h> <m> <u> <p>		: "👍"    U1F44D # THUMBS UP SIGN
+#<Multi_key> <t> <h> <m> <d> <n>		: "👎"    U1F44E # THUMBS DOWN SIGN
+<Multi_key> <k> <i> <s> <s>		: "💋"    U1F48B # KISS MARK
+
+
+## Clock faces
+<Multi_key> <parenleft> <1> <colon> <0> <0> <parenright> : "🕐" U1F550 # CLOCK FACE ONE OCLOCK
+<Multi_key> <parenleft> <2> <colon> <0> <0> <parenright> : "🕑" U1F551 # CLOCK FACE TWO OCLOCK
+<Multi_key> <parenleft> <3> <colon> <0> <0> <parenright> : "🕒" U1F552 # CLOCK FACE THREE OCLOCK
+<Multi_key> <parenleft> <4> <colon> <0> <0> <parenright> : "🕓" U1F553 # CLOCK FACE FOUR OCLOCK
+<Multi_key> <parenleft> <5> <colon> <0> <0> <parenright> : "🕔" U1F554 # CLOCK FACE FIVE OCLOCK
+<Multi_key> <parenleft> <6> <colon> <0> <0> <parenright> : "🕕" U1F555 # CLOCK FACE SIX OCLOCK
+<Multi_key> <parenleft> <7> <colon> <0> <0> <parenright> : "🕖" U1F556 # CLOCK FACE SEVEN OCLOCK
+<Multi_key> <parenleft> <8> <colon> <0> <0> <parenright> : "🕗" U1F557 # CLOCK FACE EIGHT OCLOCK
+<Multi_key> <parenleft> <9> <colon> <0> <0> <parenright> : "🕘" U1F558 # CLOCK FACE NINE OCLOCK
+<Multi_key> <parenleft> <1> <0> <colon> <0> <0> <parenright> : "🕙" U1F559 # CLOCK FACE TEN OCLOCK
+<Multi_key> <parenleft> <1> <1> <colon> <0> <0> <parenright> : "🕚" U1F55A # CLOCK FACE ELEVEN OCLOCK
+<Multi_key> <parenleft> <1> <2> <colon> <0> <0> <parenright> : "🕛" U1F55B # CLOCK FACE TWELVE OCLOCK
+
+<Multi_key> <parenleft> <1> <colon> <3> <0> <parenright>     : "🕜" U1F55C # CLOCK FACE ONE-THIRTY
+<Multi_key> <parenleft> <2> <colon> <3> <0> <parenright>     : "🕝" U1F55D # CLOCK FACE TWO-THIRTY
+<Multi_key> <parenleft> <3> <colon> <3> <0> <parenright>     : "🕞" U1F55E # CLOCK FACE THREE-THIRTY
+<Multi_key> <parenleft> <4> <colon> <3> <0> <parenright>     : "🕟" U1F55F # CLOCK FACE FOUR-THIRTY
+<Multi_key> <parenleft> <5> <colon> <3> <0> <parenright>     : "🕠" U1F560 # CLOCK FACE FIVE-THIRTY
+<Multi_key> <parenleft> <6> <colon> <3> <0> <parenright>     : "🕡" U1F561 # CLOCK FACE SIX-THIRTY
+<Multi_key> <parenleft> <7> <colon> <3> <0> <parenright>     : "🕢" U1F562 # CLOCK FACE SEVEN-THIRTY
+<Multi_key> <parenleft> <8> <colon> <3> <0> <parenright>     : "🕣" U1F563 # CLOCK FACE EIGHT-THIRTY
+<Multi_key> <parenleft> <9> <colon> <3> <0> <parenright>     : "🕤" U1F564 # CLOCK FACE NINE-THIRTY
+<Multi_key> <parenleft> <1> <0> <colon> <3> <0> <parenright>     : "🕥" U1F565 # CLOCK FACE TEN-THIRTY
+<Multi_key> <parenleft> <1> <1> <colon> <3> <0> <parenright>     : "🕦" U1F566 # CLOCK FACE ELEVEN-THIRTY
+<Multi_key> <parenleft> <1> <2> <colon> <3> <0> <parenright>     : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY
+
+
+## TODO: Emoticons (U+1F600 et seq)

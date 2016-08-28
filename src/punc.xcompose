@@ -1,0 +1,306 @@
+
+
+###############
+# PUNC.XCOMPOSE
+###############
+# File is for punctuation/invisibles/control/that kind of stuff.
+
+# Asterisk is commonly used for bullets in ASCII.
+<Multi_key> <asterisk> <asterisk>: "•" U2022 # BULLET
+<Multi_key> <asterisk> <o>: "◦" U25E6 # WHITE BULLET
+<Multi_key> <asterisk> <greater>: "‣" U2023 # TRIANGULAR BULLET
+<Multi_key> <asterisk> <minus>: "⁃" U2043 # HYPHEN BULLET
+<Multi_key> <asterisk> <parenleft>: "⁌" U204C # LEFTWARDS BULLET
+<Multi_key> <asterisk> <parenright>: "⁍" U204D # RIGHTWARDS BULLET
+<Multi_key> <exclam> <asterisk>: "◘" U25D8 # INVERSE BULLET
+# Japanese tainome
+<Multi_key> <asterisk> <at>: "◉" U25C9 # FISHEYE
+
+
+# perhaps CJK input is better handled by CJK input methods.  we try to
+# list here only characters that are not typically avaiable in those
+# (at least in my experience with Japanese IMs).
+
+# “nyoro” on JIMs
+# <Multi_key> <asciitilde> <>: "〜" U301C # WAVE DASH
+<Multi_key> <asciitilde> <minus>: "〰" U3030 # WAVY DASH (~~ is ≈)
+
+# FIXME: conflicts
+#<Multi_key> <minus> <equal>: "゠" U30A0 # KATAKANA DOUBLE HYPHEN
+#<Multi_key> <equal> <minus>: "゠" U30A0 # KATAKANA DOUBLE HYPHEN
+
+# “kome” IM.
+#
+# <Multi_key> <colon> <x>: "※" U203B # REFERENCE MARK
+
+# VERTICAL FORMS
+# ==============
+# correct vertical text uses font glyph substitution; the characters
+# below are deprecated.  since almost no one supports vertical text
+# (not even XeTeX!), these my come in handy.
+
+# «<exclam> <exclam>», «<exclam> <question>» &c. taken
+<Multi_key> <2> <exclam>: "‼" U203C # DOUBLE EXCLAMATION MARK
+<Multi_key> <2> <question>: "⁇" U2047 # DOUBLE QUESTION MARK
+# ⁈
+# ⁉
+
+
+# A quick recap on hyphens and dashes:
+#
+# • U002D «-» is the ASCII hyphen‐minus.  It is overloaded as hyphen,
+#   dash, and minus sign at the command‐line, programming languages,
+#   and in software that can’t handle Unicode well.
+# • U2010 «‐» is the true hyphen.  Use it as the grammatical hyphen
+#   when you feel typographical.
+# • U2011 «‑» is the non‐breaking hyphen.  It is visually identical
+#   to the true hyphen, but tells software they shouldn’t break a line
+#   at this point.  This is useful whenever you feel like an
+#   hyphenated word musn’t be separated in different lines — for
+#   example, when a broken hyphenated word could be mistaken by a
+#   non‐hyphenated word (e.g. “re‑creation”, if broken, could be taken
+#   as “recreation”).
+# • U2012 «‒» is the figure dash.  “Figure” here refers to numbers,
+#   and this dash is guaranteed to be the same width as a digit (in
+#   fonts with equal‐width digits) so they line up.  This dash
+#   therefore is to be used with digits, as in telephone numbers or
+#   postal codes.  Don’t use it for mathematical operations (for which
+#   there is the minus sign) or ranges (for which the en‐dash is
+#   best).  See also U2007, the figure space.
+# • U2013 «–» is the en‐dash — that is, a dash with roughly the
+#   width of an uppercase N.  It’s kind of a softer (and smaller)
+#   version of the em‐dash.  Its main uses are ranges (“2–10”,
+#   “Jan–Mar”) and as a further separator for hyphenated words
+#   (“un‐american–like”).  In a pinch, some people use two ASCII
+#   hyphen‐minuses to substitute it.
+# • U2014 «—» is the em‐dash — the dash that is roughly the width of
+#   an uppercase M, which is usually the maximum type width.  This is
+#   the one used to make parenthetical remarks — like this — or
+#   dangling clauses — like this.  Use it a lot if you’re a beatnik.
+#   In a pinch, many people use two or three ASCII hyphen‐minuses to
+#   substitute it.  Traditionally the em‐dash is used without
+#   spaces—like this—but this looks bad in monospace fonts (only).
+# • U2015 «―» is the horizontal bar.  It’s the official character to
+#   use in dialogues.  It’s identical to the em‐dash in most fonts, so
+#   many just use the em‐dash instead.
+# • U2212 «−» is the true minus sign.  It is more visible and
+#   better‐spaced than the ASCII hyphen‐minus, particularly with
+#   proportional fonts (generally its size and positioning will match
+#   +, × and other mathematical operators).
+#
+# All of the above look basically the same in most monospaced fonts.
+# Their true typographical beauty shows up in real texts, not in
+# conffiles.
+#
+# • U00AD «­» is the soft hyphen.  This is an invisible control
+#   character in Unicode; its purpose is to mark what points of a word
+#   can be broken for hyphenation and aid in automatic text layout.
+#   However, it was visible in ISO-8859-1, where it served to mark
+#   points where words _were_ broken by algorithms; thus some software
+#   still render it as a regular hyphen.  See
+#   http://www.cs.tut.fi/~jkorpela/shy.html .
+# • U2053 «⁓» is the swung dash (not a tilde like «~» ascii tilde or
+#   « ̃» combining tilde).  A swung dash is often used to substitute
+#   words, as in dictionaries.  It overlaps with CJK wave dash U301C
+#   «〜» and wavy dash U3030 «〰», which are probably better for
+#   full-width contexts (see cjk.xcompose).  Other CJK dashes are «゠»
+#   and «－».
+# • U2027 «‧» is the hyphenation point.  Also commonly seen in
+#   dictionaries (dic‧tion‧ar‧ies).  Not to be confused with the
+#   middle dot U00B7 · nor the katakana middle dot (・).
+
+
+# Notice the X name <minus> refer to the ASCII hyphen‐minus, not the
+# true minus.
+<Multi_key> <minus> <period>            : "‐" U2010 # hyhpen
+
+# Literally counter‐intuitive? Press Return when you don’t want line breaks.
+<Multi_key> <minus> <Return>                : "‑" U2011 # non‐breaking hyphen
+<Multi_key> <minus> <numbersign>            : "‒" U2012 # figure dash
+<Multi_key> <minus> <minus> <underscore>    : "―" U2015 # horizontal bar
+
+<Multi_key> <minus> <asciitilde>:         "⁓" U2053 # SWUNG DASH
+# <Multi_key>  <>: "‧" U2027 # HYPHENATION POINT
+## <Multi_key> <period> <minus>    	: "·"   periodcentered # MIDDLE DOT
+
+
+<Multi_key> <V> <V> : "✓" U2713 # CHECK MARK
+<Multi_key> <X> <X> : "✗" U2717 # BALLOT X — <x> <x> taken by Xorg for multiply
+<Multi_key> <V> <underscore> : "✔" U2714 # HEAVY CHECK MARK
+<Multi_key> <X> <underscore> : "✘" U2718 # HEAVY BALLOT X
+
+
+# Spaces
+# ======
+
+# Used like the regular space, except it tells layout softwre not to
+# break lines at its position.  Also the preferred character to
+# display combining marks in isolation (example:  ̧́)
+## <Multi_key> <space> <space>: " "   nobreakspace # NO-BREAK SPACE
+# common abbreviation
+<Multi_key> <n> <b> <s> <p>: " "   nobreakspace # NO-BREAK SPACE
+
+# The following are used for manual spacing, for example in math.
+
+# Nut; the width of capital N (half an em‐space)
+<Multi_key> <space> <n>: " " U2002   # EN SPACE
+# Mutton; the width of capital M ≅ type width
+<Multi_key> <space> <m>: " " U2003   # EM SPACE
+# aka thick space
+<Multi_key> <space> <3>: " " U2004 # THREE-PER-EM SPACE
+# aka mid space
+<Multi_key> <space> <4>: " " U2005 # FOUR-PER-EM SPACE
+<Multi_key> <space> <6>: " " U2006 # SIX-PER-EM SPACE
+
+# 4/18 of an em
+# <Multi_key> <space> <>: " " U205F # MEDIUM MATHEMATICAL SPACE
+
+# tabular space = the width of a digit if font is fixed‐digit
+<Multi_key> <space> <numbersign>: " " U2007 # FIGURE SPACE
+
+<Multi_key> <space> <t>: " " U2009 # THIN SPACE
+<Multi_key> <space> <h>: " " U200A # HAIR SPACE
+# bar = a strand of hair?
+<Multi_key> <space> <bar>: " " U200A # HAIR SPACE
+
+
+# Control
+# =======
+
+# A space so thin, it’s invisible.  Used to separate words in scripts
+# that don’t separate words such as Thai, Kmer, and Japanese.  Since
+# it’s invisible, ZWSP is actually not a space at all; but it might
+# get expanded in automatic paragraph justification.
+<Multi_key> <space> <0>: "​" U200B # ZERO WIDTH SPACE
+# common abbreviation
+<Multi_key> <space> <N> <J>		: "‌"	U200C	# ZERO WIDTH NON-JOINER
+<Multi_key> <space> <W> <J>		: "‍"	U200D	# ZERO WIDTH JOINER
+
+# The proper zero‐width no‐break space.
+<Multi_key> <w> <j>: "⁠" U2060 # WORD JOINER
+
+# The following fine‐tune the bidirectional algorithm.  In fact they
+# might mess up the display of this file =) The sequences are the
+# official abbreviations and widely used.
+#
+# The “marks” are useful for overriding the default behavior of the
+# bidi algorithm, that considers a paragraph to be in the direction of
+# the first strongly‐directed letter.
+<Multi_key> <l> <r> <m>: "‎" U200E # LEFT TO RIGHT MARK
+<Multi_key> <r> <l> <m>: "‏" U200F # RIGHT TO LEFT MARK
+<Multi_key> <l> <r> <e>: "‪" U202A # LEFT TO RIGHT EMBEDDING
+<Multi_key> <r> <l> <e>: "‫" U202B # RIGHT TO LEFT EMBEDDING
+<Multi_key> <p> <d> <f>: "‬" U202C # POP DIRECTIONAL FORMATTING
+# The overrides will force bidi to treat _any_ character as one of
+# that directionality.
+<Multi_key> <l> <r> <o>: "‭" U202D # LEFT TO RIGHT OVERRIDE
+<Multi_key> <r> <l> <o>: "‮" U202E # RIGHT TO LEFT OVERRIDE
+
+# a free pop just to be sure: ‬
+
+# Mnemonics
+# =========
+
+<Multi_key> <colon> <colon>: "⸪" U2E2A # TWO DOTS OVER ONE DOT
+#FIXME: conflicts
+# <Multi_key> <period> <colon>: "⸫" U2E2B # ONE DOT OVER TWO DOTS
+# <Multi_key> <colon> <colon>:  "⸬" U2E2C # TWO DOTS OVER TWO DOTS
+<Multi_key> <colon> <plus>: "⸭" U2E2D # FIVE DOTS MARK
+<Multi_key> <plus> <colon>: "⸭" U2E2D # FIVE DOTS MARK
+
+<Multi_key> <plus> <bar> : "†" U2020 # DAGGER
+<Multi_key> <plus> <plus> : "‡" U2021 # DOUBLE DAGGER (INTENTIONAL CONFLICT)
+
+<Multi_key> <asterisk> <3>: "⁂" U2042 # ASTERISM
+
+# One missing for Greek
+<Multi_key> <quotedbl> <parenleft>: "‟" U201F # DOUBLE HIGH-REVERSED-9
+<Multi_key> <parenleft> <quotedbl>: "‟" U201F # DOUBLE HIGH-REVERSED-9
+
+# In the Asian section, but it's general-purpose punctuation
+<Multi_key> <quotedbl> <quotedbl>       : "〃"	U3003		# DITTO MARK (INTENTIONAL CONFLICT)
+
+# These versions make more sense with other mappings.
+<Multi_key> <greater> <period>          : "›"   U203a # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <less> <period>             : "‹"   U2039 # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+
+<Multi_key> <equal> <period> <equal>	: "⸎"	U2E0E		# EDITORIAL CORONIS
+
+# Alternative, convenient sequence for apostrophe (so common in English).
+#
+# The right single quotation mark is the official apostrophe in Unicode.
+<Multi_key> <apostrophe> <apostrophe>   : "’"   U2019 # RIGHT SINGLE QUOTATION MARK (INTENTIONAL CONFLICT)
+
+# Some quotation styles around the world:
+# “American English.” “British English”.
+# “Dutch, English, Italian, Portuguese, Spanish, Turkish”
+# ”Danish, Finnish, Norwegian, Swedish” (but »Swedish books»)
+# „Czech, German, Slovak“ (opening low-9 is Gänsefüßchen „little goose feet“)
+# „Hungarian, Polish”
+# « French » # no-break space or 3∕M or (3∕M+WJ) better than regular
+#              spaces
+# «Greek, Russian»
+# ‟Greek, second level” (opening high-reversed-9)
+# »Slovenian«
+# 〝ＣＪＫ〞, 「ＣＪＫ」, 『ＣＪＫ』,【ＣＪＫ】,《ＣＪＫ》,〔ＣＪＫ〕 &c. &c.
+
+# Spelled out
+# ===========
+<Multi_key> <s> <c>:      "§" U00A7	# SECTION SIGN
+<Multi_key> <m> <i> <n> : "′"
+# ≠ prime quotation mark above
+<Multi_key> <s> <e> <c> : "″"
+<Multi_key> <i> <n> <f> : "∞"
+
+# Not a dingbat —“General Punctuation”, used as separator.
+<Multi_key> <p> <a> <l> <m>: "⸙" U2E19 # PALM BRANCH
+
+# Used in Indic scripts.
+# FIXME: conflict
+#<Multi_key> <p> <h> <u> <l>: "⁕" U2055 # FLOWER PUNCTUATION MARK
+
+# not sure why anyone would want this, but it’s nostalgic
+<Multi_key> <bar> <bar>    : "¦" brokenbar
+
+## Brackets
+# TODO: There are lots more brackets to consider: 
+# ⦅⦆ ⦇⦈ ⦉⦊ ⟪⟫ ⟬⟭ ⟮⟯ ⦑⦒ ⦓⦔ ⦕⦖ ⦗⦘ ⧼⧽ ⧘⧙ ⧚⧛ 「」 『』
+# Consider <7> <less>/<greater> for ⸂⸃ maybe? <S> and <slash> for ⸉⸊⸌⸍ ...?
+# FIXME: <asterisk> <parenright> is a conflict
+#<Multi_key> <asterisk> <parenleft>      : "﴾"   UFD3E           # ORNATE LEFT PARENTHESIS
+#<Multi_key> <asterisk> <parenright>     : "﴿"   UFD3F           # ORNATE RIGHT PARENTHESIS
+# The following *look* double-struck.
+<Multi_key> <bar> <braceleft>	 : "⦃" U2983	# LEFT WHITE CURLY BRACKET
+<Multi_key> <bar> <braceright>	 : "⦄" U2984	# RIGHT WHITE CURLY BRACKET 
+<Multi_key> <S> <parenleft>  	: "⟅" U27C5 	# LEFT S-SHAPED BAG DELIMITER
+<Multi_key> <S> <parenright>			: "⟆" U27C6 # RIGHT S-SHAPED BAG DELIMITER
+# FIXME: Are the Mathematical versions ⟨⟩ preferable? And there are more at 3008 and 3009
+<Multi_key> <less> <parenleft>			: "〈" U2329 # LEFT-POINTING ANGLE BRACKET
+<Multi_key> <greater> <parenright>		: "〉" U232A # RIGHT-POINTING ANGLE BRACKET
+<Multi_key> <parenleft> <ampersand> <parenleft>	: "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
+<Multi_key> <parenright> <ampersand> <parenright>: "⸩" U2E29 # RIGHT DOUBLE PARENTHESIS
+<Multi_key> <2> <parenleft>			: "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
+<Multi_key> <2> <parenright>			: "⸩"  U2E29 # RIGHT DOUBLE PARENTHESIS
+<Multi_key> <Z> <parenleft>			: "༼"  U0F3C # TIBETAN MARK ANG KHANG GYON
+<Multi_key> <Z> <parenright>			: "༽"  U0F3D # TIBETAN MARK ANG KHANG GYAS
+<Multi_key> <L> <bracketleft>			: "⌊"  U230A # LEFT FLOOR
+<Multi_key> <L> <bracketright>			: "⌋"  U230B # RIGHT FLOOR
+<Multi_key> <7> <bracketleft>			: "⌈"  U2308 # LEFT CEILING
+<Multi_key> <7> <bracketright>			: "⌉"  U2309 # RIGHT CEILING
+# The following use the pattern from FLOOR/CEILING
+<Multi_key> <7> <asciicircum> <bracketleft>	: "⸢"  U2E22 # TOP LEFT HALF BRACKET
+<Multi_key> <7> <asciicircum> <bracketright>	: "⸣"  U2E23 # TOP RIGHT HALF BRACKET
+<Multi_key> <L> <underscore> <bracketleft>	: "⸤"  U2E24 # BOTTOM LEFT HALF BRACKET
+<Multi_key> <L> <underscore> <bracketright>	: "⸥"  U2E25 # BOTTOM RIGHT HALF BRACKET
+
+
+<Multi_key> <bracketleft> <bracketleft> 	: "⊏"  U228F # SQUARE IMAGE OF
+<Multi_key> <bracketleft> <equal>       	: "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <bracketleft> <underscore>  	: "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <bracketright> <bracketright>	: "⊐"  U2290 # SQUARE ORIGINAL OF
+<Multi_key> <bracketright> <equal>      	: "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
+<Multi_key> <bracketright> <underscore> 	: "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
+
+<Multi_key> <l> <l>				: "ℓ"  U2113 # SCRIPT SMALL L
+<Multi_key> <underscore> <bar> <underscore>	: "⊥"  U22A5 # UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
+

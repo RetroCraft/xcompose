@@ -1,0 +1,8 @@
+# -*- coding: utf-8; mode: conf -*-
+include "%L"
+
+# See also http://bleah.co.uk/~simon/stuff/XCompose
+# and http://dotfiles.org/~inky/.XCompose
+# and http://paste.lisp.org/display/73094
+
+# scan4dups.py will ignore conflicts marked INTENTIONAL CONFLICT
