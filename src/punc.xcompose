@@ -121,7 +121,7 @@
 
 <Multi_key> <minus> <asciitilde>:         "⁓" U2053 # SWUNG DASH
 # <Multi_key>  <>: "‧" U2027 # HYPHENATION POINT
-## <Multi_key> <period> <minus>    	: "·"   periodcentered # MIDDLE DOT
+## <Multi_key> <period> <minus>     : "·"   periodcentered # MIDDLE DOT
 
 
 <Multi_key> <V> <V> : "✓" U2713 # CHECK MARK
@@ -173,8 +173,8 @@
 # get expanded in automatic paragraph justification.
 <Multi_key> <space> <0>: "​" U200B # ZERO WIDTH SPACE
 # common abbreviation
-<Multi_key> <space> <N> <J>		: "‌"	U200C	# ZERO WIDTH NON-JOINER
-<Multi_key> <space> <W> <J>		: "‍"	U200D	# ZERO WIDTH JOINER
+<Multi_key> <space> <N> <J>   : "‌"  U200C # ZERO WIDTH NON-JOINER
+<Multi_key> <space> <W> <J>   : "‍"  U200D # ZERO WIDTH JOINER
 
 # The proper zero‐width no‐break space.
 <Multi_key> <w> <j>: "⁠" U2060 # WORD JOINER
@@ -218,13 +218,13 @@
 <Multi_key> <parenleft> <quotedbl>: "‟" U201F # DOUBLE HIGH-REVERSED-9
 
 # In the Asian section, but it's general-purpose punctuation
-<Multi_key> <quotedbl> <quotedbl>       : "〃"	U3003		# DITTO MARK (INTENTIONAL CONFLICT)
+<Multi_key> <quotedbl> <quotedbl>       : "〃"  U3003   # DITTO MARK (INTENTIONAL CONFLICT)
 
 # These versions make more sense with other mappings.
 <Multi_key> <greater> <period>          : "›"   U203a # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
 <Multi_key> <less> <period>             : "‹"   U2039 # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
 
-<Multi_key> <equal> <period> <equal>	: "⸎"	U2E0E		# EDITORIAL CORONIS
+<Multi_key> <equal> <period> <equal>  : "⸎" U2E0E   # EDITORIAL CORONIS
 
 # Alternative, convenient sequence for apostrophe (so common in English).
 #
@@ -246,7 +246,7 @@
 
 # Spelled out
 # ===========
-<Multi_key> <s> <c>:      "§" U00A7	# SECTION SIGN
+<Multi_key> <s> <c>:      "§" U00A7 # SECTION SIGN
 <Multi_key> <m> <i> <n> : "′"
 # ≠ prime quotation mark above
 <Multi_key> <s> <e> <c> : "″"
@@ -270,37 +270,37 @@
 #<Multi_key> <asterisk> <parenleft>      : "﴾"   UFD3E           # ORNATE LEFT PARENTHESIS
 #<Multi_key> <asterisk> <parenright>     : "﴿"   UFD3F           # ORNATE RIGHT PARENTHESIS
 # The following *look* double-struck.
-<Multi_key> <bar> <braceleft>	 : "⦃" U2983	# LEFT WHITE CURLY BRACKET
-<Multi_key> <bar> <braceright>	 : "⦄" U2984	# RIGHT WHITE CURLY BRACKET 
-<Multi_key> <S> <parenleft>  	: "⟅" U27C5 	# LEFT S-SHAPED BAG DELIMITER
-<Multi_key> <S> <parenright>			: "⟆" U27C6 # RIGHT S-SHAPED BAG DELIMITER
+<Multi_key> <bar> <braceleft>  : "⦃" U2983  # LEFT WHITE CURLY BRACKET
+<Multi_key> <bar> <braceright>   : "⦄" U2984  # RIGHT WHITE CURLY BRACKET 
+<Multi_key> <S> <parenleft>   : "⟅" U27C5   # LEFT S-SHAPED BAG DELIMITER
+<Multi_key> <S> <parenright>      : "⟆" U27C6 # RIGHT S-SHAPED BAG DELIMITER
 # FIXME: Are the Mathematical versions ⟨⟩ preferable? And there are more at 3008 and 3009
-<Multi_key> <less> <parenleft>			: "〈" U2329 # LEFT-POINTING ANGLE BRACKET
-<Multi_key> <greater> <parenright>		: "〉" U232A # RIGHT-POINTING ANGLE BRACKET
-<Multi_key> <parenleft> <ampersand> <parenleft>	: "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
+<Multi_key> <less> <parenleft>      : "〈" U2329 # LEFT-POINTING ANGLE BRACKET
+<Multi_key> <greater> <parenright>    : "〉" U232A # RIGHT-POINTING ANGLE BRACKET
+<Multi_key> <parenleft> <ampersand> <parenleft> : "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
 <Multi_key> <parenright> <ampersand> <parenright>: "⸩" U2E29 # RIGHT DOUBLE PARENTHESIS
-<Multi_key> <2> <parenleft>			: "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
-<Multi_key> <2> <parenright>			: "⸩"  U2E29 # RIGHT DOUBLE PARENTHESIS
-<Multi_key> <Z> <parenleft>			: "༼"  U0F3C # TIBETAN MARK ANG KHANG GYON
-<Multi_key> <Z> <parenright>			: "༽"  U0F3D # TIBETAN MARK ANG KHANG GYAS
-<Multi_key> <L> <bracketleft>			: "⌊"  U230A # LEFT FLOOR
-<Multi_key> <L> <bracketright>			: "⌋"  U230B # RIGHT FLOOR
-<Multi_key> <7> <bracketleft>			: "⌈"  U2308 # LEFT CEILING
-<Multi_key> <7> <bracketright>			: "⌉"  U2309 # RIGHT CEILING
+<Multi_key> <2> <parenleft>     : "⸨"  U2E28 # LEFT DOUBLE PARENTHESIS
+<Multi_key> <2> <parenright>      : "⸩"  U2E29 # RIGHT DOUBLE PARENTHESIS
+<Multi_key> <Z> <parenleft>     : "༼"  U0F3C # TIBETAN MARK ANG KHANG GYON
+<Multi_key> <Z> <parenright>      : "༽"  U0F3D # TIBETAN MARK ANG KHANG GYAS
+<Multi_key> <L> <bracketleft>     : "⌊"  U230A # LEFT FLOOR
+<Multi_key> <L> <bracketright>      : "⌋"  U230B # RIGHT FLOOR
+<Multi_key> <7> <bracketleft>     : "⌈"  U2308 # LEFT CEILING
+<Multi_key> <7> <bracketright>      : "⌉"  U2309 # RIGHT CEILING
 # The following use the pattern from FLOOR/CEILING
-<Multi_key> <7> <asciicircum> <bracketleft>	: "⸢"  U2E22 # TOP LEFT HALF BRACKET
-<Multi_key> <7> <asciicircum> <bracketright>	: "⸣"  U2E23 # TOP RIGHT HALF BRACKET
-<Multi_key> <L> <underscore> <bracketleft>	: "⸤"  U2E24 # BOTTOM LEFT HALF BRACKET
-<Multi_key> <L> <underscore> <bracketright>	: "⸥"  U2E25 # BOTTOM RIGHT HALF BRACKET
+<Multi_key> <7> <asciicircum> <bracketleft> : "⸢"  U2E22 # TOP LEFT HALF BRACKET
+<Multi_key> <7> <asciicircum> <bracketright>  : "⸣"  U2E23 # TOP RIGHT HALF BRACKET
+<Multi_key> <L> <underscore> <bracketleft>  : "⸤"  U2E24 # BOTTOM LEFT HALF BRACKET
+<Multi_key> <L> <underscore> <bracketright> : "⸥"  U2E25 # BOTTOM RIGHT HALF BRACKET
 
 
-<Multi_key> <bracketleft> <bracketleft> 	: "⊏"  U228F # SQUARE IMAGE OF
-<Multi_key> <bracketleft> <equal>       	: "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
-<Multi_key> <bracketleft> <underscore>  	: "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
-<Multi_key> <bracketright> <bracketright>	: "⊐"  U2290 # SQUARE ORIGINAL OF
-<Multi_key> <bracketright> <equal>      	: "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
-<Multi_key> <bracketright> <underscore> 	: "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
+<Multi_key> <bracketleft> <bracketleft>   : "⊏"  U228F # SQUARE IMAGE OF
+<Multi_key> <bracketleft> <equal>         : "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <bracketleft> <underscore>    : "⊑"  U2291 # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <bracketright> <bracketright> : "⊐"  U2290 # SQUARE ORIGINAL OF
+<Multi_key> <bracketright> <equal>        : "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
+<Multi_key> <bracketright> <underscore>   : "⊒"  U2292 # SQUARE ORIGINAL OF OR EQUAL TO
 
-<Multi_key> <l> <l>				: "ℓ"  U2113 # SCRIPT SMALL L
-<Multi_key> <underscore> <bar> <underscore>	: "⊥"  U22A5 # UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
+<Multi_key> <l> <l>       : "ℓ"  U2113 # SCRIPT SMALL L
+<Multi_key> <underscore> <bar> <underscore> : "⊥"  U22A5 # UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
 

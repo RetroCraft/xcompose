@@ -37,15 +37,15 @@
 
 
 ## Set operators
-<Multi_key> <braceleft> <E>			: "∈"	U2208		# ELEMENT OF
-<Multi_key> <braceleft> <exclam> <E>		: "∉"	U2209		# NOT AN ELEMENT OF
-<Multi_key> <braceleft> <parenleft>	: "⊂"	U2282		# SUBSET OF
-<Multi_key> <braceleft> <parenright>	: "⊃"	U2283		# SUPERSET OF
+<Multi_key> <braceleft> <E>     : "∈" U2208   # ELEMENT OF
+<Multi_key> <braceleft> <exclam> <E>    : "∉" U2209   # NOT AN ELEMENT OF
+<Multi_key> <braceleft> <parenleft> : "⊂" U2282   # SUBSET OF
+<Multi_key> <braceleft> <parenright>  : "⊃" U2283   # SUPERSET OF
 <Multi_key> <braceleft> <exclam> <braceleft> <parenleft> : "⊄" U2284        # NOT A SUBSET OF
-<Multi_key> <braceleft> <equal> <parenleft> : "⊆" U2286		# SUBSET OF OR EQUAL TO
-<Multi_key> <braceleft> <equal> <parenright> : "⊇" U2287	# SUPERSET OF OR EQUAL TO
-<Multi_key> <braceleft> <asciicircum>	: "∩"	U2229		# INTERSECTION
-<Multi_key> <braceleft> <U>		: "∪"	U222A		# UNION
+<Multi_key> <braceleft> <equal> <parenleft> : "⊆" U2286   # SUBSET OF OR EQUAL TO
+<Multi_key> <braceleft> <equal> <parenright> : "⊇" U2287  # SUPERSET OF OR EQUAL TO
+<Multi_key> <braceleft> <asciicircum> : "∩" U2229   # INTERSECTION
+<Multi_key> <braceleft> <U>   : "∪" U222A   # UNION
 
 <Multi_key> <bracketleft> <bracketright>: "∎" # END OF PROOF (INTENTIONAL CONFLICT)
 
@@ -59,60 +59,60 @@
 # v = ↓ = vertical
 <Multi_key> <v> <period> <period>: "⋮" U22EE # VERTICAL ELLIPSIS
 # FIXME: prefix conflict
-#<Multi_key> <c> <period> <period>	: "⋯"	U22EF		# MIDLINE HORIZONTAL ELLIPSIS
-<Multi_key> <period> <slash> <period>	: "⋰"	U22F0		# UP RIGHT DIAGONAL ELLIPSIS
+#<Multi_key> <c> <period> <period>  : "⋯" U22EF   # MIDLINE HORIZONTAL ELLIPSIS
+<Multi_key> <period> <slash> <period> : "⋰" U22F0   # UP RIGHT DIAGONAL ELLIPSIS
 # To avoid conflict with \. for combining dot
-<Multi_key> <period> <backslash> <period> : "⋱" U22F1		# DOWN RIGHT DIAGONAL ELLIPSIS
+<Multi_key> <period> <backslash> <period> : "⋱" U22F1   # DOWN RIGHT DIAGONAL ELLIPSIS
 
 # See also the other files (e.g. invisible.xcompose for spaces, &c.)
 
 # FIXME: 2. is ⒉
-#<Multi_key> <2> <period>                  : "‥"	U2025		# TWO DOT LEADER
+#<Multi_key> <2> <period>                  : "‥"  U2025   # TWO DOT LEADER
 # This should not be needed.
-#<Multi_key> <1> <period>                 : "․"	U2024		# ONE DOT LEADER
+#<Multi_key> <1> <period>                 : "․" U2024   # ONE DOT LEADER
 # FIXME: ./. = ⋰
-#<Multi_key> <period> <slash> <period>	: "⁒"	U2052		# COMMERCIAL MINUS SIGN
+#<Multi_key> <period> <slash> <period>  : "⁒" U2052   # COMMERCIAL MINUS SIGN
 # Printable sign for space.  But is \<space> too useful a key combo to use
 # for this?
-<Multi_key> <backslash> <space>		: "␣"	U2423		# OPEN BOX
+<Multi_key> <backslash> <space>   : "␣" U2423   # OPEN BOX
 
 # Custom additions: Mathematical symbols
-<Multi_key> <less> <exclam> <greater>   : "≸"  U2278		# NEITHER LESS-THAN NOR GREATER-THAN
-<Multi_key> <plus> <less>        	: "≪"  U226A		# MUCH LESS-THAN
-<Multi_key> <plus> <greater> 		: "≫"  U226B		# MUCH GREATER-THAN
+<Multi_key> <less> <exclam> <greater>   : "≸"  U2278    # NEITHER LESS-THAN NOR GREATER-THAN
+<Multi_key> <plus> <less>         : "≪"  U226A    # MUCH LESS-THAN
+<Multi_key> <plus> <greater>    : "≫"  U226B    # MUCH GREATER-THAN
 # Avoid conflict with the standard plus plus → #
-<Multi_key> <3> <greater> 		: "⋙"  U22D9		# VERY MUCH GREATER-THAN
-<Multi_key> <3> <less>			: "⋘"  U22D8		# VERY MUCH LESS-THAN
-<Multi_key> <n> <i>			: "∋"  U220B		# CONTAINS AS MEMBER  (I hope this doesn't conflict)
-<Multi_key> <slash> <n> <i>		: "∌"  U220C		# DOES NOT CONTAIN AS MEMBER
+<Multi_key> <3> <greater>     : "⋙"  U22D9    # VERY MUCH GREATER-THAN
+<Multi_key> <3> <less>      : "⋘"  U22D8    # VERY MUCH LESS-THAN
+<Multi_key> <n> <i>     : "∋"  U220B    # CONTAINS AS MEMBER  (I hope this doesn't conflict)
+<Multi_key> <slash> <n> <i>   : "∌"  U220C    # DOES NOT CONTAIN AS MEMBER
 # <exclam><n><i> would conflict, with <exclam> <n> for N WITH UNDERDOT, etc.
-<Multi_key> <equal> <question>		: "≟"  U225f		# QUESTIONED EQUAL TO
+<Multi_key> <equal> <question>    : "≟"  U225f    # QUESTIONED EQUAL TO
 # FIXME: conflict
-#<Multi_key> <equal> <d> <e> <f>		: "≝"  U225D		# EQUAL TO BY DEFINITION
-<Multi_key> <equal> <equal>		: "≡"  U2261		# IDENTICAL TO
-<Multi_key> <colon> <equal> 		: "≔"  U2254		# COLON EQUALS
-<Multi_key> <equal> <colon> 		: "≕"  U2255		# EQUALS COLON
+#<Multi_key> <equal> <d> <e> <f>    : "≝"  U225D    # EQUAL TO BY DEFINITION
+<Multi_key> <equal> <equal>   : "≡"  U2261    # IDENTICAL TO
+<Multi_key> <colon> <equal>     : "≔"  U2254    # COLON EQUALS
+<Multi_key> <equal> <colon>     : "≕"  U2255    # EQUALS COLON
 # Using <slash> would conflict
-<Multi_key> <equal> <exclam> <equal> <equal>	: "≢"  U2262		# NOT IDENTICAL TO
+<Multi_key> <equal> <exclam> <equal> <equal>  : "≢"  U2262    # NOT IDENTICAL TO
 # We already have ±
-<Multi_key> <minus> <plus>		: "∓"  U2213		# MINUS OR PLUS SIGN (INTENTIONAL CONFLICT)
-<Multi_key> <s> <q>			: "√"  U221A		# SQUARE ROOT
-<Multi_key> <3> <s> <q>			: "∛"  U221B	        # CUBE ROOT
-<Multi_key> <4> <s> <q>			: "∜"  U221C		# FOURTH ROOT
-<Multi_key> <slash> <backslash>		: "∧"  U2227            # LOGICAL AND
-<Multi_key> <backslash> <slash>		: "∨"  U2228            # LOGICAL OR
+<Multi_key> <minus> <plus>    : "∓"  U2213    # MINUS OR PLUS SIGN (INTENTIONAL CONFLICT)
+<Multi_key> <s> <q>     : "√"  U221A    # SQUARE ROOT
+<Multi_key> <3> <s> <q>     : "∛"  U221B          # CUBE ROOT
+<Multi_key> <4> <s> <q>     : "∜"  U221C    # FOURTH ROOT
+<Multi_key> <slash> <backslash>   : "∧"  U2227            # LOGICAL AND
+<Multi_key> <backslash> <slash>   : "∨"  U2228            # LOGICAL OR
 <Multi_key> <backslash> <underscore> <slash>: "⊻"  U22BB        # XOR
 # FIXME: conflict
-#<Multi_key> <asterisk> <o>		: "∘"  U2218            # RING OPERATOR (function composition)
-<Multi_key> <asterisk> <x>		: "⨯"  U2A2F            # CROSS PRODUCT
-<Multi_key> <asterisk> <period>		: "⋅"  U22C5            # DOT OPERATOR (dot product)
+#<Multi_key> <asterisk> <o>   : "∘"  U2218            # RING OPERATOR (function composition)
+<Multi_key> <asterisk> <x>    : "⨯"  U2A2F            # CROSS PRODUCT
+<Multi_key> <asterisk> <period>   : "⋅"  U22C5            # DOT OPERATOR (dot product)
 <Multi_key> <0> <slash>                 : "∅"  U2205            # EMPTY SET
 <Multi_key> <slash> <0>                 : "∅"  U2205            # EMPTY SET
 <Multi_key> <equal> <T> <E>                  : "∃"  U2203         # THERE EXISTS
 <Multi_key> <equal> <exclam> <less> <E> <E>     : "∄"  U2204            # THERE DOES NOT EXIST
 <Multi_key> <A> <A>                     : "∀"  U2200            # FOR ALL (INTENTIONAL CONFLICT)
 <Multi_key> <Q> <E> <D>     : "∎"  U220E            # END OF PROOF
-<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135	       # ALEF SYMBOL
+<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135        # ALEF SYMBOL
 <Multi_key> <braceleft> <0> <a> <l> <e> <f> : "ℵ₀"        # ALEF Null
 <Multi_key> <braceleft> <1> <a> <l> <e> <f> : "ℵ₁"        # ALEF One
 <Multi_key> <KP_Multiply> <KP_Multiply>    : "∗"   U2217 # ASTERISK OPERATOR
@@ -124,29 +124,29 @@
 # FIXME: conflict
 #<Multi_key> <parenleft> <asterisk> <parenright> : "⊛"  U229B    # CIRCLED ASTERISK OPERATOR
 # )- conflicts with system for }.
-<Multi_key> <parenright> <underscore>    : "⟌"   	U27CC		# LONG DIVISION
-<Multi_key> <period> <quotedbl>	   	: "∴"	U2234  		# THEREFORE
-<Multi_key> <quotedbl> <period>	   	: "∵"	U2235  		# BECAUSE
+<Multi_key> <parenright> <underscore>    : "⟌"    U27CC   # LONG DIVISION
+<Multi_key> <period> <quotedbl>     : "∴" U2234     # THEREFORE
+<Multi_key> <quotedbl> <period>     : "∵" U2235     # BECAUSE
 # Ordinal indicators, for feminine and masculine, used in Romance languages
-<Multi_key> <a> <minus>	      	  	: "ª"   U00AA		# FEMININE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
-<Multi_key> <o> <minus>			: "º"	U00BA		# MASCULINE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
+<Multi_key> <a> <minus>             : "ª"   U00AA   # FEMININE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
+<Multi_key> <o> <minus>     : "º" U00BA   # MASCULINE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
 
-<Multi_key> <braceleft> <s> <u> <m>	: "∑"	U2211		# N-ARY SUMMATION
-<Multi_key> <braceleft> <i> <n> <t>	: "∫"	U222B		# INTEGRAL
-<Multi_key> <braceleft> <u> <i> <n> <t>	: "⨛"	U2A1B		# UPPER INTEGRAL
-<Multi_key> <braceleft> <l> <i> <n> <t>	: "⨜"	U2A1C		# LOWER INTEGRAL
-<Multi_key> <braceleft> <i> <i> <n> <t>	: "∬"	U222C		# DOUBLE INTEGRAL
-<Multi_key> <braceleft> <i> <i> <i> <n> <t>	: "∭"	U222D		# TRIPLE INTEGRAL
-<Multi_key> <braceleft> <i> <i> <i> <i> <n> <t>	: "⨌"	U2A0C		# QUADRUPLE INTEGRAL
-<Multi_key> <braceleft> <o> <i> <n> <t>	: "∮"	U222E		# CONTOUR INTEGRAL
-<Multi_key> <braceleft> <p> <i> <n> <t>	: "⨕"	U2a15		# SEMICIRCULAR POLE INTEGRAL
-<Multi_key> <braceleft> <c> <P> <i> <n> <t>	: "⨓"	U2A13		# INTEGRAL AROUND POINT
-<Multi_key> <braceleft> <o> <i> <i> <n> <t>	: "∯"	U222F		# SURFACE INTEGRAL
-<Multi_key> <braceleft> <o> <i> <i> <i> <n> <t>	: "∰"	U2230		# VOLUME INTEGRAL
-<Multi_key> <braceleft> <g> <i> <n> <t>	: "⨘"	U2A18		# GEOMETRIC INTEGRAL
-<Multi_key> <braceleft> <s> <i> <n> <t>	: "⨋"	U2A0B		# SUM/INTEGRAL
-<Multi_key> <braceleft> <d> <e> <l>	: "∇"	U2207	        # NABLA
-<Multi_key> <braceleft> <p> <a> <r> <t>   : "∂" U2202		# PARTIAL DIFFERENTIAL
+<Multi_key> <braceleft> <s> <u> <m> : "∑" U2211   # N-ARY SUMMATION
+<Multi_key> <braceleft> <i> <n> <t> : "∫" U222B   # INTEGRAL
+<Multi_key> <braceleft> <u> <i> <n> <t> : "⨛" U2A1B   # UPPER INTEGRAL
+<Multi_key> <braceleft> <l> <i> <n> <t> : "⨜" U2A1C   # LOWER INTEGRAL
+<Multi_key> <braceleft> <i> <i> <n> <t> : "∬" U222C   # DOUBLE INTEGRAL
+<Multi_key> <braceleft> <i> <i> <i> <n> <t> : "∭" U222D   # TRIPLE INTEGRAL
+<Multi_key> <braceleft> <i> <i> <i> <i> <n> <t> : "⨌" U2A0C   # QUADRUPLE INTEGRAL
+<Multi_key> <braceleft> <o> <i> <n> <t> : "∮" U222E   # CONTOUR INTEGRAL
+<Multi_key> <braceleft> <p> <i> <n> <t> : "⨕" U2a15   # SEMICIRCULAR POLE INTEGRAL
+<Multi_key> <braceleft> <c> <P> <i> <n> <t> : "⨓" U2A13   # INTEGRAL AROUND POINT
+<Multi_key> <braceleft> <o> <i> <i> <n> <t> : "∯" U222F   # SURFACE INTEGRAL
+<Multi_key> <braceleft> <o> <i> <i> <i> <n> <t> : "∰" U2230   # VOLUME INTEGRAL
+<Multi_key> <braceleft> <g> <i> <n> <t> : "⨘" U2A18   # GEOMETRIC INTEGRAL
+<Multi_key> <braceleft> <s> <i> <n> <t> : "⨋" U2A0B   # SUM/INTEGRAL
+<Multi_key> <braceleft> <d> <e> <l> : "∇" U2207         # NABLA
+<Multi_key> <braceleft> <p> <a> <r> <t>   : "∂" U2202   # PARTIAL DIFFERENTIAL
 # Would we prefer 20D1 COMBINING RIGHT HARPOON ABOVE?
 <Multi_key> <asciicircum> <greater>     : "⃗"   U20D7           # COMBINING RIGHT ARROW ABOVE (vector)
 # TODO: There's a whole passel of these guys starting at U+1D538 but I have no fonts for those.
@@ -156,16 +156,16 @@
 <Multi_key> <bar> <Q>                   : "ℚ"   U211A           # DOUBLE-STRUCK CAPITAL Q (set of rational numbers)
 <Multi_key> <bar> <R>                   : "ℝ"   U211D           # DOUBLE-STRUCK CAPITAL R (set of real numbers)
 <Multi_key> <bar> <Z>                   : "ℤ"   U2124           # DOUBLE-STRUCK CAPITAL Z (set of integers)
-<Multi_key> <bar> <H>		: "ℍ" U210D	# DOUBLE-STRUCK CAPITAL H
-<Multi_key> <bar> <e>		: "ⅇ" U2147	# DOUBLE-STRUCK ITALIC SMALL E
-<Multi_key> <bar> <i>		: "ⅈ" U2148	# DOUBLE-STRUCK ITALIC SMALL I
-<Multi_key> <bar> <j>		: "ⅉ" U2149	# DOUBLE-STRUCK ITALIC SMALL J
-<Multi_key> <bar> <asterisk> <p> : "ℼ" U213C	# DOUBLE-STRUCK SMALL PI
-<Multi_key> <bar> <Greek_pi> 	 : "ℼ" U213C	# DOUBLE-STRUCK SMALL PI
-<Multi_key> <bar> <asterisk> <P> : "ℿ" U213F	# DOUBLE-STRUCK CAPITAL PI
-<Multi_key> <bar> <Greek_PI> 	 : "ℿ" U213F	# DOUBLE-STRUCK CAPITAL PI
-<Multi_key> <bar> <asterisk> <S> : "⅀" U2140	# DOUBLE-STRUCK N-ARY SUMMATION
-<Multi_key> <bar> <Greek_SIGMA>  : "⅀" U2140	# DOUBLE-STRUCK N-ARY SUMMATION
+<Multi_key> <bar> <H>   : "ℍ" U210D # DOUBLE-STRUCK CAPITAL H
+<Multi_key> <bar> <e>   : "ⅇ" U2147 # DOUBLE-STRUCK ITALIC SMALL E
+<Multi_key> <bar> <i>   : "ⅈ" U2148 # DOUBLE-STRUCK ITALIC SMALL I
+<Multi_key> <bar> <j>   : "ⅉ" U2149 # DOUBLE-STRUCK ITALIC SMALL J
+<Multi_key> <bar> <asterisk> <p> : "ℼ" U213C  # DOUBLE-STRUCK SMALL PI
+<Multi_key> <bar> <Greek_pi>   : "ℼ" U213C  # DOUBLE-STRUCK SMALL PI
+<Multi_key> <bar> <asterisk> <P> : "ℿ" U213F  # DOUBLE-STRUCK CAPITAL PI
+<Multi_key> <bar> <Greek_PI>   : "ℿ" U213F  # DOUBLE-STRUCK CAPITAL PI
+<Multi_key> <bar> <asterisk> <S> : "⅀" U2140  # DOUBLE-STRUCK N-ARY SUMMATION
+<Multi_key> <bar> <Greek_SIGMA>  : "⅀" U2140  # DOUBLE-STRUCK N-ARY SUMMATION
 
 # X has all these without slash.
 
