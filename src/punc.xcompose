@@ -201,6 +201,10 @@
 # Mnemonics
 # =========
 
+<Multi_key> <question> <less>       : "⸮"   U2E2E   # REVERSED QUESTION MARK
+<Multi_key> <question> <ampersand> <exclam>   : "⁈"  U2048  # QUESTION EXCLAMATION MARK
+<Multi_key> <exclam> <ampersand> <question>   : "⁉"  U2049  # EXCLAMATION QUESTION MARK
+
 <Multi_key> <colon> <colon>: "⸪" U2E2A # TWO DOTS OVER ONE DOT
 #FIXME: conflicts
 # <Multi_key> <period> <colon>: "⸫" U2E2B # ONE DOT OVER TWO DOTS
