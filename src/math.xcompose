@@ -27,6 +27,8 @@
 # versions.
 <Multi_key> <exclam> <equal>   : "≠" U2260 # NOT EQUAL TO
 <Multi_key> <asciitilde> <equal> : "≅" U2245 # APPROXIMATELY EQUAL TO
+<Multi_key> <exclam> <asciitilde> <equal> : "≆" U2246 # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <exclam> <asciitilde> <exclam> <equal> : "≇" U2247 # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
 <Multi_key> <slash> <less>    : "≮" U226E # NOT LESS THAN (INTENTIONAL CONFLICT)
 <Multi_key> <slash> <greater> : "≯" U226F # NOT GREATER THAN
 <Multi_key> <exclam> <less>    : "≮" U226E # NOT LESS THAN
