@@ -86,11 +86,9 @@
 <Multi_key> <ampersand> <a> <t> <o> <m>         : "⚛" U269B   # ATOM SYMBOL
 <Multi_key> <slash> <exclam> <backslash> : "⚠"  U26A0           # WARNING SIGN
 <Multi_key> <exclam> <asciicircum>  : "⚠" U26A0   # WARNING SIGN  (INTENTIONAL CONFLICT)
-<Multi_key> <z> <a> <p>       : "⚡" U26A1   # HIGH VOLTAGE SIGN 
-# Shouldn't use just <r><a> because it's too likely to be a prefix for
-# a useful word.
-<Multi_key> <r> <a> <d> : "☢" U2622   # RADIOACTIVE SIGN
-<Multi_key> <b> <h>   : "☣" U2623   # BIOHAZARD SIGN
+<Multi_key> <ampersand> <z> <a> <p>       : "⚡" U26A1   # HIGH VOLTAGE SIGN
+<Multi_key> <ampersand> <r> <a> <d> : "☢" U2622   # RADIOACTIVE SIGN
+<Multi_key> <ampersand> <b> <h>   : "☣" U2623   # BIOHAZARD SIGN
 # Changing this from ⚝
 # FIXME: conflict
 #<Multi_key> <A> <A> <A> <A> <A>  : "⛤" U26E4 # PENTAGRAM (pentalpha, get it?)
@@ -104,8 +102,6 @@
 # 26B0 COFFIN ?
 # One of the SNOWFLAKEs?
 # SNOWMAN? COMET? ANCHOR?
-# I already have STAR OF DAVID on another map.
-# 231A, 231B -- WATCH and HOURGLASS -- one should be &-w-a-i-t
 # 23D4 METRICAL LONG OVER TWO SHORTS a.k.a. METRICAL BOOBS
 # 0950 DEVANAGARI OM?
 # 214C PER SIGN?
@@ -123,29 +119,29 @@
 <Multi_key> <O> <X>:      "☠" U2620 # SKULL AND CROSSBONES (INTENTIONAL CONFLICT)
 <Multi_key> <k> <b> <d> : "⌨"   U2328     # KEYBOARD
 # FIXME: conflict
-#<Multi_key> <asterisk> <asterisk>  :"★" U2605 # BLACK STAR
-<Multi_key> <asterisk> <0>  :"☆" U2606 # WHITE STAR (INTENTIONAL CONFLICT)
+<Multi_key> <exclam> <asterisk> <S> :"★" U2605 # BLACK STAR
+<Multi_key> <asterisk> <S>          :"☆" U2606 # WHITE STAR
 # FIXME: conflict
 #<Multi_key> <asterisk> <minus> :"✪" U272A # CIRCLED WHITE STAR
-<Multi_key> <2> <asterisk>  :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
-<Multi_key> <asterisk> <4>      :"✢"  U2722  # FOUR TEARDROP-SPOKED ASTERISK
-<Multi_key> <asterisk> <6>  :"✡" U2721 # STAR OF DAVID
+<Multi_key> <2> <asterisk>          :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
+<Multi_key> <asterisk> <4>          :"✢"  U2722  # FOUR TEARDROP-SPOKED ASTERISK
+<Multi_key> <asterisk> <6>          :"✡" U2721 # STAR OF DAVID
 <Multi_key> <asterisk> <numbersign> :"✯" U272F # PINWHEEL STAR
-<Multi_key> <asterisk> <exclam> :"✱" U2731 # HEAVY ASTERISK
-<Multi_key> <at> <numbersign> : "⌘" U2318 # PLACE OF INTEREST SIGN
+<Multi_key> <asterisk> <exclam>     :"✱" U2731 # HEAVY ASTERISK
+<Multi_key> <at> <numbersign>       : "⌘" U2318 # PLACE OF INTEREST SIGN
 # Using backslash-minus-slash etc. conflicts with combining accents.
 <Multi_key> <grave> <minus> <apostrophe>   : "⚞"  U269E  # THREE LINES CONVERGING RIGHT
 <Multi_key> <apostrophe> <minus> <grave>   : "⚟"  U269F  # THREE LINES CONVERGING LEFT
 # FIXME: prefix conflict
-#<Multi_key> <b> <e> <l> <l>    : "⍾" U237E  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
+<Multi_key> <ampersand> <b> <e> <l> <l>    : "⍾" U237E  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
 # Other monstery characters... ѪꙚ (alien abductions?) 
 # ඏൠഋ & others from Kannada et al...? 
 # Can't use -^- for this; conflicts with -^ for ↑, and getting those arrows
 # workable was complicated enough.  How about this?
 # FIXME: prefix conflict
 #<Multi_key> <underscore> <asciicircum> <underscore>  : "⌤" U2324  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
-<Multi_key> <w> <a> <i> <t>   : "⌛" U231B   # HOURGLASS
-<Multi_key> <t> <i> <m> <e>   : "⌚" U231A   # WATCH
+<Multi_key> <ampersand> <w> <a> <i> <t>   : "⌛" U231B   # HOURGLASS
+<Multi_key> <ampersand> <t> <i> <m> <e>   : "⌚" U231A   # WATCH
 
 ## Astrological signs
 

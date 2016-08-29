@@ -6,15 +6,15 @@
 # File is for punctuation/invisibles/control/that kind of stuff.
 
 # Asterisk is commonly used for bullets in ASCII.
-<Multi_key> <asterisk> <asterisk>: "•" U2022 # BULLET
-<Multi_key> <asterisk> <o>: "◦" U25E6 # WHITE BULLET
-<Multi_key> <asterisk> <greater>: "‣" U2023 # TRIANGULAR BULLET
-<Multi_key> <asterisk> <minus>: "⁃" U2043 # HYPHEN BULLET
-<Multi_key> <asterisk> <parenleft>: "⁌" U204C # LEFTWARDS BULLET
-<Multi_key> <asterisk> <parenright>: "⁍" U204D # RIGHTWARDS BULLET
-<Multi_key> <exclam> <asterisk>: "◘" U25D8 # INVERSE BULLET
+<Multi_key> <asterisk> <asterisk>         : "•" U2022 # BULLET
+<Multi_key> <asterisk> <o>                : "◦" U25E6 # WHITE BULLET
+<Multi_key> <asterisk> <greater>          : "‣" U2023 # TRIANGULAR BULLET
+<Multi_key> <asterisk> <minus>            : "⁃" U2043 # HYPHEN BULLET
+<Multi_key> <asterisk> <parenleft>        : "⁌" U204C # LEFTWARDS BULLET
+<Multi_key> <asterisk> <parenright>       : "⁍" U204D # RIGHTWARDS BULLET
+<Multi_key> <exclam> <asterisk> <asterisk>: "◘" U25D8 # INVERSE BULLET
 # Japanese tainome
-<Multi_key> <asterisk> <at>: "◉" U25C9 # FISHEYE
+<Multi_key> <asterisk> <at>               : "◉" U25C9 # FISHEYE
 
 
 # perhaps CJK input is better handled by CJK input methods.  we try to

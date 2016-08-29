@@ -5,6 +5,7 @@ These are prefixes used for Compose sequences... stick to them as much as possib
 | `&` | `<ampersand>` | Words and symbols (e.g. `&-s-u-n`) |
 | `{` | `<braceleft>` | Mathematics |
 | `f` | `f` | Fingers |
+| `#` | `<numbersign>` | Music |
 
 Keys with general meanings
 | Key | Compose | Use |
