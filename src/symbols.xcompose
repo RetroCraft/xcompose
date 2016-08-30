@@ -51,7 +51,7 @@
 <Multi_key> <less> <f> <less> <3>       : "❧"  U2767            # ROTATED FLORAL HEART BULLET
 <Multi_key> <greater> <f> <less> <3>    : "☙"  U2619            # REVERSED ROTATED FLORAL HEART BULLET
 
-<Multi_key> <ampersand> <t> <e> <l>             : "☎" U260F # WHITE TELEPHONE
+<Multi_key> <ampersand> <t> <e> <l>             : "☏" U260F # WHITE TELEPHONE
 <Multi_key> <ampersand> <exclam> <t> <e> <l>    : "☎" U260E # BLACK TELEPHONE
 <Multi_key> <ampersand> <t> <e> <a>             : "☕" U2615 # HOT BEVERAGE
 # "shamrock" is too long; there IS a limit to these!
@@ -96,8 +96,8 @@
 <Multi_key> <ampersand> <s> <k> <u> <l> <l> : "☠" U2620 # SKULL AND CROSSBONES
 <Multi_key> <ampersand> <k> <b> <d>         : "⌨" U2328 # KEYBOARD
 <Multi_key> <ampersand> <b> <e> <l> <l>     : "⍾" U237E # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
-# Other monstery characters... ѪꙚ (alien abductions?) 
-# ඏൠഋ & others from Kannada et al...? 
+# Other monstery characters... ѪꙚ (alien abductions?)
+# ඏൠഋ & others from Kannada et al...?
 # Can't use -^- for this; conflicts with -^ for ↑, and getting those arrows
 # workable was complicated enough.  How about this?
 # FIXME: prefix conflict

@@ -24,6 +24,7 @@ if [[ ! -z $1 ]]; then
   ORIG="$1"
 fi
 
-cat $ORIG xcompose | python bin/scan4dups.py
+cat $ORIG xcompose | bin/scan4dups.py
+cat xcompose | bin/checklines.py
 
 echo "DONE. Final xcompose file has $(expr `wc -l < xcompose` - 1) lines"

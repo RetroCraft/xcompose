@@ -7,6 +7,7 @@ import re
 listing={}
 
 try:
+    print "Begin conflict check"
     while True:
         line=sys.stdin.next()
         # print "((%s))"%line
@@ -26,21 +27,21 @@ try:
         if not m:
             # shouldn't happen, but just in case
             val='???'
-            print "couldn't make sense of line: "+line
+            print "Parsing error: "+line
         else:
             val=m.group(1)
         if listing.has_key(name) and not re.search(r'INTENTIONAL CONFLICT', line):
             if val != listing[name]:
-                print "Exact conflict found: (%s )[%s][%s]"%(name, 
+                print "\tExact conflict found: (%s )[%s][%s]"%(name,
                                                              listing[name], val)
             else:   # It's easier to read if lines have different indentations
-                print "\tRedundant definition: (%s )[%s]"%(name, val)
+                print "\t\tRedundant definition: (%s )[%s]"%(name, val)
         else:
             listing[name]=val
 except StopIteration:
-    print "hit end"
+    print "Finish conflict check"
 # NOW check for prefix conflicts:
-print "Checking prefixes."
+print "Begin prefix check"
 for key in listing.keys():
     # print "Key: (%s)"%key
     pref=''
@@ -52,8 +53,7 @@ for key in listing.keys():
         pref+=" "+word
         # print "checking (%s)"%pref
         if listing.has_key(pref):
-            print "Prefix conflict found: " \
+            print "\tPrefix conflict found: " \
                 "(%s )[%s] vs (%s )[%s]"%(pref, listing[pref],
                                           key, listing[key])
-
-    
+print "Finish prefix check"
