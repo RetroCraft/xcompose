@@ -1,16 +1,29 @@
 #!/bin/bash
 
-# Clear current output file
-> xcompose
-
 # Add all .xcompose files in src/ into output file
 echo "Building file..."
-find src/ -type f -name "*.xcompose" -print0 | while IFS= read -r -d $'\0' line; do
-  echo "Add $line"
-  cat $line >> xcompose
+echo 'include "%L"' > xcompose
+find src/ -type f -name "*.xcompose" -print0 | while IFS= read -r -d $'\0' file; do
+  echo "Add $file"
+  # Omit all blank lines or commented lines to final file
+  while read -r line || [[ -n "$line" ]]; do
+    if [[ ! "$line" =~ ^# && ! -z "$line" ]]; then
+      echo $line >> xcompose
+    fi
+  done < $file
 done
 
 # Check for duplicates/errors/bad things
 echo "Checking file for errors..."
-# Using the en_US.UTF-8 locale for default Compose
-cat /usr/share/X11/locale/en_US.UTF-8/Compose xcompose | python bin/scan4dups.py
+
+# Using the en_US.UTF-8 locale for default Compose...
+ORIG=/usr/share/X11/locale/en_US.UTF-8/Compose
+# ...unless provided otherwise
+if [[ ! -z $1 ]]; then
+  echo "Overriding defualt compose file with $1"
+  ORIG="$1"
+fi
+
+cat $ORIG xcompose | python bin/scan4dups.py
+
+echo "DONE. Final xcompose file has $(expr `wc -l < xcompose` - 1) lines"

@@ -1,5 +1,0 @@
-# -*- coding: utf-8; mode: conf -*-
-include "%L"
-
-# 00TOP.XCOMPOSE - ensure this file remains first
-# scan4dups.py will ignore conflicts marked INTENTIONAL CONFLICT
