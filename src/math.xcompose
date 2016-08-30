@@ -47,7 +47,7 @@
 <Multi_key> <braceleft> <asciicircum> : "∩" U2229   # INTERSECTION
 <Multi_key> <braceleft> <U>   : "∪" U222A   # UNION
 
-<Multi_key> <bracketleft> <bracketright>: "∎" # END OF PROOF (INTENTIONAL CONFLICT)
+<Multi_key> <bracketleft> <bracketright>: "∎" U220E # END OF PROOF (INTENTIONAL CONFLICT)
 
 # % ÷ 100; can’t extend with <o> <o> due to XCompose substring issue
 # (<%> <o> already used for per-mille)
@@ -112,9 +112,9 @@
 <Multi_key> <equal> <exclam> <less> <E> <E>     : "∄"  U2204            # THERE DOES NOT EXIST
 <Multi_key> <A> <A>                     : "∀"  U2200            # FOR ALL (INTENTIONAL CONFLICT)
 <Multi_key> <Q> <E> <D>     : "∎"  U220E            # END OF PROOF
-<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135        # ALEF SYMBOL
-<Multi_key> <braceleft> <0> <a> <l> <e> <f> : "ℵ₀"        # ALEF Null
-<Multi_key> <braceleft> <1> <a> <l> <e> <f> : "ℵ₁"        # ALEF One
+<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135        # ALEPH SYMBOL
+<Multi_key> <braceleft> <0> <a> <l> <e> <f> : "ℵ₀"        # ALEPH NULL (MULTIPLE CHARS)
+<Multi_key> <braceleft> <1> <a> <l> <e> <f> : "ℵ₁"        # ALEPH ONE (MULTIPLE CHARS)
 <Multi_key> <KP_Multiply> <KP_Multiply>    : "∗"   U2217 # ASTERISK OPERATOR
 <Multi_key> <parenleft> <plus> <parenright>     : "⊕"  U2295    # CIRCLED PLUS
 # FIXME: prefix conflict

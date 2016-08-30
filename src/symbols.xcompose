@@ -24,7 +24,7 @@
 <Multi_key> <exclam> <colon> <parenright> : "☻"   U263B # BLACK SMILING FACE
 <Multi_key> <colon> <asciitilde>          : "⍨"   U2368   # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
 <Multi_key> <colon> <bar>                 : "⸚"   U2E1A   # HYPHEN WITH DIAERESIS
-<Multi_key> <colon> <o> <o> <parenright>  :  "°͜°"    # Funny smiley-face.
+<Multi_key> <colon> <o> <o> <parenright>  :  "°͜°"    # Funny smiley-face. (MULTIPLE CHARS)
 
 # Those are archaic Cyrillic letters... but look so _perfect_ for use
 # in chat. And about the last, the "multiocular O"... Well, I don't

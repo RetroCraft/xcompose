@@ -11,7 +11,8 @@ for line in sys.stdin:
     continue
   match=re.match(r'\s*(.*):\s*"(.*?)"\s*(\S*)\s*(#.*)?', line)
   if not match:
-    # print("({0})".format(line))
+    continue
+  if re.search("MULTIPLE CHARS", line):
     continue
   (keystrokes, char, num, comments)=match.groups()
   nummatch=re.match(r'U([0-9A-Fa-f]+)', num)

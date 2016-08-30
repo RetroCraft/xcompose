@@ -148,7 +148,7 @@ include "%L"
 <Multi_key> <braceleft> <equal> <parenright> : "⊇" U2287 # SUPERSET OF OR EQUAL TO
 <Multi_key> <braceleft> <asciicircum> : "∩" U2229 # INTERSECTION
 <Multi_key> <braceleft> <U> : "∪" U222A # UNION
-<Multi_key> <bracketleft> <bracketright>: "∎" # END OF PROOF (INTENTIONAL CONFLICT)
+<Multi_key> <bracketleft> <bracketright>: "∎" U220E # END OF PROOF (INTENTIONAL CONFLICT)
 <Multi_key> <percent> <O>: "‱" U2031 # PER MYRIAD SIGN
 <Multi_key> <space> <comma>: "⁣" U2063 # INVISIBLE COMMA (INTENTIONAL CONFLICT)
 <Multi_key> <v> <period> <period>: "⋮" U22EE # VERTICAL ELLIPSIS
@@ -182,9 +182,9 @@ include "%L"
 <Multi_key> <equal> <exclam> <less> <E> <E> : "∄" U2204 # THERE DOES NOT EXIST
 <Multi_key> <A> <A> : "∀" U2200 # FOR ALL (INTENTIONAL CONFLICT)
 <Multi_key> <Q> <E> <D> : "∎" U220E # END OF PROOF
-<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135 # ALEF SYMBOL
-<Multi_key> <braceleft> <0> <a> <l> <e> <f> : "ℵ₀" # ALEF Null
-<Multi_key> <braceleft> <1> <a> <l> <e> <f> : "ℵ₁" # ALEF One
+<Multi_key> <braceleft> <a> <l> <e> <f> : "ℵ" U2135 # ALEPH SYMBOL
+<Multi_key> <braceleft> <0> <a> <l> <e> <f> : "ℵ₀" # ALEPH NULL (MULTIPLE CHARS)
+<Multi_key> <braceleft> <1> <a> <l> <e> <f> : "ℵ₁" # ALEPH ONE (MULTIPLE CHARS)
 <Multi_key> <KP_Multiply> <KP_Multiply> : "∗" U2217 # ASTERISK OPERATOR
 <Multi_key> <parenleft> <plus> <parenright> : "⊕" U2295 # CIRCLED PLUS
 <Multi_key> <parenleft> <x> <x> <parenright> : "⊗" U2297 # CIRCLED TIMES
@@ -300,9 +300,9 @@ include "%L"
 <Multi_key> <equal> <period> <equal> : "⸎" U2E0E # EDITORIAL CORONIS
 <Multi_key> <apostrophe> <apostrophe> : "’" U2019 # RIGHT SINGLE QUOTATION MARK (INTENTIONAL CONFLICT)
 <Multi_key> <s> <c>: "§" U00A7 # SECTION SIGN
-<Multi_key> <m> <i> <n> : "′"
-<Multi_key> <s> <e> <c> : "″"
-<Multi_key> <i> <n> <f> : "∞"
+<Multi_key> <m> <i> <n> : "′" U2032 # PRIME
+<Multi_key> <s> <e> <c> : "″" U2033 # DOUBLE PRIME
+<Multi_key> <i> <n> <f> : "∞" U221E # INFINITY
 <Multi_key> <p> <a> <l> <m>: "⸙" U2E19 # PALM BRANCH
 <Multi_key> <bar> <bar> : "¦" brokenbar
 <Multi_key> <bar> <braceleft> : "⦃" U2983 # LEFT WHITE CURLY BRACKET
@@ -348,7 +348,7 @@ include "%L"
 <Multi_key> <exclam> <colon> <parenright> : "☻" U263B # BLACK SMILING FACE
 <Multi_key> <colon> <asciitilde> : "⍨" U2368 # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
 <Multi_key> <colon> <bar> : "⸚" U2E1A # HYPHEN WITH DIAERESIS
-<Multi_key> <colon> <o> <o> <parenright> : "°͜°" # Funny smiley-face.
+<Multi_key> <colon> <o> <o> <parenright> : "°͜°" # Funny smiley-face. (MULTIPLE CHARS)
 <Multi_key> <O> <period> <O> : "Ꙭ" UA66C # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O bin doc examples README.md src xcompose used in the dual of words based on the root for 'eye'
 <Multi_key> <o> <period> <o> : "ꙭ" UA66D # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
 <Multi_key> <O> <colon> : "Ꙫ" UA66A # CYRILLIC CAPITAL LETTER BINOCULAR O bin doc examples README.md src xcompose used in the dual of words based on the root for 'eye'

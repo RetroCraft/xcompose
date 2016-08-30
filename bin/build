@@ -28,4 +28,4 @@ fi
 cat $ORIG xcompose | bin/scan4dups.py | sed "s/\t\t\(.*$\)/$(tput setaf 3)\\1$(tput sgr0)/" | sed "s/\t\(.*$\)/$(tput setaf 4)\\1$(tput sgr0)/"
 cat xcompose | bin/checklines.py | sed "s/\t\t\(.*$\)/$(tput setaf 1)\\1$(tput sgr0)/" | sed "s/\t\(.*$\)/$(tput setaf 6)\\1$(tput sgr0)/" 
 
-echo "$(tput setaf 2)DONE. Final xcompose file has $(expr `wc -l < xcompose` - 1) lines$(tput sgr0)"
+echo "$(tput setaf 2)DONE. Final xcompose file has $(expr `wc -l < xcompose` - 1) definitions$(tput sgr0)"

@@ -251,10 +251,9 @@
 # Spelled out
 # ===========
 <Multi_key> <s> <c>:      "§" U00A7 # SECTION SIGN
-<Multi_key> <m> <i> <n> : "′"
-# ≠ prime quotation mark above
-<Multi_key> <s> <e> <c> : "″"
-<Multi_key> <i> <n> <f> : "∞"
+<Multi_key> <m> <i> <n> : "′" U2032 # PRIME
+<Multi_key> <s> <e> <c> : "″" U2033 # DOUBLE PRIME
+<Multi_key> <i> <n> <f> : "∞" U221E # INFINITY
 
 # Not a dingbat —“General Punctuation”, used as separator.
 <Multi_key> <p> <a> <l> <m>: "⸙" U2E19 # PALM BRANCH
