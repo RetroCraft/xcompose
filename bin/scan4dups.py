@@ -27,14 +27,14 @@ try:
         if not m:
             # shouldn't happen, but just in case
             val='???'
-            print "Parsing error: "+line
+            print "\tParsing error: "+line
         else:
             val=m.group(1)
         if listing.has_key(name) and not re.search(r'INTENTIONAL CONFLICT', line):
             if val != listing[name]:
                 print "\tExact conflict found: (%s )[%s][%s]"%(name,
                                                              listing[name], val)
-            else:   # It's easier to read if lines have different indentations
+            else:
                 print "\t\tRedundant definition: (%s )[%s]"%(name, val)
         else:
             listing[name]=val
