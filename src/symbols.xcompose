@@ -1,9 +1,8 @@
-
-
 ##################
 # SYMBOLS.XCOMPOSE
 ##################
 # File is for pictogram-type symbols. Mnemonic is & for most words.
+# Emoji go into emoji.xcompose
 
 # Fingers
 <Multi_key> <f> <exclam> <less>     : "☚" U261A   # BLACK LEFT POINTING INDEX
@@ -340,6 +339,3 @@
 <Multi_key> <parenleft> <1> <0> <colon> <3> <0> <parenright>     : "🕥" U1F565 # CLOCK FACE TEN-THIRTY
 <Multi_key> <parenleft> <1> <1> <colon> <3> <0> <parenright>     : "🕦" U1F566 # CLOCK FACE ELEVEN-THIRTY
 <Multi_key> <parenleft> <1> <2> <colon> <3> <0> <parenright>     : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY
-
-
-## TODO: Emoticons (U+1F600 et seq)
