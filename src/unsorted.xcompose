@@ -5,148 +5,148 @@
 
 # Arrows
 # ======
-<Multi_key> <less> <greater>: "↔" U2194 # INTENTIONAL CONFLICT
-<Multi_key> <asciicircum> <bar>: "↑" U2191
-<Multi_key> <bar> <asciicircum>: "↑" U2191
-<Multi_key> <v> <bar>: "↓" U2193
-<Multi_key> <bar> <v>: "↓" U2193
+Mk < >  : "↔" U2194 # LEFT RIGHT ARROW (INTENTIONAL CONFLICT)
+Mk ^ |  : "↑" U2191 # UPWARDS ARROW
+Mk | ^  : "↑" U2191 # UPWARDS ARROW
+Mk v |  : "↓" U2193 # DOWNWARDS ARROW
+Mk | v  : "↓" U2193 # DOWNWARDS ARROW
 
-<Multi_key> <bar> <less> <minus>      : "↚"   U219A # LEFTWARDS ARROW WITH STROKE
-<Multi_key> <bar> <minus> <greater>   : "↛"   U219B # RIGHTWARDS ARROW WITH STROKE
-<Multi_key> <bar> <less> <greater>    : "↮"   U21AE # LEFT RIGHT ARROW WITH STROKE
+Mk | < -      : "↚"   U219A # LEFTWARDS ARROW WITH STROKE
+Mk | - >   : "↛"   U219B # RIGHTWARDS ARROW WITH STROKE
+Mk | < >    : "↮"   U21AE # LEFT RIGHT ARROW WITH STROKE
 
-<Multi_key> <less> <v>          : "↵" U21B5   # DOWNWARDS ARROW WITH CORNER LEFTWARDS
+Mk < v          : "↵" U21B5   # DOWNWARDS ARROW WITH CORNER LEFTWARDS
 
-<Multi_key> <minus> <less>    : "←" leftarrow # LEFTWARDS ARROW
-<Multi_key> <minus> <asciicircum> : "↑" uparrow   # UPWARDS ARROW (INTENTIONAL CONFLICT)
-<Multi_key> <minus> <v>     : "↓" downarrow # DOWNWARDS ARROW
+Mk - <    : "←" leftarrow # LEFTWARDS ARROW
+Mk - ^ : "↑" uparrow   # UPWARDS ARROW (INTENTIONAL CONFLICT)
+Mk - v     : "↓" downarrow # DOWNWARDS ARROW
 
-<Multi_key> <asciicircum> <v>   : "↕" U2195           # UP DOWN ARROW (kragen's)
-<Multi_key> <asciicircum> <ampersand> <v>: "⇵"  U21F5   # DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW
-<Multi_key> <less> <o>      : "⟲" U27F2   # ANTICLOCKWISE GAPPED CIRCLE ARROW
-<Multi_key> <greater> <o>   : "⟳" U27F3   # CLOCKWISE GAPPED CIRCLE ARROW (INTENTIONAL CONFLICT)
+Mk ^ v   : "↕" U2195           # UP DOWN ARROW (kragen's)
+Mk ^ & v: "⇵"  U21F5   # DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW
+Mk < o      : "⟲" U27F2   # ANTICLOCKWISE GAPPED CIRCLE ARROW
+Mk > o   : "⟳" U27F3   # CLOCKWISE GAPPED CIRCLE ARROW (INTENTIONAL CONFLICT)
 # FIXME: conflict
-#<Multi_key> <less> <c>     : "↺" U21BA   # ANTICLOCKWISE OPEN CIRCLE ARROW
-<Multi_key> <greater> <c>   : "↻" U21BB   # CLOCKWISE OPEN CIRCLE ARROW
-<Multi_key> <less> <asciitilde>   : "⇜" U21DC   # LEFTWARDS SQUIGGLE ARROW
-<Multi_key> <greater> <asciitilde>  : "⇝" U21DD   # RIGHTWARDS SQUIGGLE ARROW
-<Multi_key> <less> <bar>                : "⇤" U21E4   # LEFTWARDS ARROW TO BAR
-<Multi_key> <greater> <bar>             : "⇥" U21E5   # RIGHTWARDS ARROW TO BAR
-<Multi_key> <brokenbar> <less>          : "⇠" U21E0   # LEFTWARDS DASHED ARROW
-<Multi_key> <brokenbar> <asciicircum>   : "⇡" U21E1   # UPWARDS DASHED ARROW (INTENTIONAL CONFLICT)
-<Multi_key> <brokenbar> <greater>       : "⇢" U21E2   # RIGHTWARDS DASHED ARROW
-<Multi_key> <brokenbar> <v>             : "⇣" U21E3   # DOWNWARDS DASHED ARROW
+#Mk < c     : "↺" U21BA   # ANTICLOCKWISE OPEN CIRCLE ARROW
+Mk > c   : "↻" U21BB   # CLOCKWISE OPEN CIRCLE ARROW
+Mk < ~   : "⇜" U21DC   # LEFTWARDS SQUIGGLE ARROW
+Mk > ~  : "⇝" U21DD   # RIGHTWARDS SQUIGGLE ARROW
+Mk < |                : "⇤" U21E4   # LEFTWARDS ARROW TO BAR
+Mk > |             : "⇥" U21E5   # RIGHTWARDS ARROW TO BAR
+Mk brokenbar <          : "⇠" U21E0   # LEFTWARDS DASHED ARROW
+Mk brokenbar ^   : "⇡" U21E1   # UPWARDS DASHED ARROW (INTENTIONAL CONFLICT)
+Mk brokenbar >       : "⇢" U21E2   # RIGHTWARDS DASHED ARROW
+Mk brokenbar v             : "⇣" U21E3   # DOWNWARDS DASHED ARROW
 
 # Doubled arrows
 # ==============
-<Multi_key> <equal> <greater>   : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
-<Multi_key> <equal> <less>    : "⇐" U21D0 # LEFTWARDS DOUBLE ARROW
+Mk = >   : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
+Mk = <    : "⇐" U21D0 # LEFTWARDS DOUBLE ARROW
 # FIXME: a very useful character, but "iff" does not match other sequences; all combinations of <=> conflict
-<Multi_key> <i> <f> <f> : "⇔" U21D4 # LEFT RIGHT DOUBLE ARROW
-<Multi_key> <equal> <asciicircum> <asciicircum>: "⇑"  U21D1 # UPWARDS DOUBLE ARROW
-<Multi_key> <equal> <v> <v>   : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
-<Multi_key> <equal> <asciicircum> <v> : "⇕" U21D5 # UP DOWN DOUBLE ARROW
-<Multi_key> <equal> <v> <less>    : "⏎" U23CE # RETURN SYMBOL
+Mk i f f : "⇔" U21D4 # LEFT RIGHT DOUBLE ARROW
+Mk = ^ ^ : "⇑"  U21D1 # UPWARDS DOUBLE ARROW
+Mk = v v   : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+Mk = ^ v : "⇕" U21D5 # UP DOWN DOUBLE ARROW
+Mk = v <    : "⏎" U23CE # RETURN SYMBOL
 
 # X already includes mappings of the form:
-## <Multi_key> <parenleft> <0> <parenright>     : "⓪"   U24EA # CIRCLED DIGIT ZERO
+## Mk ( 0 )     : "⓪"   U24EA # CIRCLED DIGIT ZERO
 
 # Since X uses () for circled, we use [] for parenthesised…is this a good solution?
 #
-<Multi_key> <bracketleft> <1> <bracketright>  : "⑴" U2474 # PARENTHESIZED DIGIT ONE
-<Multi_key> <bracketleft> <2> <bracketright>  : "⑵" U2475 # PARENTHESIZED DIGIT TWO
-<Multi_key> <bracketleft> <3> <bracketright>  : "⑶" U2476 # PARENTHESIZED DIGIT THREE
-<Multi_key> <bracketleft> <4> <bracketright>  : "⑷" U2477 # ⋮
-<Multi_key> <bracketleft> <5> <bracketright>  : "⑸" U2478
-<Multi_key> <bracketleft> <6> <bracketright>  : "⑹" U2479
-<Multi_key> <bracketleft> <7> <bracketright>  : "⑺" U247A
-<Multi_key> <bracketleft> <8> <bracketright>  : "⑻" U247B
-<Multi_key> <bracketleft> <9> <bracketright>  : "⑼" U247C
-<Multi_key> <bracketleft> <1> <0> <bracketright> : "⑽" U247D
-<Multi_key> <bracketleft> <1> <1> <bracketright> : "⑾" U247E
-<Multi_key> <bracketleft> <1> <2> <bracketright> : "⑿" U247F
-<Multi_key> <bracketleft> <1> <3> <bracketright> : "⒀" U2480
-<Multi_key> <bracketleft> <1> <4> <bracketright> : "⒁" U2481
-<Multi_key> <bracketleft> <1> <5> <bracketright> : "⒂" U2482
-<Multi_key> <bracketleft> <1> <6> <bracketright> : "⒃" U2483
-<Multi_key> <bracketleft> <1> <7> <bracketright> : "⒄" U2484
-<Multi_key> <bracketleft> <1> <8> <bracketright> : "⒅" U2485
-<Multi_key> <bracketleft> <1> <9> <bracketright> : "⒆" U2486
-<Multi_key> <bracketleft> <2> <0> <bracketright> : "⒇" U2487
+Mk [ 1 ]  : "⑴" U2474 # PARENTHESIZED DIGIT ONE
+Mk [ 2 ]  : "⑵" U2475 # PARENTHESIZED DIGIT TWO
+Mk [ 3 ]  : "⑶" U2476 # PARENTHESIZED DIGIT THREE
+Mk [ 4 ]  : "⑷" U2477 # ⋮
+Mk [ 5 ]  : "⑸" U2478 # ⋮
+Mk [ 6 ]  : "⑹" U2479 # ⋮
+Mk [ 7 ]  : "⑺" U247A # ⋮
+Mk [ 8 ]  : "⑻" U247B # ⋮
+Mk [ 9 ]  : "⑼" U247C # ⋮
+Mk [ 1 0 ] : "⑽" U247D # ⋮
+Mk [ 1 1 ] : "⑾" U247E # ⋮
+Mk [ 1 2 ] : "⑿" U247F # ⋮
+Mk [ 1 3 ] : "⒀" U2480 # ⋮
+Mk [ 1 4 ] : "⒁" U2481 # ⋮
+Mk [ 1 5 ] : "⒂" U2482 # ⋮
+Mk [ 1 6 ] : "⒃" U2483 # ⋮
+Mk [ 1 7 ] : "⒄" U2484 # ⋮
+Mk [ 1 8 ] : "⒅" U2485 # ⋮
+Mk [ 1 9 ] : "⒆" U2486 # ⋮
+Mk [ 2 0 ] : "⒇" U2487 # ⋮
 
-<Multi_key> <bracketleft> <a> <bracketright>  : "⒜" U249C # PARENTHESIZED LATIN SMALL LETTER A
-<Multi_key> <bracketleft> <b> <bracketright>  : "⒝" U249D # PARENTHESIZED LATIN SMALL LETTER B
-<Multi_key> <bracketleft> <c> <bracketright>  : "⒞" U249E # ⋮
-<Multi_key> <bracketleft> <d> <bracketright>  : "⒟" U249F
-<Multi_key> <bracketleft> <e> <bracketright>  : "⒠" U24A0
-<Multi_key> <bracketleft> <f> <bracketright>  : "⒡" U24A1
-<Multi_key> <bracketleft> <g> <bracketright>  : "⒢" U24A2
-<Multi_key> <bracketleft> <h> <bracketright>  : "⒣" U24A3
-<Multi_key> <bracketleft> <i> <bracketright>  : "⒤" U24A4
-<Multi_key> <bracketleft> <j> <bracketright>  : "⒥" U24A5
-<Multi_key> <bracketleft> <k> <bracketright>  : "⒦" U24A6
-<Multi_key> <bracketleft> <l> <bracketright>  : "⒧" U24A7
-<Multi_key> <bracketleft> <m> <bracketright>  : "⒨" U24A8
-<Multi_key> <bracketleft> <n> <bracketright>  : "⒩" U24A9
-<Multi_key> <bracketleft> <o> <bracketright>  : "⒪" U24AA
-<Multi_key> <bracketleft> <p> <bracketright>  : "⒫" U24AB
-<Multi_key> <bracketleft> <q> <bracketright>  : "⒬" U24AC
-<Multi_key> <bracketleft> <r> <bracketright>  : "⒭" U24AD
-<Multi_key> <bracketleft> <s> <bracketright>  : "⒮" U24AE
-<Multi_key> <bracketleft> <t> <bracketright>  : "⒯" U24AF
-<Multi_key> <bracketleft> <u> <bracketright>  : "⒰" U24B0
-<Multi_key> <bracketleft> <v> <bracketright>  : "⒱" U24B1
-<Multi_key> <bracketleft> <w> <bracketright>  : "⒲" U24B2
-<Multi_key> <bracketleft> <x> <bracketright>  : "⒳" U24B3
-<Multi_key> <bracketleft> <y> <bracketright>  : "⒴" U24B4
-<Multi_key> <bracketleft> <z> <bracketright>  : "⒵" U24B5
+Mk [ a ]  : "⒜" U249C # PARENTHESIZED LATIN SMALL LETTER A
+Mk [ b ]  : "⒝" U249D # PARENTHESIZED LATIN SMALL LETTER B
+Mk [ c ]  : "⒞" U249E # ⋮
+Mk [ d ]  : "⒟" U249F # ⋮
+Mk [ e ]  : "⒠" U24A0 # ⋮
+Mk [ f ]  : "⒡" U24A1 # ⋮
+Mk [ g ]  : "⒢" U24A2 # ⋮
+Mk [ h ]  : "⒣" U24A3 # ⋮
+Mk [ i ]  : "⒤" U24A4 # ⋮
+Mk [ j ]  : "⒥" U24A5 # ⋮
+Mk [ k ]  : "⒦" U24A6 # ⋮
+Mk [ l ]  : "⒧" U24A7 # ⋮
+Mk [ m ]  : "⒨" U24A8 # ⋮
+Mk [ n ]  : "⒩" U24A9 # ⋮
+Mk [ o ]  : "⒪" U24AA # ⋮
+Mk [ p ]  : "⒫" U24AB # ⋮
+Mk [ q ]  : "⒬" U24AC # ⋮
+Mk [ r ]  : "⒭" U24AD # ⋮
+Mk [ s ]  : "⒮" U24AE # ⋮
+Mk [ t ]  : "⒯" U24AF # ⋮
+Mk [ u ]  : "⒰" U24B0 # ⋮
+Mk [ v ]  : "⒱" U24B1 # ⋮
+Mk [ w ]  : "⒲" U24B2 # ⋮
+Mk [ x ]  : "⒳" U24B3 # ⋮
+Mk [ y ]  : "⒴" U24B4 # ⋮
+Mk [ z ]  : "⒵" U24B5 # ⋮
 
-<Multi_key> <1> <period>   : "⒈" U2488 # DIGIT ONE FULL STOP
-<Multi_key> <2> <period>   : "⒉" U2489 # DIGIT TWO FULL STOP
-<Multi_key> <3> <period>   : "⒊" U248A # ⋮
-<Multi_key> <4> <period>   : "⒋" U248B
-<Multi_key> <5> <period>   : "⒌" U248C
-<Multi_key> <6> <period>   : "⒍" U248D
-<Multi_key> <7> <period>   : "⒎" U248E
-<Multi_key> <8> <period>   : "⒏" U248F
-<Multi_key> <9> <period>   : "⒐" U2490
-<Multi_key> <1> <0> <period>  : "⒑" U2491
-# Various of those two‐digit period forms have prefix‐conflicts with X
+Mk 1 .   : "⒈" U2488 # DIGIT ONE FULL STOP
+Mk 2 .   : "⒉" U2489 # DIGIT TWO FULL STOP
+Mk 3 .   : "⒊" U248A # ⋮
+Mk 4 .   : "⒋" U248B # ⋮
+Mk 5 .   : "⒌" U248C # ⋮
+Mk 6 .   : "⒍" U248D # ⋮
+Mk 7 .   : "⒎" U248E # ⋮
+Mk 8 .   : "⒏" U248F # ⋮
+Mk 9 .   : "⒐" U2490 # ⋮
+Mk 1 0 .  : "⒑" U2491 # ⋮
+# Various of those two‐digit . forms have prefix‐conflicts with X
 # sequences for fractions.
-# <Multi_key> <1> <1> <period>  : "⒒" U2492
-# <Multi_key> <1> <2> <period>  : "⒓" U2493
-# <Multi_key> <1> <3> <period>  : "⒔" U2494
-# <Multi_key> <1> <4> <period>  : "⒕" U2495
-# <Multi_key> <1> <5> <period>  : "⒖" U2496
-# <Multi_key> <1> <6> <period>  : "⒗" U2497
-# <Multi_key> <1> <7> <period>  : "⒘" U2498
-# <Multi_key> <1> <8> <period>  : "⒙" U2499
-# <Multi_key> <1> <9> <period>  : "⒚" U249A
-# <Multi_key> <2> <0> <period>  : "⒛" U249B
+# Mk 1 1 .  : "⒒" U2492 # ⋮
+# Mk 1 2 .  : "⒓" U2493 # ⋮
+# Mk 1 3 .  : "⒔" U2494 # ⋮
+# Mk 1 4 .  : "⒕" U2495 # ⋮
+# Mk 1 5 .  : "⒖" U2496 # ⋮
+# Mk 1 6 .  : "⒗" U2497 # ⋮
+# Mk 1 7 .  : "⒘" U2498 # ⋮
+# Mk 1 8 .  : "⒙" U2499 # ⋮
+# Mk 1 9 .  : "⒚" U249A # ⋮
+# Mk 2 0 .  : "⒛" U249B # ⋮
 
 
 # The idea here is that “!” = “not” = inverted.  Despite being called
-# “negative” they are not negative numbers, so no minus sign.
+# “negative” they are not negative numbers, so no - sign.
 #
 # Unicode only has negative numbers for 0 and 11–20; 1–10 are dingbats.
-<Multi_key> <exclam> <parenleft> <0> <parenright> : "⓿" U24FF # NEGATIVE CIRCLED DIGIT ZERO
-<Multi_key> <exclam> <parenleft> <1> <parenright> : "❶" U2776 # DINGBAT NEGATIVE CIRCLED DIGIT ONE
-<Multi_key> <exclam> <parenleft> <2> <parenright> : "❷" U2777 # DINGBAT NEGATIVE CIRCLED DIGIT TWO
-<Multi_key> <exclam> <parenleft> <3> <parenright> : "❸" U2778 # ⋮
-<Multi_key> <exclam> <parenleft> <4> <parenright> : "❹" U2779
-<Multi_key> <exclam> <parenleft> <5> <parenright> : "❺" U277A
-<Multi_key> <exclam> <parenleft> <6> <parenright> : "❻" U277B
-<Multi_key> <exclam> <parenleft> <7> <parenright> : "❼" U277C
-<Multi_key> <exclam> <parenleft> <8> <parenright> : "❽" U277D
-<Multi_key> <exclam> <parenleft> <9> <parenright> : "❾" U277E
-<Multi_key> <exclam> <parenleft> <1> <0> <parenright> : "❿" U277F # DINGBAT NEGATIVE CIRCLED NUMBER TEN
-<Multi_key> <exclam> <parenleft> <1> <1> <parenright> : "⓫" U24EB # NEGATIVE CIRCLED NUMBER ELEVEN
-<Multi_key> <exclam> <parenleft> <1> <2> <parenright> : "⓬" U24EC # ⋮
-<Multi_key> <exclam> <parenleft> <1> <3> <parenright> : "⓭" U24ED
-<Multi_key> <exclam> <parenleft> <1> <4> <parenright> : "⓮" U24EE
-<Multi_key> <exclam> <parenleft> <1> <5> <parenright> : "⓯" U24EF
-<Multi_key> <exclam> <parenleft> <1> <6> <parenright> : "⓰" U24F0
-<Multi_key> <exclam> <parenleft> <1> <7> <parenright> : "⓱" U24F1
-<Multi_key> <exclam> <parenleft> <1> <8> <parenright> : "⓲" U24F2
-<Multi_key> <exclam> <parenleft> <1> <9> <parenright> : "⓳" U24F3
-<Multi_key> <exclam> <parenleft> <2> <0> <parenright> : "⓴" U24F4
+Mk ! ( 0 ) : "⓿" U24FF # NEGATIVE CIRCLED DIGIT ZERO
+Mk ! ( 1 ) : "❶" U2776 # DINGBAT NEGATIVE CIRCLED DIGIT ONE
+Mk ! ( 2 ) : "❷" U2777 # DINGBAT NEGATIVE CIRCLED DIGIT TWO
+Mk ! ( 3 ) : "❸" U2778 # ⋮
+Mk ! ( 4 ) : "❹" U2779 # ⋮
+Mk ! ( 5 ) : "❺" U277A # ⋮
+Mk ! ( 6 ) : "❻" U277B # ⋮
+Mk ! ( 7 ) : "❼" U277C # ⋮
+Mk ! ( 8 ) : "❽" U277D # ⋮
+Mk ! ( 9 ) : "❾" U277E # ⋮
+Mk ! ( 1 0 ) : "❿" U277F # DINGBAT NEGATIVE CIRCLED NUMBER TEN
+Mk ! ( 1 1 ) : "⓫" U24EB # NEGATIVE CIRCLED NUMBER ELEVEN
+Mk ! ( 1 2 ) : "⓬" U24EC # ⋮
+Mk ! ( 1 3 ) : "⓭" U24ED # ⋮
+Mk ! ( 1 4 ) : "⓮" U24EE # ⋮
+Mk ! ( 1 5 ) : "⓯" U24EF # ⋮
+Mk ! ( 1 6 ) : "⓰" U24F0 # ⋮
+Mk ! ( 1 7 ) : "⓱" U24F1 # ⋮
+Mk ! ( 1 8 ) : "⓲" U24F2 # ⋮
+Mk ! ( 1 9 ) : "⓳" U24F3 # ⋮
+Mk ! ( 2 0 ) : "⓴" U24F4 # ⋮

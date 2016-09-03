@@ -13,7 +13,7 @@ Mk ^ _ ^                          : "😁" U1F601 # GRINNING FACE WITH SMILING E
 #<Multi_key> <colon>                 : "😄" U1F604 # SMILING FACE WITH OPEN MOUTH AND SMILING EYES
 #<Multi_key> <colon>                 : "😅" U1F605 # SMILING FACE WITH OPEN MOUTH AND COLD SWEAT
 #<Multi_key> <colon>                 : "😆" U1F606 # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
-Mk O : )                           : "😇" U1F607 # SMILING FACE WITH HALO
+Mk : O : )                           : "😇" U1F607 # SMILING FACE WITH HALO
 Mk > : )                           : "😈" U1F608 # SMILING FACE WITH HORNS
 Mk ; )                             : "😉" U1F609 # WINKING FACE
 #<Multi_key> <colon>                 : "😊" U1F60A # SMILING FACE WITH SMILING EYES

@@ -24,7 +24,7 @@ print(bcolors.UNDERLINE + bcolors.HEADER + "Begin build" + bcolors.ENDC)
 out = open(args.output, 'w+')
 out.write('include "/usr/share/X11/locale/' + args.locale + '/Compose"\n')
 os.chdir("src")
-for file in glob.glob("*.xcomposet"):
+for file in glob.glob("*.xcompose"):
     print("Building file", file)
     with open(file) as f:
         for line in f.readlines():
@@ -65,7 +65,7 @@ for file in glob.glob("*.xcomposet"):
                     if m.group(1) != format(ord(val), 'x').upper():
                         fail = 'Unicode'
                     desc = re.match(r'([^(*]*).*', comment)
-                    if desc.group(1).strip() != unicodedata.name(val):
+                    if desc.group(1).strip() != unicodedata.name(val) and not re.search('⋮', desc.group(0)):
                         fail = 'Description'
                     if fail != '':
                         print(bcolors.FAIL + 'Unicode parse error: ' + fail + '\n' +

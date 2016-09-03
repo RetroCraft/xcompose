@@ -4,260 +4,260 @@
 # File is for letter-type symbols.
 
 # these two are the latin letters, not the runic wynn ᚹ U16B9
-<Multi_key> <W> <W>: "Ƿ" U01F7 # Wynn
-<Multi_key> <w> <w>: "ƿ" U01BF # wynn
+Mk W W : "Ƿ" U1F7 # LATIN CAPITAL LETTER WYNN
+Mk w w : "ƿ" U1BF # LATIN LETTER WYNN
 
-<Multi_key> <Y> <Y>: "Ȝ" U021C # Yogh
-<Multi_key> <y> <y>: "ȝ" U021D # yogh
+Mk Y Y : "Ȝ" U21C # LATIN CAPITAL LETTER YOGH
+Mk y y : "ȝ" U21D # LATIN SMALL LETTER YOGH
 
-# Macrons are more convenient with (shift‐less) hyphen than X default
-# (shift‐full) underscore.  Notice the <minus> X name refers to the
-# ASCII hyphen‐minus, not to the true minus character.
+# Macrons are more convenient with (shift‐<) hyphen than X default
+# (shift‐full) underscore.  Notice the - X name refers to the
+# ASCII hyphen‐minus, not to the true - character.
 #
-# It would be cool if we could do this using <Multi_key> <minus> :
+# It would be cool if we could do this using Mk - :
 # dead_macron, but doesn’t work due to conflict.
 #
 
 # FIXME: The following fixes https://bugs.freedesktop.org/show_bug.cgi?id=74116
-<Multi_key> <minus> <a>    : "ā" U0101 # LATIN SMALL LETTER A WITH MACRON (INTENTIONAL CONFLICT)
-<Multi_key> <a> <minus>    : "ā" U0101 # LATIN SMALL LETTER A WITH MACRON (INTENTIONAL CONFLICT)
+Mk - a    : "ā" U101 # LATIN SMALL LETTER A WITH MACRON (INTENTIONAL CONFLICT)
+Mk a -    : "ā" U101 # LATIN SMALL LETTER A WITH MACRON (INTENTIONAL CONFLICT)
 
 # FIXME: Submit the following to freedesktop.org, as they're consistent with existing shortcuts
-<Multi_key> <minus> <AE>                : "Ǣ"   U01E2 # LATIN CAPITAL LETTER AE WITH MACRON
-<Multi_key> <minus> <ae>                : "ǣ"   U01E3 # LATIN SMALL LETTER AE WITH MACRON
-<Multi_key> <minus> <Y>                       : "Ȳ"   U0232 # LATIN CAPITAL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
-<Multi_key> <minus> <y>                       : "ȳ"   U0233 # LATIN SMALL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
-<Multi_key> <minus> <G>                       : "Ḡ"   U1E20 # LATIN CAPITAL LETTER G WITH MACRON
-<Multi_key> <minus> <g>                       : "ḡ"   U1E21 # LATIN SMALL LETTER G WITH MACRON
+Mk - AE                : "Ǣ"   U1E2 # LATIN CAPITAL LETTER AE WITH MACRON
+Mk - ae                : "ǣ"   U1E3 # LATIN SMALL LETTER AE WITH MACRON
+Mk - Y                       : "Ȳ"   U232 # LATIN CAPITAL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
+Mk - y                       : "ȳ"   U233 # LATIN SMALL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
+Mk - G                       : "Ḡ"   U1E20 # LATIN CAPITAL LETTER G WITH MACRON
+Mk - g                       : "ḡ"   U1E21 # LATIN SMALL LETTER G WITH MACRON
 
-<Multi_key> <minus> <Greek_alpha>       : "ᾱ"   U1FB1 # GREEK SMALL LETTER ALPHA WITH MACRON
-<Multi_key> <minus> <Greek_ALPHA>       : "Ᾱ"   U1FB9 # GREEK CAPITAL LETTER ALPHA WITH MACRON
-<Multi_key> <minus> <Greek_iota>        : "ῑ"   U1FD1 # GREEK SMALL LETTER IOTA WITH MACRON
-<Multi_key> <minus> <Greek_IOTA>        : "Ῑ"   U1FD9 # GREEK CAPITAL LETTER IOTA WITH MACRON
-<Multi_key> <minus> <Greek_upsilon>     : "ῡ"   U1FE1 # GREEK SMALL LETTER UPSILON WITH MACRON
-<Multi_key> <minus> <Greek_UPSILON>     : "Ῡ"   U1FE9 # GREEK CAPITAL LETTER UPSILON WITH MACRON
+Mk - Greek_alpha       : "ᾱ"   U1FB1 # GREEK SMALL LETTER ALPHA WITH MACRON
+Mk - Greek_ALPHA       : "Ᾱ"   U1FB9 # GREEK CAPITAL LETTER ALPHA WITH MACRON
+Mk - Greek_iota        : "ῑ"   U1FD1 # GREEK SMALL LETTER IOTA WITH MACRON
+Mk - Greek_IOTA        : "Ῑ"   U1FD9 # GREEK CAPITAL LETTER IOTA WITH MACRON
+Mk - Greek_upsilon     : "ῡ"   U1FE1 # GREEK SMALL LETTER UPSILON WITH MACRON
+Mk - Greek_UPSILON     : "Ῡ"   U1FE9 # GREEK CAPITAL LETTER UPSILON WITH MACRON
 
-<Multi_key> <minus> <Cyrillic_I>              : "Ӣ"   U04E2 # CYRILLIC CAPITAL LETTER I WITH MACRON
-<Multi_key> <minus> <Cyrillic_i>              : "ӣ"   U04E3 # CYRILLIC SMALL LETTER I WITH MACRON
-<Multi_key> <minus> <Cyrillic_U>              : "Ӯ"   U04EE # CYRILLIC CAPITAL LETTER U WITH MACRON
-<Multi_key> <minus> <Cyrillic_u>              : "ӯ"   U04EF # CYRILLIC SMALL LETTER U WITH MACRON
+Mk - Cyrillic_I              : "Ӣ"   U4E2 # CYRILLIC CAPITAL LETTER I WITH MACRON
+Mk - Cyrillic_i              : "ӣ"   U4E3 # CYRILLIC SMALL LETTER I WITH MACRON
+Mk - Cyrillic_U              : "Ӯ"   U4EE # CYRILLIC CAPITAL LETTER U WITH MACRON
+Mk - Cyrillic_u              : "ӯ"   U4EF # CYRILLIC SMALL LETTER U WITH MACRON
 
 ## Ligatures
-<Multi_key> <s> <t>   : "ﬆ"  UFB06 # LATIN SMALL LIGATURE ST
-<Multi_key> <f> <t>   : "ﬅ"  UFB05 # LATIN SMALL LIGATURE LONG S T
+Mk s t   : "ﬆ"  UFB06 # LATIN SMALL LIGATURE ST
+Mk f t   : "ﬅ"  UFB05 # LATIN SMALL LIGATURE LONG S T
 
 ## Latin Extended-B
-<Multi_key> <E> <less>     : "Ǝ"      U018E # LATIN CAPITAL LETTER REVERSED E (INTENTIONAL CONFLICT)
+Mk E <     : "Ǝ"      U18E # LATIN CAPITAL LETTER REVERSED E (INTENTIONAL CONFLICT)
 
 ## Latin-D
-<Multi_key> <o> <ampersand> <o> : "ꝏ" UA74F # LATIN SMALL LETTER OO
-<Multi_key> <O> <ampersand> <O> : "Ꝏ" UA74E # LATIN CAPITAL LETTER OO
+Mk o & o : "ꝏ" UA74F # LATIN SMALL LETTER OO
+Mk O & O : "Ꝏ" UA74E # LATIN CAPITAL LETTER OO
 # FIXME: fill in the following
-# <Multi_key> <ampersand>:"Ꜳ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꜳ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꜵ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꜵ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꜷ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꜷ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꜹ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꜹ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꜽ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꜽ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꝓ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝓ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꝕ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝕ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꝛ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝛ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꝝ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝝ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"Ꝡ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝡ" UA7 # LATIN LETTER
-# <Multi_key> <ampersand>:"ꝸ" UA7 # LATIN LETTER
-<Multi_key> <E> <ampersand> <T>: "Ꝫ" UA76A # LATIN CAPITAL LETTER ET
-<Multi_key> <e> <ampersand> <t>: "ꝫ" UA76B # LATIN SMALL LETTER ET
+# Mk & : "Ꜳ" UA7 # LATIN LETTER
+# Mk & : "ꜳ" UA7 # LATIN LETTER
+# Mk & : "Ꜵ" UA7 # LATIN LETTER
+# Mk & : "ꜵ" UA7 # LATIN LETTER
+# Mk & : "Ꜷ" UA7 # LATIN LETTER
+# Mk & : "ꜷ" UA7 # LATIN LETTER
+# Mk & : "Ꜹ" UA7 # LATIN LETTER
+# Mk & : "ꜹ" UA7 # LATIN LETTER
+# Mk & : "Ꜽ" UA7 # LATIN LETTER
+# Mk & : "ꜽ" UA7 # LATIN LETTER
+# Mk & : "Ꝓ" UA7 # LATIN LETTER
+# Mk & : "ꝓ" UA7 # LATIN LETTER
+# Mk & : "Ꝕ" UA7 # LATIN LETTER
+# Mk & : "ꝕ" UA7 # LATIN LETTER
+# Mk & : "Ꝛ" UA7 # LATIN LETTER
+# Mk & : "ꝛ" UA7 # LATIN LETTER
+# Mk & : "Ꝝ" UA7 # LATIN LETTER
+# Mk & : "ꝝ" UA7 # LATIN LETTER
+# Mk & : "Ꝡ" UA7 # LATIN LETTER
+# Mk & : "ꝡ" UA7 # LATIN LETTER
+# Mk & : "ꝸ" UA7 # LATIN LETTER
+Mk E & T : "Ꝫ" UA76A # LATIN CAPITAL LETTER ET
+Mk e & t : "ꝫ" UA76B # LATIN SMALL LETTER ET
 
 # Ancient Roman epigraphic letters
 # FIXME: conflict
-#<Multi_key> <F> <less>   : "ꟻ" UA7FB # LATIN EPIGRAPHIC LETTER REVERSED F
-<Multi_key> <P> <less>    : "ꟼ" UA7FC # LATIN EPIGRAPHIC LETTER REVERSED P
-<Multi_key> <M> <W>   : "ꟽ" UA7FD # LATIN EPIGRAPHIC LETTER INVERTED M
-<Multi_key> <I> <bar>   : "ꟾ" UA7FE # LATIN EPIGRAPHIC LETTER I LONGA
-<Multi_key> <M> <slash>   : "ꟿ" UA7FF # LATIN EPIGRAPHIC LETTER ARCHAIC M
+#Mk F <   : "ꟻ" UA7FB # LATIN EPIGRAPHIC LETTER REVERSED F
+Mk P <    : "ꟼ" UA7FC # LATIN EPIGRAPHIC LETTER REVERSED P
+Mk M W   : "ꟽ" UA7FD # LATIN EPIGRAPHIC LETTER INVERTED M
+Mk I |   : "ꟾ" UA7FE # LATIN EPIGRAPHIC LETTER I LONGA
+Mk M /   : "ꟿ" UA7FF # LATIN EPIGRAPHIC LETTER ARCHAIC M
 
 ## Subscript letters
-<Multi_key> <underscore> <i>           :  "ᵢ"  U1D62      # LATIN SUBSCRIPT SMALL LETTER I (INTENTIONAL CONFLICT)
-<Multi_key> <underscore> <o>         :  "ₒ"  U2092    # LATIN SUBSCRIPT SMALL LETTER O (INTENTIONAL CONFLICT)
-<Multi_key> <underscore> <x>         :  "ₓ"  U2093    # LATIN SUBSCRIPT SMALL LETTER X
-<Multi_key> <underscore> <j>         :  "ⱼ"  U2C7C    # LATIN SUBSCRIPT SMALL LETTER J
-<Multi_key> <underscore> <k>           :  "ₖ"  U2096    # LATIN SUBSCRIPT SMALL LETTER K
-<Multi_key> <underscore> <m>         :  "ₘ"  U2098    # LATIN SUBSCRIPT SMALL LETTER M
-<Multi_key> <underscore> <n>         :  "ₙ"  U2099    # LATIN SUBSCRIPT SMALL LETTER N
-<Multi_key> <underscore> <minus>       : "₋"   U208B    # SUBSCRIPT MINUS
+Mk _ i           :  "ᵢ"  U1D62      # LATIN SUBSCRIPT SMALL LETTER I (INTENTIONAL CONFLICT)
+Mk _ o         :  "ₒ"  U2092    # LATIN SUBSCRIPT SMALL LETTER O (INTENTIONAL CONFLICT)
+Mk _ x         :  "ₓ"  U2093    # LATIN SUBSCRIPT SMALL LETTER X
+Mk _ j         :  "ⱼ"  U2C7C    # LATIN SUBSCRIPT SMALL LETTER J
+Mk _ k           :  "ₖ"  U2096    # LATIN SUBSCRIPT SMALL LETTER K
+Mk _ m         :  "ₘ"  U2098    # LATIN SUBSCRIPT SMALL LETTER M
+Mk _ n         :  "ₙ"  U2099    # LATIN SUBSCRIPT SMALL LETTER N
+Mk _ -       : "₋"   U208B    # SUBSCRIPT MINUS
 
 # Some archaic Greek.  (For modern Greek, use a Greek keyboard layout.)
-# FIXME: <asterisk> <period> is already used
-# # "period" will indicate a sort of variant of some kind; asterisk is still the "greek" marker
-# <Multi_key> <asterisk> <period> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
+# FIXME: * . is already used
+# # "." will indicate a sort of variant of some kind; * is still the "greek" marker
+# Mk * . p : "ϖ" U3D6   # GREEK PI SYMBOL
 # # Reserving .f in case we want PHI SYMBOL.  Digamma was "w" sound anyway.
-# <Multi_key> <asterisk> <period> <w> : "ϝ" U03DD   # GREEK SMALL LETTER DIGAMMA
-# <Multi_key> <asterisk> <period> <W> : "Ϝ" U03DC   # GREEK CAPITAL LETTER DIGAMMA
-# <Multi_key> <asterisk> <Q>  : "Ϟ" U03DE # GREEK LETTER QOPPA
-# <Multi_key> <asterisk> <q>  : "ϟ" U03DF # GREEK SMALL LETTER QOPPA
-# <Multi_key> <asterisk> <period> <Q> : "Ϙ" U03D8 # GREEK LETTER ARCHAIC QOPPA
-# <Multi_key> <asterisk> <period> <q> : "ϙ" U03D9 # GREEK SMALL LETTER ARCHAIC QOPPA
-# <Multi_key> <asterisk> <ampersand>  : "ϗ" U03D7 # GREEK KAI SYMBOL
-# <Multi_key> <asterisk> <period> <Z> : "Ϡ" U03E0 # GREEK LETTER SAMPI
-# <Multi_key> <asterisk> <period> <z> : "ϡ" U03E1 # GREEK SMALL LETTER SAMPI
-# <Multi_key> <asterisk> <period> <period> <Z> : "Ͳ"  U0372  # GREEK CAPITAL LETTER ARCHAIC SAMPI
-# <Multi_key> <asterisk> <period> <period> <z> : "ͳ"  U0373  # GREEK SMALL LETTER ARCHAIC SAMPI
+# Mk * . w : "ϝ" U3DD   # GREEK SMALL LETTER DIGAMMA
+# Mk * . W : "Ϝ" U3DC   # GREEK CAPITAL LETTER DIGAMMA
+# Mk * Q  : "Ϟ" U3DE # GREEK LETTER QOPPA
+# Mk * q  : "ϟ" U3DF # GREEK SMALL LETTER QOPPA
+# Mk * . Q : "Ϙ" U3D8 # GREEK LETTER ARCHAIC QOPPA
+# Mk * . q : "ϙ" U3D9 # GREEK SMALL LETTER ARCHAIC QOPPA
+# Mk *  &   : "ϗ" U3D7 # GREEK KAI SYMBOL
+# Mk * . Z : "Ϡ" U3E0 # GREEK LETTER SAMPI
+# Mk * . z : "ϡ" U3E1 # GREEK SMALL LETTER SAMPI
+# Mk * . . Z : "Ͳ"  U372  # GREEK CAPITAL LETTER ARCHAIC SAMPI
+# Mk * . . z : "ͳ"  U373  # GREEK SMALL LETTER ARCHAIC SAMPI
 # # Sorry, couldn't think of better ones for these.  Might want .s for SAN.
-# <Multi_key> <asterisk> <question>      : "Ϛ"  U03DA # GREEK LETTER STIGMA
-# <Multi_key> <asterisk> <slash>         : "ϛ"  U03DB # GREEK SMALL LETTER STIGMA
-# <Multi_key> <asterisk> <apostrophe> <apostrophe>    : "ʹ" U02B9 # MODIFIER LETTER PRIME, canonically equivalent to U0374 GREEK NUMERAL SIGN
+# Mk * ?      : "Ϛ"  U3DA # GREEK LETTER STIGMA
+# Mk * /         : "ϛ"  U3DB # GREEK SMALL LETTER STIGMA
+# Mk * ' '    : "ʹ" U2B9 # MODIFIER LETTER PRIME, canonically equivalent to U0374 GREEK NUMERAL SIGN
 # # While we're at it...
-# <Multi_key> <asterisk> <period> <apostrophe>  : "′" U2032 # PRIME
-# <Multi_key> <asterisk> <period> <quotedbl>      : "″" U2033 # DOUBLE PRIME
-# <Multi_key> <asterisk> <comma>         : "͵"  U0375 # GREEK LOWER NUMERAL SIGN (for thousands)
+# Mk * . '  : "′" U2032 # PRIME
+# Mk * . quotedbl      : "″" U2033 # DOUBLE PRIME
+# Mk * ,         : "͵"  U375 # GREEK LOWER NUMERAL SIGN (for thousands)
 # # Do we want BETA SYMBOL, RHO SYMBOL, KAPPA SYMBOL, PHI SYMBOL, THETA SYMBOL?
 # # The format makes them obvious enough I guess.  PI SYMBOL is different enough
-# # that there's no question, and it is separate from these.
-# <Multi_key> <asterisk> <period> <b>    : "ϐ"  U03D0 # GREEK BETA SYMBOL
-# <Multi_key> <asterisk> <period> <u>    : "ϑ"  U03D1 # GREEK THETA SYMBOL
-# <Multi_key> <asterisk> <period> <Y>    : "ϒ"  U03D2 # GREEK UPSILON WITH HOOK SYMBOL
-# <Multi_key> <asterisk> <period> <f>    : "ϕ"  U03D5 # GREEK PHI SYMBOL
-# <Multi_key> <asterisk> <period> <k>    : "ϰ"  U03F0 # GREEK KAPPA SYMBOL
-# <Multi_key> <asterisk> <period> <r>    : "ϱ"  U03F1 # GREEK RHO SYMBOL
-# <Multi_key> <asterisk> <period> <U>    : "ϴ"  U03F4 # GREEK CAPITAL THETA SYMBOL
-# <Multi_key> <asterisk> <period> <e>    : "ϵ"  U03F5 # GREEK LUNATE EPSILON SYMBOL
+# # that there's no ?, and it is separate from these.
+# Mk * . b    : "ϐ"  U3D0 # GREEK BETA SYMBOL
+# Mk * . u    : "ϑ"  U3D1 # GREEK THETA SYMBOL
+# Mk * . Y    : "ϒ"  U3D2 # GREEK UPSILON WITH HOOK SYMBOL
+# Mk * . f    : "ϕ"  U3D5 # GREEK PHI SYMBOL
+# Mk * . k    : "ϰ"  U3F0 # GREEK KAPPA SYMBOL
+# Mk * . r    : "ϱ"  U3F1 # GREEK RHO SYMBOL
+# Mk * . U    : "ϴ"  U3F4 # GREEK CAPITAL THETA SYMBOL
+# Mk * . e    : "ϵ"  U3F5 # GREEK LUNATE EPSILON SYMBOL
 # # TODO: Lunate sigmas and dotted versions thereof...  What about SAN, which is at least a letter?
 
 # Roman numerals
 # Percent for numerical mnemonic
-<Multi_key> <percent> <1>   : "ⅰ" U2170   # SMALL ROMAN NUMERAL ONE
-<Multi_key> <percent> <2>   : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
-<Multi_key> <percent> <3>   : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
-<Multi_key> <percent> <4>   : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
-<Multi_key> <percent> <5>   : "ⅴ" U2174   # SMALL ROMAN NUMERAL FIVE
-<Multi_key> <percent> <6>   : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
-<Multi_key> <percent> <7>   : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
-<Multi_key> <percent> <8>   : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
-<Multi_key> <percent> <9>   : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
-<Multi_key> <percent> <x>   : "ⅹ" U2179   # SMALL ROMAN NUMERAL TEN
-<Multi_key> <percent> <underscore> <1>  : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
-<Multi_key> <percent> <underscore> <2>  : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
-<Multi_key> <percent> <l>   : "ⅼ" U217C   # SMALL ROMAN NUMERAL FIFTY
-<Multi_key> <percent> <c>   : "ⅽ" U217D   # SMALL ROMAN NUMERAL ONE HUNDRED
-<Multi_key> <percent> <d>   : "ⅾ" U217E   # SMALL ROMAN NUMERAL FIVE HUNDRED
-<Multi_key> <percent> <m>   : "ⅿ" U217F   # SMALL ROMAN NUMERAL ONE THOUSAND
-<Multi_key> <percent> <0> <1>   : "Ⅰ" U2160   # ROMAN NUMERAL ONE
-<Multi_key> <percent> <0> <2>   : "Ⅱ" U2161   # ROMAN NUMERAL TWO
-<Multi_key> <percent> <0> <3>   : "Ⅲ" U2162   # ROMAN NUMERAL THREE
-<Multi_key> <percent> <0> <4>   : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
-<Multi_key> <percent> <0> <5>   : "Ⅴ" U2164   # ROMAN NUMERAL FIVE
-<Multi_key> <percent> <0> <6>   : "Ⅵ" U2165   # ROMAN NUMERAL SIX
-<Multi_key> <percent> <0> <7>   : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
-<Multi_key> <percent> <0> <8>   : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
-<Multi_key> <percent> <0> <9>   : "Ⅸ" U2168   # ROMAN NUMERAL NINE
-<Multi_key> <percent> <0> <x>   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
-<Multi_key> <percent> <underscore> <0> <1>  : "Ⅺ" U216A # ROMAN NUMERAL ELEVEL
-<Multi_key> <percent> <underscore> <0> <2>  : "Ⅻ" U216B # ROMAN NUMERAL TWELVE
-<Multi_key> <percent> <0> <l>   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
-<Multi_key> <percent> <0> <c>   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
-<Multi_key> <percent> <0> <d>   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
-<Multi_key> <percent> <0> <m>   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
-<Multi_key> <percent> <X>   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
-<Multi_key> <percent> <L>   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
-<Multi_key> <percent> <C>   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
-<Multi_key> <percent> <D>   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
-<Multi_key> <percent> <M>   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
+Mk % 1   : "ⅰ" U2170   # SMALL ROMAN NUMERAL ONE
+Mk % 2   : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
+Mk % 3   : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
+Mk % 4   : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
+Mk % 5   : "ⅴ" U2174   # SMALL ROMAN NUMERAL FIVE
+Mk % 6   : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
+Mk % 7   : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
+Mk % 8   : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
+Mk % 9   : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
+Mk % x   : "ⅹ" U2179   # SMALL ROMAN NUMERAL TEN
+Mk % _ 1  : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
+Mk % _ 2  : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
+Mk % l   : "ⅼ" U217C   # SMALL ROMAN NUMERAL FIFTY
+Mk % c   : "ⅽ" U217D   # SMALL ROMAN NUMERAL ONE HUNDRED
+Mk % d   : "ⅾ" U217E   # SMALL ROMAN NUMERAL FIVE HUNDRED
+Mk % m   : "ⅿ" U217F   # SMALL ROMAN NUMERAL ONE THOUSAND
+Mk % 0 1   : "Ⅰ" U2160   # ROMAN NUMERAL ONE
+Mk % 0 2   : "Ⅱ" U2161   # ROMAN NUMERAL TWO
+Mk % 0 3   : "Ⅲ" U2162   # ROMAN NUMERAL THREE
+Mk % 0 4   : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
+Mk % 0 5   : "Ⅴ" U2164   # ROMAN NUMERAL FIVE
+Mk % 0 6   : "Ⅵ" U2165   # ROMAN NUMERAL SIX
+Mk % 0 7   : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
+Mk % 0 8   : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
+Mk % 0 9   : "Ⅸ" U2168   # ROMAN NUMERAL NINE
+Mk % 0 x   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
+Mk % _ 0 1  : "Ⅺ" U216A # ROMAN NUMERAL ELEVEN
+Mk % _ 0 2  : "Ⅻ" U216B # ROMAN NUMERAL TWELVE
+Mk % 0 l   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
+Mk % 0 c   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
+Mk % 0 d   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
+Mk % 0 m   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
+Mk % X   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
+Mk % L   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
+Mk % C   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
+Mk % D   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
+Mk % M   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
 
-<Multi_key> <R> <x>     : "℞" U211E   # PRESCRIPTION TAKE
-<Multi_key> <o> <z> <period>    : "℥" U2125   # OUNCE SIGN
-<Multi_key> <s> <r> <period>  : "℈" U2108   # SCRUPLE
+Mk R x     : "℞" U211E   # PRESCRIPTION TAKE
+Mk o z .    : "℥" U2125   # OUNCE SIGN
+Mk s r .  : "℈" U2108   # SCRUPLE
 # There are all kinds of awesome combining characters in the U+0300 page.
 # There are a bunch of other awesome combining characters like U+20E0
 # FIXME: conflict
-#<Multi_key> <asterisk> <period> <period> <period> : "๛" U0E5B   # THAI CHARACTER KHOMUT (end of chapter)
+#Mk * . . . : "๛" UE5B   # THAI CHARACTER KHOMUT (end of chapter)
 
 # INTERNATIONAL PHONETIC ALPHABET
 
-<Multi_key> <e> <less>     : "ɘ"      U0258 # LATIN SMALL LETTER REVERSED E (INTENTIONAL CONFLICT)
+Mk e <     : "ɘ"      U258 # LATIN SMALL LETTER REVERSED E (INTENTIONAL CONFLICT)
 
-<Multi_key> <parenleft> <parenright>: "◌" U25CC # DOTTED CIRCLE
+Mk ( ): "◌" U25CC # DOTTED CIRCLE
 # FIXME: conflict
-#<Multi_key> <bracketleft> <bracketright>: "⬚" U2B1A # DOTTED SQUARE
-<Multi_key> <k> <s>                     : "ʘ"   U0298           # LATIN LETTER BILABIAL CLICK (kiss sound)
+#Mk bracketleft bracketright: "⬚" U2B1A # DOTTED SQUARE
+Mk k s                     : "ʘ"   U298           # LATIN LETTER BILABIAL CLICK (kiss sound)
 
-#To avoid namespace clashes, <asciicircum> is doubled (will I regret that?)
-<Multi_key> <asciicircum> <asciicircum> <i>       : "ⁱ"   U2071           # SUPERSCRIPT I
-<Multi_key> <asciicircum> <asciicircum> <n>       : "ⁿ"   U207F           # SUPERSCRIPT N
+#To avoid namespace clashes, ^ is doubled (will I regret that?)
+Mk ^ ^ i       : "ⁱ"   U2071           # SUPERSCRIPT LATIN SMALL LETTER I
+Mk ^ ^ n       : "ⁿ"   U207F           # SUPERSCRIPT LATIN SMALL LETTER N
 #Maybe add: ˀˁ˃˂  Need to be able to talk about ʔˁ...
-<Multi_key> <asciicircum> <question> <period> : "ˀ" U02C0 # MODIFIER LETTER GLOTTAL STOP
-<Multi_key> <asciicircum> <question> <parenleft> : "ˁ"  U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
+Mk ^ ? . : "ˀ" U2C0 # MODIFIER LETTER GLOTTAL STOP
+Mk ^ ? ( : "ˁ"  U2C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 
-<Multi_key> <s> <h>     : "ʃ" U0283   # LATIN SMALL LETTER ESH
-<Multi_key> <z> <h>     : "ʒ" U0292   # LATIN SMALL LETTER EZH
-<Multi_key> <l> <h>         : "ɬ" U026C   # LATIN SMALL LETTER L WITH BELT
-<Multi_key> <l> <3>     : "ɮ" U026E   # LATIN SMALL LETTER LEZH
-<Multi_key> <question> <period>   : "ʔ" U0294   # LATIN LETTER GLOTTAL STOP
-<Multi_key> <question> <parenleft>  : "ʕ" U0295   # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
+Mk s h     : "ʃ" U283   # LATIN SMALL LETTER ESH
+Mk z h     : "ʒ" U292   # LATIN SMALL LETTER EZH
+Mk l h         : "ɬ" U26C   # LATIN SMALL LETTER L WITH BELT
+Mk l 3     : "ɮ" U26E   # LATIN SMALL LETTER LEZH
+Mk ? .   : "ʔ" U294   # LATIN LETTER GLOTTAL STOP
+Mk ? (  : "ʕ" U295   # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
 # Not great keystrokes...
-<Multi_key> <question> <v>    : "ʖ" U0296   # LATIN LETTER INVERTED GLOTTAL STOP
-<Multi_key> <question> <minus>    : "ʡ" U02A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
-<Multi_key> <question> <braceleft>  : "ʢ" U02A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
+Mk ? v    : "ʖ" U296   # LATIN LETTER INVERTED GLOTTAL STOP
+Mk ? -    : "ʡ" U2A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
+Mk ? {  : "ʢ" U2A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
 # How about ɸ? φ isn’t the IPA glyph.
-<Multi_key> <p> <h>     : "ɸ" U0278   # LATIN SMALL LETTER PHI
-<Multi_key> <i> <h>         : "ɪ" U026A   # LATIN LETTER SMALL CAPITAL I
-<Multi_key> <u> <h>     : "ʊ" U028A   # LATIN SMALL LETTER UPSILON
-<Multi_key> <a> <h>     : "ɑ" U0251   # LATIN SMALL LETTER ALPHA
-<Multi_key> <e> <r>     : "ɚ" U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key> <o> <parenright>    :"ɔ"  U0254     # LATIN SMALL LETTER OPEN O
-<Multi_key> <O> <parenright>    :"Ɔ"  U0186     # LATIN CAPITAL LETTER OPEN O
-<Multi_key> <e> <h>                 : "ɛ"   U025B   # LATIN SMALL LETTER OPEN E
-# Have to put the <less> at the beginning for these.
+Mk p h     : "ɸ" U278   # LATIN SMALL LETTER PHI
+Mk i h         : "ɪ" U26A   # LATIN LETTER SMALL CAPITAL I
+Mk u h     : "ʊ" U28A   # LATIN SMALL LETTER UPSILON
+Mk a h     : "ɑ" U251   # LATIN SMALL LETTER ALPHA
+Mk e r     : "ɚ" U25A   # LATIN SMALL LETTER SCHWA WITH HOOK
+Mk o )    : "ɔ"  U254     # LATIN SMALL LETTER OPEN O
+Mk O )    : "Ɔ"  U186     # LATIN CAPITAL LETTER OPEN O
+Mk e h                 : "ɛ"   U25B   # LATIN SMALL LETTER OPEN E
+# Have to put the < at the beginning for these.
 # FIXME: prefix conflicts
-#<Multi_key> <less> <e> <h>   : "ɜ" U025C   # LATIN SMALL LETTER REVERSED OPEN E
-#<Multi_key> <less> <e> <r>   : "ɝ" U025D   # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
+#Mk < e h   : "ɜ" U25C   # LATIN SMALL LETTER REVERSED OPEN E
+#Mk < e r   : "ɝ" U25D   # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 # How are these keystrokes?
-<Multi_key> <bar> <apostrophe>    : "ˈ" U02C8   # MODIFIER LETTER VERTICAL LINE
-<Multi_key> <bar> <comma>   : "ˌ" U02CC   # MODIFIER LETTER LOW VERTICAL LINE
-<Multi_key> <bar> <underscore>    : "̩"  U0329   # COMBINING VERTICAL LINE BELOW
+Mk | '    : "ˈ" U2C8   # MODIFIER LETTER VERTICAL LINE
+Mk | ,   : "ˌ" U2CC   # MODIFIER LETTER LOW VERTICAL LINE
+Mk | _    : "̩"  U329   # COMBINING VERTICAL LINE BELOW
 # Harmonize with other combiners.
-<Multi_key> <backslash> <underscore> <bar>  : "̩"  U0329   # COMBINING VERTICAL LINE BELOW
-<Multi_key> <r> <r>                     : "ɹ"   U0279           # LATIN SMALL LETTER TURNED R: voiced alveolar approximant (American English (at least) R)
-<Multi_key> <r> <d>                     : "ɾ"   U027E           # LATIN SMALL LETTER R WITH FISHHOOK: voiced alveolar flap or tap (American English intervocalic allophone of d, or Spanish r)
+Mk \ _ |  : "̩"  U329   # COMBINING VERTICAL LINE BELOW
+Mk r r                     : "ɹ"   U279           # LATIN SMALL LETTER TURNED R: voiced alveolar approximant (American English (at least) R)
+Mk r d                     : "ɾ"   U27E           # LATIN SMALL LETTER R WITH FISHHOOK: voiced alveolar flap or tap (American English intervocalic allophone of d, or Spanish r)
 # FIXME: conflicts
-#<Multi_key> <v> <v>                     : "ʌ"   U028C           # LATIN SMALL LETTER TURNED V
-#<Multi_key> <u> <i>      : "ɯ" U026F   # LATIN SMALL LETTER TURNED M
+#Mk v v                     : "ʌ"   U28C           # LATIN SMALL LETTER TURNED V
+#Mk u i      : "ɯ" U26F   # LATIN SMALL LETTER TURNED M
 # doubling a letter seems to be mostly used for turning
 # FIXME: conflict
-# <Multi_key> <w> <w>     : "ʍ" U028D   # LATIN SMALL LETTER TURNED W
-<Multi_key> <a> <a>     : "ɐ" U0250   # LATIN SMALL LETTER TURNED A (INTENTIONAL CONFLICT)
+# Mk w w     : "ʍ" U28D   # LATIN SMALL LETTER TURNED W
+Mk a a     : "ɐ" U250   # LATIN SMALL LETTER TURNED A (INTENTIONAL CONFLICT)
 # I'll use capitals for a different double
 # FIXME: conflict
-#<Multi_key> <W> <W>      : "ʬ" U02AC   # LATIN LETTER BILABIAL PERCUSSIVE
+#Mk W W      : "ʬ" U2AC   # LATIN LETTER BILABIAL PERCUSSIVE
 # FIXME: conflict
-#<Multi_key> <colon> <plus>           : "ː" U02D0   # MODIFIER LETTER TRIANGULAR COLON
+#Mk : +           : "ː" U2D0   # MODIFIER LETTER TRIANGULAR COLON
 # Also handy for writing urls: http://ʬw.omniglot.com/
 # ɣ? ᴥ?  Important enough to add? ᴥ is cool just as a "latin" letter.
-<Multi_key> <g> <h>           : "ɣ"   U0263     # LATIN SMALL LETTER GAMMA
-<Multi_key> <a> <i> <n>       : "ᴥ"   U1D25     # LATIN LETTER AIN
+Mk g h           : "ɣ"   U263     # LATIN SMALL LETTER GAMMA
+Mk a i n       : "ᴥ"   U1D25     # LATIN LETTER AIN
 # Sometimes it's a "tail", sometimes a "hook", and sometimes a "retroflex hook"
-# These conflict with system definitions for letters with cedilla, but those can be obtained by typing the comma first
-<Multi_key> <d> <comma>       : "ɖ"   U0256     # LATIN SMALL LETTER D WITH TAIL (INTENTIONAL CONFLICT)
-<Multi_key> <l> <comma>       : "ɭ"   U026D     # LATIN SMALL LETTER L WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-<Multi_key> <n> <comma>       : "ɳ"   U0273     # LATIN SMALL LETTER N WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-<Multi_key> <s> <comma>       : "ʂ"   U0282     # LATIN SMALL LETTER S WITH HOOK (INTENTIONAL CONFLICT)
-<Multi_key> <t> <comma>       : "ʈ"   U0288     # LATIN SMALL LETTER T WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-<Multi_key> <z> <comma>       : "ʐ"   U0290     # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
+# These conflict with system definitions for letters with cedilla, but those can be obtained by typing the , first
+Mk d ,       : "ɖ"   U256     # LATIN SMALL LETTER D WITH TAIL (INTENTIONAL CONFLICT)
+Mk l ,       : "ɭ"   U26D     # LATIN SMALL LETTER L WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk n ,       : "ɳ"   U273     # LATIN SMALL LETTER N WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk s ,       : "ʂ"   U282     # LATIN SMALL LETTER S WITH HOOK (INTENTIONAL CONFLICT)
+Mk t ,       : "ʈ"   U288     # LATIN SMALL LETTER T WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk z ,       : "ʐ"   U290     # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
 # This is used for functions, folders, etc.  Yeah, the hook's facing wrong.
-<Multi_key> <f> <comma>       : "ƒ"   U0192     # LATIN SMALL LETTER F WITH HOOK
+Mk f ,       : "ƒ"   U192     # LATIN SMALL LETTER F WITH HOOK
 # Sigh, might as well do implosives.  Which is also sometimes a hook.
-<Multi_key> <b> <apostrophe>      : "ɓ"   U0253     # LATIN SMALL LETTER B WITH HOOK
-<Multi_key> <d> <apostrophe>      : "ɗ"   U0257     # LATIN SMALL LETTER D WITH HOOK
-<Multi_key> <g> <apostrophe>      : "ɠ"   U0260     # LATIN SMALL LETTER G WITH HOOK
-<Multi_key> <g> <g>       : "ɡ"   U0261     # LATIN SMALL LETTER SCRIPT G
+Mk b '      : "ɓ"   U253     # LATIN SMALL LETTER B WITH HOOK
+Mk d '      : "ɗ"   U257     # LATIN SMALL LETTER D WITH HOOK
+Mk g '      : "ɠ"   U260     # LATIN SMALL LETTER G WITH HOOK
+Mk g g       : "ɡ"   U261     # LATIN SMALL LETTER SCRIPT G
 # The h looks the same...
-<Multi_key> <h> <apostrophe>      : "ɦ"   U0266     # LATIN SMALL LETTER H WITH HOOK
-<Multi_key> <G> <apostrophe>      : "ʛ"   U029B     # LATIN LETTER SMALL CAPITAL G WITH HOOK
+Mk h '      : "ɦ"   U266     # LATIN SMALL LETTER H WITH HOOK
+Mk G '      : "ʛ"   U29B     # LATIN LETTER SMALL CAPITAL G WITH HOOK

@@ -36,6 +36,10 @@ keycodes = {
     '/' : 'slash',
     '?' : 'question',
     'sp' : 'space',
+    'ret' : 'Return',
 
-    '**' : 'KP_Multiply'
+    '++' : 'KP_Plus',
+    '--' : 'KP_Minus',
+    '**' : 'KP_Multiply',
+    '//' : 'KP_Divide'
 }
