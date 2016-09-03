@@ -5,83 +5,84 @@
 # Emoji go into emoji.xcompose
 
 # Fingers
-<Multi_key> <f> <exclam> <less>     : "☚" U261A   # BLACK LEFT POINTING INDEX
-<Multi_key> <f> <exclam> <greater>  : "☛" U261B   # BLACK RIGHT POINTING INDEX
-<Multi_key> <f> <less>              : "☜" U261C   # WHITE LEFT POINTING INDEX
-<Multi_key> <f> <asciicircum>       : "☝" U261D   # WHITE UP POINTING INDEX
-<Multi_key> <f> <greater>           : "☞" U261E   # WHITE RIGHT POINTING INDEX
-<Multi_key> <f> <v>                 : "☟" U261F   # WHITE DOWN POINTING INDEX
-<Multi_key> <f> <V>                 : "✌" U270C   # VICTORY HAND
-<Multi_key> <f> <w>                 : "✍" U270D   # WRITING HAND
-<Multi_key> <f> <p> <v>             : "✎" U270E   # LOWER RIGHT PENCIL
-<Multi_key> <f> <p> <greater>       : "✏" U270F   # PENCIL
-<Multi_key> <f> <p> <asciicircum>   : "✐" U2710   # UPPER RIGHT PENCIL
+Mk f ! <  : "☚" U261A   # BLACK LEFT POINTING INDEX
+Mk f ! >  : "☛" U261B   # BLACK RIGHT POINTING INDEX
+Mk f <    : "☜" U261C   # WHITE LEFT POINTING INDEX
+Mk f ^    : "☝" U261D   # WHITE UP POINTING INDEX
+Mk f >    : "☞" U261E   # WHITE RIGHT POINTING INDEX
+Mk f v    : "☟" U261F   # WHITE DOWN POINTING INDEX
+Mk f V    : "✌" U270C   # VICTORY HAND
+Mk f w    : "✍" U270D   # WRITING HAND
+Mk f p v  : "✎" U270E   # LOWER RIGHT PENCIL
+Mk f p >  : "✏" U270F   # PENCIL
+Mk f p ^  : "✐" U2710   # UPPER RIGHT PENCIL
 
 # Smiley faces
 
-<Multi_key> <colon> <parenright>          : "☺" U263A # WHITE SMILING FACE
-<Multi_key> <exclam> <colon> <parenright> : "☻"   U263B # BLACK SMILING FACE
-<Multi_key> <colon> <asciitilde>          : "⍨"   U2368   # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
-<Multi_key> <colon> <bar>                 : "⸚"   U2E1A   # HYPHEN WITH DIAERESIS
-<Multi_key> <colon> <o> <o> <parenright>  :  "°͜°"    # Funny smiley-face. (MULTIPLE CHARS)
+Mk : )      : "☺" U263A # WHITE SMILING FACE
+Mk ! : )    : "☻" U263B # BLACK SMILING FACE
+# TODO: Conflict
+#Mk : ~     : "⍨"   U2368   # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
+#Mk : |     : "⸚"   U2E1A   # HYPHEN WITH DIAERESIS
+Mk : o o )  :  "°͜°"    # Funny smiley-face.
 
 # Those are archaic Cyrillic letters... but look so _perfect_ for use
 # in chat. And about the last, the "multiocular O"... Well, I don't
 # know what it can be used for, but given the description, how could I
 # leave it out‽
 # (I guess using U+1F440 EYES would be more straightforward, but not as funny?)
-<Multi_key> <O> <period> <O>  : "Ꙭ" UA66C   # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O * used in the dual of words based on the root for 'eye'
-<Multi_key> <o> <period> <o>  : "ꙭ" UA66D   # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
-<Multi_key> <O> <colon>       : "Ꙫ" UA66A   # CYRILLIC CAPITAL LETTER BINOCULAR O * used in the dual of words based on the root for 'eye'
-<Multi_key> <o> <colon>       : "ꙫ" UA66B   # CYRILLIC SMALL LETTER BINOCULAR O
-<Multi_key> <o> <plus>        : "ꙮ" UA66E   # CYRILLIC LETTER MULTIOCULAR O * used in the epithet 'many-eyed'
+Mk O . O    : "Ꙭ" UA66C # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O * used in the dual of words based on the root for 'eye'
+Mk o . o    : "ꙭ" UA66D # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
+Mk O :      : "Ꙫ" UA66A # CYRILLIC CAPITAL LETTER BINOCULAR O * used in the dual of words based on the root for 'eye'
+Mk o :      : "ꙫ" UA66B # CYRILLIC SMALL LETTER BINOCULAR O
+Mk o +      : "ꙮ" UA66E # CYRILLIC LETTER MULTIOCULAR O * used in the epithet 'many-eyed'
 
 # While we're doing stacks of circles with dots.
-<Multi_key> <o> <3>             : "߷" U07F7   # NKO SYMBOL GBAKURUNEN
-<Multi_key> <2> <colon>         : "∷"  U2237  # PROPORTION -- not strictly 2 times COLON
-<Multi_key> <semicolon> <less>  : "⁏"  U204F  # REVERSED SEMICOLON
+Mk o 3      : "߷" U7F7  # NKO SYMBOL GBAKURUNEN
+Mk 2 :      : "∷" U2237 # PROPORTION * not strictly 2 times COLON
+Mk ; <      : "⁏" U204F # REVERSED SEMICOLON
 # Keep looking into big hunks of Latin Extended-D, A720- et seq.
 # And now that we are into hearts...
 # FIXME: clash with system Compose file
-#<Multi_key> <less> <less> <3>           : "❥"  U2765            # ROTATED HEAVY BLACK HEART BULLET
+#Mk < < 3   : "❥" U2765 # ROTATED HEAVY BLACK HEART BULLET
 # FIXME: conflict
-#<Multi_key> <exclam> <less> <3>         : "❣"  U2763            # HEAVY HEART EXCLAMATION MARK ORNAMENT
-<Multi_key> <less> <f> <3>              : "❦"  U2766            # FLORAL HEART
-<Multi_key> <less> <f> <less> <3>       : "❧"  U2767            # ROTATED FLORAL HEART BULLET
-<Multi_key> <greater> <f> <less> <3>    : "☙"  U2619            # REVERSED ROTATED FLORAL HEART BULLET
+#Mk ! < 3   : "❣" U2763 # HEAVY HEART EXCLAMATION MARK ORNAMENT
+Mk < f 3    : "❦" U2766 # FLORAL HEART
+Mk < f < 3  : "❧" U2767 # ROTATED FLORAL HEART BULLET
+Mk > f < 3  : "☙" U2619 # REVERSED ROTATED FLORAL HEART BULLET
 
-<Multi_key> <ampersand> <t> <e> <l>             : "☏" U260F # WHITE TELEPHONE
-<Multi_key> <ampersand> <exclam> <t> <e> <l>    : "☎" U260E # BLACK TELEPHONE
-<Multi_key> <ampersand> <t> <e> <a>             : "☕" U2615 # HOT BEVERAGE
+Mk & t e l       : "☏" U260F # WHITE TELEPHONE
+Mk & ! t e l     : "☎" U260E # BLACK TELEPHONE
+Mk & t e a       : "☕" U2615 # HOT BEVERAGE
 # "shamrock" is too long; there IS a limit to these!
-<Multi_key> <ampersand> <s> <h> <m> <r> <c> <k> : "☘" U2618 # SHAMROCK
-<Multi_key> <ampersand> <p> <c>                 : "☮" U262E # PEACE SYMBOL
-<Multi_key> <ampersand> <y> <i> <n>             : "☯" U262F # YIN YANG
+Mk & s h m r c k : "☘" U2618 # SHAMROCK
+Mk & p c         : "☮" U262E # PEACE SYMBOL
+Mk & y i n       : "☯" U262F # YIN YANG
 
 # Other possibly useful symbols:
 # 2668 HOT SPRINGS (for chat, for running off to shower?)
 # I want 2713-2714 and 2717-2718
 # We need a Dingbats prefix, for ❛❜❝❞❢
-<Multi_key> <bracketleft> <space> <bracketright> :  "☐" U2610 # BALLOT BOX
-<Multi_key> <bracketleft> <Y> <bracketright>     :  "☑" U2611 # BALLOT BOX WITH CHECK
-<Multi_key> <bracketleft> <N> <bracketright>     :  "☒" U2612 # BALLOT BOX WITH X
+Mk [ space ] : "☐" U2610 # BALLOT BOX
+Mk [ Y ]     : "☑" U2611 # BALLOT BOX WITH CHECK
+Mk [ N ]     : "☒" U2612 # BALLOT BOX WITH X
 # 267B BLACK UNIVERSAL RECYCLING SYMBOL
 
-<Multi_key> <f> <d> <l>                     : "⚜" U269C # FLEUR-DE-LIS
-<Multi_key> <ampersand> <a> <t> <o> <m>     : "⚛" U269B # ATOM SYMBOL
-<Multi_key> <slash> <exclam> <backslash>    : "⚠" U26A0 # WARNING SIGN
-<Multi_key> <exclam> <asciicircum>          : "⚠" U26A0 # WARNING SIGN  (INTENTIONAL CONFLICT)
-<Multi_key> <ampersand> <z> <a> <p>         : "⚡" U26A1 # HIGH VOLTAGE SIGN
-<Multi_key> <ampersand> <r> <a> <d>         : "☢" U2622 # RADIOACTIVE SIGN
-<Multi_key> <ampersand> <b> <h>             : "☣" U2623 # BIOHAZARD SIGN
+Mk f d l        : "⚜" U269C # FLEUR-DE-LIS
+Mk & a t o m    : "⚛" U269B # ATOM SYMBOL
+Mk / ! \        : "⚠" U26A0 # WARNING SIGN
+Mk ! ^          : "⚠" U26A0 # WARNING SIGN  (INTENTIONAL CONFLICT)
+Mk & z a p      : "⚡" U26A1 # HIGH VOLTAGE SIGN
+Mk & r a d      : "☢" U2622 # RADIOACTIVE SIGN
+Mk & b h        : "☣" U2623 # BIOHAZARD SIGN
 # Changing this from ⚝
-<Multi_key> <ampersand> <p> <g> <r> <a> <m> : "⛤" U26E4 # PENTAGRAM
-<Multi_key> <ampersand> <p> <l> <a> <n> <e> : "✈" U2708 # AIRPLANE
-<Multi_key> <ampersand> <m> <a> <i> <l>     : "✉" U2709 # ENVELOPE
-<Multi_key> <ampersand> <w> <h> <l> <c> <h> : "♿" U267F # WHEELCHAIR SYMBOL
-<Multi_key> <ampersand> <m> <e> <d>         : "☤" U2624 # CADEUCEUS
+Mk & p g r a m  : "⛤" U26E4 # PENTAGRAM
+Mk & p l a n e  : "✈" U2708 # AIRPLANE
+Mk & m a i l    : "✉" U2709 # ENVELOPE
+Mk & w h l c h  : "♿" U267F # WHEELCHAIR SYMBOL
+Mk & m e d      : "☤" U2624 # CADUCEUS
 # Something different for STAFF OF AESCULAPIUS?
-<Multi_key> <ampersand> <1> <m> <e> <d>   : "⚕" U2695 # STAFF OF AESCULAPIUS
+Mk & 1 m e d    : "⚕" U2695 # STAFF OF AESCULAPIUS
 # Maybe something different that isn't lousy.
 # 26B0 COFFIN ?
 # One of the SNOWFLAKEs?
@@ -92,250 +93,250 @@
 # 212E ESTIMATED SYMBOL?
 # 2324 UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS a.k.a. NOT AMUSED
 
-<Multi_key> <ampersand> <s> <k> <u> <l> <l> : "☠" U2620 # SKULL AND CROSSBONES
-<Multi_key> <ampersand> <k> <b> <d>         : "⌨" U2328 # KEYBOARD
-<Multi_key> <ampersand> <b> <e> <l> <l>     : "⍾" U237E # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
+Mk & s k u l l  : "☠" U2620 # SKULL AND CROSSBONES
+Mk & k b d      : "⌨" U2328 # KEYBOARD
+Mk & b e l l    : "⍾" U237E # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
 # Other monstery characters... ѪꙚ (alien abductions?)
 # ඏൠഋ & others from Kannada et al...?
 # Can't use -^- for this; conflicts with -^ for ↑, and getting those arrows
 # workable was complicated enough.  How about this?
 # FIXME: prefix conflict
-#<Multi_key> <underscore> <asciicircum> <underscore>  : "⌤" U2324  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
-<Multi_key> <ampersand> <w> <a> <i> <t>     : "⌛" U231B   # HOURGLASS
-<Multi_key> <ampersand> <t> <i> <m> <e>     : "⌚" U231A   # WATCH
+#Mk underscore ^ underscore  : "⌤" U2324  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
+Mk & w a i t    : "⌛" U231B   # HOURGLASS
+Mk & t i m e    : "⌚" U231A   # WATCH
 
-<Multi_key> <ampersand> <f> <e> <m>                 : "♀" U2640   # FEMALE SIGN
-<Multi_key> <ampersand> <m> <a> <l> <e>             : "♂" U2642   # MALE SIGN
-<Multi_key> <ampersand> <g> <a> <y>                 : "⚣" U26A3   # DOUBLED MALE SIGN
-<Multi_key> <ampersand> <l> <e> <s> <b>             : "⚢" U26A2   # DOUBLED FEMALE SIGN
-<Multi_key> <ampersand> <h> <e> <t> <e> <r> <o>     : "⚤" U26A4   # INTERLOCKED FEMALE AND MALE SIGN
-<Multi_key> <ampersand> <t> <r> <a> <n> <s>         : "⚥" U26A5   # MALE AND FEMALE SIGN
-<Multi_key> <ampersand> <g> <q> <u> <e> <e> <r>     : "⚧" U26A7   # MALE WITH STROKE AND MALE AND FEMALE SIGN
+Mk & f e m        : "♀" U2640   # FEMALE SIGN
+Mk & m a l e      : "♂" U2642   # MALE SIGN
+Mk & g a y        : "⚣" U26A3   # DOUBLED MALE SIGN
+Mk & l e s b      : "⚢" U26A2   # DOUBLED FEMALE SIGN
+Mk & h e t e r o  : "⚤" U26A4   # INTERLOCKED FEMALE AND MALE SIGN
+Mk & t r a n s    : "⚥" U26A5   # MALE AND FEMALE SIGN
+Mk & g q u e e r  : "⚧" U26A7   # MALE WITH STROKE AND MALE AND FEMALE SIGN
 
 # Stars
-<Multi_key> <exclam> <asterisk> <S> :"★" U2605 # BLACK STAR
-<Multi_key> <asterisk> <S>          :"☆" U2606 # WHITE STAR
-<Multi_key> <exclam> <parenleft> <asterisk> <parenright> :"✪" U272A # CIRCLED WHITE STAR
-<Multi_key> <2> <asterisk>          :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
-<Multi_key> <asterisk> <4>          :"✢"  U2722  # FOUR TEARDROP-SPOKED ASTERISK
-<Multi_key> <asterisk> <6>          :"✡" U2721 # STAR OF DAVID
-<Multi_key> <asterisk> <numbersign> :"✯" U272F # PINWHEEL STAR
-<Multi_key> <asterisk> <exclam>     :"✱" U2731 # HEAVY ASTERISK
-<Multi_key> <at> <numbersign>       : "⌘" U2318 # PLACE OF INTEREST SIGN
+Mk ! * S   : "★" U2605 # BLACK STAR
+Mk * S     : "☆" U2606 # WHITE STAR
+Mk ! ( * ) : "✪" U272A # CIRCLED WHITE STAR
+Mk 2 *     : "⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
+Mk * 4     : "✢" U2722 # FOUR TEARDROP-SPOKED ASTERISK
+Mk * 6     : "✡" U2721 # STAR OF DAVID
+Mk * #     : "✯" U272F # PINWHEEL STAR
+Mk * !     : "✱" U2731 # HEAVY ASTERISK
+Mk @ #     : "⌘" U2318 # PLACE OF INTEREST SIGN
 
-# Using backslash-minus-slash etc. conflicts with combining accents.
-<Multi_key> <grave> <minus> <apostrophe>   : "⚞"  U269E  # THREE LINES CONVERGING RIGHT
-<Multi_key> <apostrophe> <minus> <grave>   : "⚟"  U269F  # THREE LINES CONVERGING LEFT
+# Using \---/ etc. conflicts with combining accents.
+Mk ` - '   : "⚞" U269E # THREE LINES CONVERGING RIGHT
+Mk ' - `   : "⚟" U269F # THREE LINES CONVERGING LEFT
 
 ## Astrological signs
 
 # Planets
 #FIXME: Improve these
-<Multi_key> <ampersand> <s> <u> <n>             : "☉" U2609 # SUN (Sunday)
-<Multi_key> <ampersand> <m> <o> <o> <n>         : "☽" U263D # FIRST QUARTER MOON (Monday)
-<Multi_key> <ampersand> <m> <e> <r> <c> <u> <r> : "☿" U263F # MERCURY (Wednesday)
-<Multi_key> <ampersand> <v> <e> <n> <u> <s>     : "♀" U2640    # FEMALE SIGN
-<Multi_key> <ampersand> <j> <u> <p> <i> <t> <e> : "♃" U2643  # JUPITER (Thursday)
-<Multi_key> <ampersand> <s> <a> <t> <u> <r> <n> : "♄" U2644 # SATURN (Saturday)
-<Multi_key> <ampersand> <u> <r> <a> <n> <u> <s> : "♅" U2645 # URANUS (FIXME: or ⛢ U26E2?)
-<Multi_key> <ampersand> <n> <e> <p> <t> <u> <n> : "♆" U2646 # NEPTUNE
-<Multi_key> <ampersand> <p> <l> <u> <t> <o>     : "♇" U2647 # PLUTO (ok, it isn't a planet anymore, but we still love it.)
+Mk & s u n       : "☉" U2609 # SUN (Sunday)
+Mk & m o o n     : "☽" U263D # FIRST QUARTER MOON (Monday)
+Mk & m e r c u r : "☿" U263F # MERCURY (Wednesday)
+Mk & v e n u s   : "♀" U2640 # FEMALE SIGN
+Mk & j u p i t e : "♃" U2643 # JUPITER (Thursday)
+Mk & s a t u r n : "♄" U2644 # SATURN (Saturday)
+Mk & u r a n u s : "♅" U2645 # URANUS (FIXME: or ⛢ U26E2?)
+Mk & n e p t u n : "♆" U2646 # NEPTUNE
+Mk & p l u t o   : "♇" U2647 # PLUTO (ok, it isn't a planet anymore, but we still love it.)
 
 # Minor planets
 #FIXME: Improve these
-<Multi_key> <ampersand> <c> <e> <r> <e> <s>     : "⚳" U26B3 # CERES
-<Multi_key> <ampersand> <p> <a> <l> <l> <a> <s> : "⚴" U26B4 # PALLAS
-<Multi_key> <ampersand> <j> <u> <n> <o>         : "⚵" U26B5 # JUNO
-<Multi_key> <ampersand> <v> <e> <s> <t> <a>     : "⚶" U26B6 # VESTA
-<Multi_key> <ampersand> <c> <h> <i> <r> <o> <n> : "⚷" U26B7 # CHIRON
-<Multi_key> <ampersand> <l> <i> <l> <i> <t> <h> : "⚸" U26B8 # BLACK MOON LILITH
+Mk & c e r e s   : "⚳" U26B3 # CERES
+Mk & p a l l a s : "⚴" U26B4 # PALLAS
+Mk & j u n o     : "⚵" U26B5 # JUNO
+Mk & v e s t a   : "⚶" U26B6 # VESTA
+Mk & c h i r o n : "⚷" U26B7 # CHIRON
+Mk & l i l i t h : "⚸" U26B8 # BLACK MOON LILITH
 
 # Zodiac signs
 #FIXME: Improve these
-<Multi_key> <ampersand> <a> <r> <i> <e> <s>     : "♈" U2648 # ARIES
-<Multi_key> <ampersand> <t> <a> <u> <r> <u> <s> : "♉" U2649 # TAURUS
-<Multi_key> <ampersand> <g> <e> <m> <i> <n> <i> : "♊" U264A # GEMINI
-<Multi_key> <ampersand> <c> <a> <n> <c> <e> <r> : "♋" U264B # CANCER
-<Multi_key> <ampersand> <l> <e> <o>             : "♌" U264C # LEO
-<Multi_key> <ampersand> <v> <i> <r> <g> <o>     : "♍" U264D # VIRGO
-<Multi_key> <ampersand> <l> <i> <b> <r> <a>     : "♎" U264E # LIBRA
-<Multi_key> <ampersand> <s> <c> <o> <r> <p>     : "♏" U264F # SCORPIUS
-<Multi_key> <ampersand> <s> <a> <g> <i> <t>     : "♐" U2650 # SAGITTARIUS
-<Multi_key> <ampersand> <c> <a> <p> <r> <i> <c> : "♑" U2651 # CAPRICORN
-<Multi_key> <ampersand> <a> <q> <u> <a> <r>     : "♒" U2652 # AQUARIUS
-<Multi_key> <ampersand> <p> <i> <s> <c> <e> <s> : "♓" U2653 # PISCES
+Mk & a r i e s   : "♈" U2648 # ARIES
+Mk & t a u r u s : "♉" U2649 # TAURUS
+Mk & g e m i n i : "♊" U264A # GEMINI
+Mk & c a n c e r : "♋" U264B # CANCER
+Mk & l e o       : "♌" U264C # LEO
+Mk & v i r g o   : "♍" U264D # VIRGO
+Mk & l i b r a   : "♎" U264E # LIBRA
+Mk & s c o r p   : "♏" U264F # SCORPIUS
+Mk & s a g i t   : "♐" U2650 # SAGITTARIUS
+Mk & c a p r i c : "♑" U2651 # CAPRICORN
+Mk & a q u a r   : "♒" U2652 # AQUARIUS
+Mk & p i s c e s : "♓" U2653 # PISCES
 # # Really, this should be SERPENTARIUS.  All the other signs are in Latin.
-<Multi_key> <ampersand> <o> <p> <h> <i> <u> <c> : "⛎" U26CE # OPHIUCHUS
+Mk & o p h i u c : "⛎" U26CE # OPHIUCHUS
 
 ## Music.  # is the music mnemonic.
-<Multi_key> <numbersign> <G>              : "𝄞"  U0001d11e # MUSICAL SYMBOL G CLEF
-<Multi_key> <numbersign> <F>              : "𝄢"  U0001d122 # MUSICAL SYMBOL F CLEF
-<Multi_key> <numbersign> <C>              : "𝄡" U0001d121 # MUSICAL SYMBOL C CLEF
-<Multi_key> <numbersign> <b>              : "♭" U266D # MUSIC FLAT SIGN
-<Multi_key> <numbersign> <numbersign>     : "♯" U266F # MUSIC SHARP SIGN
+Mk # G     : "𝄞" U1D11E # MUSICAL SYMBOL G CLEF
+Mk # F     : "𝄢" U1D122 # MUSICAL SYMBOL F CLEF
+Mk # C     : "𝄡" U1D121 # MUSICAL SYMBOL C CLEF
+Mk # b     : "♭" U266D  # MUSIC FLAT SIGN
+Mk # #     : "♯" U266F  # MUSIC SHARP SIGN
 
 ## Games
 
 # Dice
-<Multi_key> <bracketleft> <1> <d> <bracketright>  :  "⚀"  U2680 # DIE FACE-1
-<Multi_key> <bracketleft> <2> <d> <bracketright>  :  "⚁"  U2681 # DIE FACE-2
-<Multi_key> <bracketleft> <3> <d> <bracketright>  :  "⚂"  U2682 # DIE FACE-3
-<Multi_key> <bracketleft> <4> <d> <bracketright>  :  "⚃"  U2683 # DIE FACE-4
-<Multi_key> <bracketleft> <5> <d> <bracketright>  :  "⚄"  U2684 # DIE FACE-5
-<Multi_key> <bracketleft> <6> <d> <bracketright>  :  "⚅"  U2685 # DIE FACE-6
+Mk [ 1 d ]  :  "⚀"  U2680 # DIE FACE-1
+Mk [ 2 d ]  :  "⚁"  U2681 # DIE FACE-2
+Mk [ 3 d ]  :  "⚂"  U2682 # DIE FACE-3
+Mk [ 4 d ]  :  "⚃"  U2683 # DIE FACE-4
+Mk [ 5 d ]  :  "⚄"  U2684 # DIE FACE-5
+Mk [ 6 d ]  :  "⚅"  U2685 # DIE FACE-6
 
 # Playing Cards
-# The convention is more or less established, except for the Knight.  I'm
+# The convention is more or < established, except for the Knight.  I'm
 # using N for that, like in Chess, since K would conflict with King of course.
 
-<Multi_key> <3> <3>       : "♣" U2663 # BLACK CLUB SUIT
-<Multi_key> <D> <greater> : "♢" U2662 # WHITE DIAMOND SUIT (<> is ↔)
-<Multi_key> <3> <minus>   : "♠" U2660 # BLACK SPADE SUIT
-<Multi_key> <E> <greater> : "♡" U2661 # WHITE HEART SUIT (INTENTIONAL CONFLICT)
+Mk 3 3  : "♣" U2663 # BLACK CLUB SUIT
+Mk D >  : "♢" U2662 # WHITE DIAMOND SUIT ( is ↔)
+Mk 3 -  : "♠" U2660 # BLACK SPADE SUIT
+Mk E >  : "♡" U2661 # WHITE HEART SUIT (INTENTIONAL CONFLICT)
 
-<Multi_key> <bracketleft> <A> <S> <bracketright>  : "🂡" U1F0A1  # PLAYING CARD ACE OF SPADES
-<Multi_key> <bracketleft> <2> <S> <bracketright>  : "🂢" U1F0A2  # PLAYING CARD TWO OF SPADES
-<Multi_key> <bracketleft> <3> <S> <bracketright>  : "🂣" U1F0A3  # PLAYING CARD THREE OF SPADES
-<Multi_key> <bracketleft> <4> <S> <bracketright>  : "🂤" U1F0A4  # PLAYING CARD FOUR OF SPADES
-<Multi_key> <bracketleft> <5> <S> <bracketright>  : "🂥" U1F0A5  # PLAYING CARD FIVE OF SPADES
-<Multi_key> <bracketleft> <6> <S> <bracketright>  : "🂦" U1F0A6  # PLAYING CARD SIX OF SPADES
-<Multi_key> <bracketleft> <7> <S> <bracketright>  : "🂧" U1F0A7  # PLAYING CARD SEVEN OF SPADES
-<Multi_key> <bracketleft> <8> <S> <bracketright>  : "🂨" U1F0A8  # PLAYING CARD EIGHT OF SPADES
-<Multi_key> <bracketleft> <9> <S> <bracketright>  : "🂩" U1F0A9  # PLAYING CARD NINE OF SPADES
-<Multi_key> <bracketleft> <T> <S> <bracketright>  : "🂪" U1F0AA  # PLAYING CARD TEN OF SPADES
-<Multi_key> <bracketleft> <J> <S> <bracketright>  : "🂫" U1F0AB  # PLAYING CARD JACK OF SPADES
-<Multi_key> <bracketleft> <N> <S> <bracketright>  : "🂬" U1F0AC  # PLAYING CARD KNIGHT OF SPADES
-<Multi_key> <bracketleft> <Q> <S> <bracketright>  : "🂭" U1F0AD  # PLAYING CARD QUEEN OF SPADES
-<Multi_key> <bracketleft> <K> <S> <bracketright>  : "🂮" U1F0AE  # PLAYING CARD KING OF SPADES
+Mk [ A S ]  : "🂡" U1F0A1  # PLAYING CARD ACE OF SPADES
+Mk [ 2 S ]  : "🂢" U1F0A2  # PLAYING CARD TWO OF SPADES
+Mk [ 3 S ]  : "🂣" U1F0A3  # PLAYING CARD THREE OF SPADES
+Mk [ 4 S ]  : "🂤" U1F0A4  # PLAYING CARD FOUR OF SPADES
+Mk [ 5 S ]  : "🂥" U1F0A5  # PLAYING CARD FIVE OF SPADES
+Mk [ 6 S ]  : "🂦" U1F0A6  # PLAYING CARD SIX OF SPADES
+Mk [ 7 S ]  : "🂧" U1F0A7  # PLAYING CARD SEVEN OF SPADES
+Mk [ 8 S ]  : "🂨" U1F0A8  # PLAYING CARD EIGHT OF SPADES
+Mk [ 9 S ]  : "🂩" U1F0A9  # PLAYING CARD NINE OF SPADES
+Mk [ T S ]  : "🂪" U1F0AA  # PLAYING CARD TEN OF SPADES
+Mk [ J S ]  : "🂫" U1F0AB  # PLAYING CARD JACK OF SPADES
+Mk [ N S ]  : "🂬" U1F0AC  # PLAYING CARD KNIGHT OF SPADES
+Mk [ Q S ]  : "🂭" U1F0AD  # PLAYING CARD QUEEN OF SPADES
+Mk [ K S ]  : "🂮" U1F0AE  # PLAYING CARD KING OF SPADES
 
-<Multi_key> <bracketleft> <A> <H> <bracketright>  : "🂱" U1F0B1  # PLAYING CARD ACE OF HEARTS
-<Multi_key> <bracketleft> <2> <H> <bracketright>  : "🂲" U1F0B2  # PLAYING CARD TWO OF HEARTS
-<Multi_key> <bracketleft> <3> <H> <bracketright>  : "🂳" U1F0B3  # PLAYING CARD THREE OF HEARTS
-<Multi_key> <bracketleft> <4> <H> <bracketright>  : "🂴" U1F0B4  # PLAYING CARD FOUR OF HEARTS
-<Multi_key> <bracketleft> <5> <H> <bracketright>  : "🂵" U1F0B5  # PLAYING CARD FIVE OF HEARTS
-<Multi_key> <bracketleft> <6> <H> <bracketright>  : "🂶" U1F0B6  # PLAYING CARD SIX OF HEARTS
-<Multi_key> <bracketleft> <7> <H> <bracketright>  : "🂷" U1F0B7  # PLAYING CARD SEVEN OF HEARTS
-<Multi_key> <bracketleft> <8> <H> <bracketright>  : "🂸" U1F0B8  # PLAYING CARD EIGHT OF HEARTS
-<Multi_key> <bracketleft> <9> <H> <bracketright>  : "🂹" U1F0B9  # PLAYING CARD NINE OF HEARTS
-<Multi_key> <bracketleft> <T> <H> <bracketright>  : "🂺" U1F0BA  # PLAYING CARD TEN OF HEARTS
-<Multi_key> <bracketleft> <J> <H> <bracketright>  : "🂻" U1F0BB  # PLAYING CARD JACK OF HEARTS
-<Multi_key> <bracketleft> <N> <H> <bracketright>  : "🂼" U1F0BC  # PLAYING CARD KNIGHT OF HEARTS
-<Multi_key> <bracketleft> <Q> <H> <bracketright>  : "🂽" U1F0BD  # PLAYING CARD QUEEN OF HEARTS
-<Multi_key> <bracketleft> <K> <H> <bracketright>  : "🂾" U1F0BE  # PLAYING CARD KING OF HEARTS
+Mk [ A H ]  : "🂱" U1F0B1  # PLAYING CARD ACE OF HEARTS
+Mk [ 2 H ]  : "🂲" U1F0B2  # PLAYING CARD TWO OF HEARTS
+Mk [ 3 H ]  : "🂳" U1F0B3  # PLAYING CARD THREE OF HEARTS
+Mk [ 4 H ]  : "🂴" U1F0B4  # PLAYING CARD FOUR OF HEARTS
+Mk [ 5 H ]  : "🂵" U1F0B5  # PLAYING CARD FIVE OF HEARTS
+Mk [ 6 H ]  : "🂶" U1F0B6  # PLAYING CARD SIX OF HEARTS
+Mk [ 7 H ]  : "🂷" U1F0B7  # PLAYING CARD SEVEN OF HEARTS
+Mk [ 8 H ]  : "🂸" U1F0B8  # PLAYING CARD EIGHT OF HEARTS
+Mk [ 9 H ]  : "🂹" U1F0B9  # PLAYING CARD NINE OF HEARTS
+Mk [ T H ]  : "🂺" U1F0BA  # PLAYING CARD TEN OF HEARTS
+Mk [ J H ]  : "🂻" U1F0BB  # PLAYING CARD JACK OF HEARTS
+Mk [ N H ]  : "🂼" U1F0BC  # PLAYING CARD KNIGHT OF HEARTS
+Mk [ Q H ]  : "🂽" U1F0BD  # PLAYING CARD QUEEN OF HEARTS
+Mk [ K H ]  : "🂾" U1F0BE  # PLAYING CARD KING OF HEARTS
 
-<Multi_key> <bracketleft> <A> <D> <bracketright>  : "🃁" U1F0C1  # PLAYING CARD ACE OF DIAMONDS
-<Multi_key> <bracketleft> <2> <D> <bracketright>  : "🃂" U1F0C2  # PLAYING CARD TWO OF DIAMONDS
-<Multi_key> <bracketleft> <3> <D> <bracketright>  : "🃃" U1F0C3  # PLAYING CARD THREE OF DIAMONDS
-<Multi_key> <bracketleft> <4> <D> <bracketright>  : "🃄" U1F0C4  # PLAYING CARD FOUR OF DIAMONDS
-<Multi_key> <bracketleft> <5> <D> <bracketright>  : "🃅" U1F0C5  # PLAYING CARD FIVE OF DIAMONDS
-<Multi_key> <bracketleft> <6> <D> <bracketright>  : "🃆" U1F0C6  # PLAYING CARD SIX OF DIAMONDS
-<Multi_key> <bracketleft> <7> <D> <bracketright>  : "🃇" U1F0C7  # PLAYING CARD SEVEN OF DIAMONDS
-<Multi_key> <bracketleft> <8> <D> <bracketright>  : "🃈" U1F0C8  # PLAYING CARD EIGHT OF DIAMONDS
-<Multi_key> <bracketleft> <9> <D> <bracketright>  : "🃉" U1F0C9  # PLAYING CARD NINE OF DIAMONDS
-<Multi_key> <bracketleft> <T> <D> <bracketright>  : "🃊" U1F0CA  # PLAYING CARD TEN OF DIAMONDS
-<Multi_key> <bracketleft> <J> <D> <bracketright>  : "🃋" U1F0CB  # PLAYING CARD JACK OF DIAMONDS
-<Multi_key> <bracketleft> <N> <D> <bracketright>  : "🃌" U1F0CC  # PLAYING CARD KNIGHT OF DIAMONDS
-<Multi_key> <bracketleft> <Q> <D> <bracketright>  : "🃍" U1F0CD  # PLAYING CARD QUEEN OF DIAMONDS
-<Multi_key> <bracketleft> <K> <D> <bracketright>  : "🃎" U1F0CE  # PLAYING CARD KING OF DIAMONDS
+Mk [ A D ]  : "🃁" U1F0C1  # PLAYING CARD ACE OF DIAMONDS
+Mk [ 2 D ]  : "🃂" U1F0C2  # PLAYING CARD TWO OF DIAMONDS
+Mk [ 3 D ]  : "🃃" U1F0C3  # PLAYING CARD THREE OF DIAMONDS
+Mk [ 4 D ]  : "🃄" U1F0C4  # PLAYING CARD FOUR OF DIAMONDS
+Mk [ 5 D ]  : "🃅" U1F0C5  # PLAYING CARD FIVE OF DIAMONDS
+Mk [ 6 D ]  : "🃆" U1F0C6  # PLAYING CARD SIX OF DIAMONDS
+Mk [ 7 D ]  : "🃇" U1F0C7  # PLAYING CARD SEVEN OF DIAMONDS
+Mk [ 8 D ]  : "🃈" U1F0C8  # PLAYING CARD EIGHT OF DIAMONDS
+Mk [ 9 D ]  : "🃉" U1F0C9  # PLAYING CARD NINE OF DIAMONDS
+Mk [ T D ]  : "🃊" U1F0CA  # PLAYING CARD TEN OF DIAMONDS
+Mk [ J D ]  : "🃋" U1F0CB  # PLAYING CARD JACK OF DIAMONDS
+Mk [ N D ]  : "🃌" U1F0CC  # PLAYING CARD KNIGHT OF DIAMONDS
+Mk [ Q D ]  : "🃍" U1F0CD  # PLAYING CARD QUEEN OF DIAMONDS
+Mk [ K D ]  : "🃎" U1F0CE  # PLAYING CARD KING OF DIAMONDS
 
-<Multi_key> <bracketleft> <A> <C> <bracketright>  : "🃑" U1F0D1  # PLAYING CARD ACE OF CLUBS
-<Multi_key> <bracketleft> <2> <C> <bracketright>  : "🃒" U1F0D2  # PLAYING CARD TWO OF CLUBS
-<Multi_key> <bracketleft> <3> <C> <bracketright>  : "🃓" U1F0D3  # PLAYING CARD THREE OF CLUBS
-<Multi_key> <bracketleft> <4> <C> <bracketright>  : "🃔" U1F0D4  # PLAYING CARD FOUR OF CLUBS
-<Multi_key> <bracketleft> <5> <C> <bracketright>  : "🃕" U1F0D5  # PLAYING CARD FIVE OF CLUBS
-<Multi_key> <bracketleft> <6> <C> <bracketright>  : "🃖" U1F0D6  # PLAYING CARD SIX OF CLUBS
-<Multi_key> <bracketleft> <7> <C> <bracketright>  : "🃗" U1F0D7  # PLAYING CARD SEVEN OF CLUBS
-<Multi_key> <bracketleft> <8> <C> <bracketright>  : "🃘" U1F0D8  # PLAYING CARD EIGHT OF CLUBS
-<Multi_key> <bracketleft> <9> <C> <bracketright>  : "🃙" U1F0D9  # PLAYING CARD NINE OF CLUBS
-<Multi_key> <bracketleft> <T> <C> <bracketright>  : "🃚" U1F0DA  # PLAYING CARD TEN OF CLUBS
-<Multi_key> <bracketleft> <J> <C> <bracketright>  : "🃛" U1F0DB  # PLAYING CARD JACK OF CLUBS
-<Multi_key> <bracketleft> <N> <C> <bracketright>  : "🃜" U1F0DC  # PLAYING CARD KNIGHT OF CLUBS
-<Multi_key> <bracketleft> <Q> <C> <bracketright>  : "🃝" U1F0DD  # PLAYING CARD QUEEN OF CLUBS
-<Multi_key> <bracketleft> <K> <C> <bracketright>  : "🃞" U1F0DE  # PLAYING CARD KING OF CLUBS
+Mk [ A C ]  : "🃑" U1F0D1  # PLAYING CARD ACE OF CLUBS
+Mk [ 2 C ]  : "🃒" U1F0D2  # PLAYING CARD TWO OF CLUBS
+Mk [ 3 C ]  : "🃓" U1F0D3  # PLAYING CARD THREE OF CLUBS
+Mk [ 4 C ]  : "🃔" U1F0D4  # PLAYING CARD FOUR OF CLUBS
+Mk [ 5 C ]  : "🃕" U1F0D5  # PLAYING CARD FIVE OF CLUBS
+Mk [ 6 C ]  : "🃖" U1F0D6  # PLAYING CARD SIX OF CLUBS
+Mk [ 7 C ]  : "🃗" U1F0D7  # PLAYING CARD SEVEN OF CLUBS
+Mk [ 8 C ]  : "🃘" U1F0D8  # PLAYING CARD EIGHT OF CLUBS
+Mk [ 9 C ]  : "🃙" U1F0D9  # PLAYING CARD NINE OF CLUBS
+Mk [ T C ]  : "🃚" U1F0DA  # PLAYING CARD TEN OF CLUBS
+Mk [ J C ]  : "🃛" U1F0DB  # PLAYING CARD JACK OF CLUBS
+Mk [ N C ]  : "🃜" U1F0DC  # PLAYING CARD KNIGHT OF CLUBS
+Mk [ Q C ]  : "🃝" U1F0DD  # PLAYING CARD QUEEN OF CLUBS
+Mk [ K C ]  : "🃞" U1F0DE  # PLAYING CARD KING OF CLUBS
 
-<Multi_key> <bracketleft> <C> <B> <bracketright>  : "🂠"   U1F0A0  # PLAYING CARD BACK
-<Multi_key> <bracketleft> <B> <J> <bracketright>  : "🃏"  U1F0CF  # PLAYING CARD BLACK JOKER
-<Multi_key> <bracketleft> <W> <J> <bracketright>  : "🃟"   U1F0DF  # PLAYING CARD WHITE JOKER
+Mk [ C B ]  : "🂠"   U1F0A0  # PLAYING CARD BACK
+Mk [ B J ]  : "🃏"  U1F0CF  # PLAYING CARD BLACK JOKER
+Mk [ W J ]  : "🃟"   U1F0DF  # PLAYING CARD WHITE JOKER
 
 # TODO: Dominoes
 # I'm thinking [ 1 1 ], etc, maybe use ] 1 1 [ for vertical
 
 # Chess
-# FIXME: <bar> will be an issue when we want double-struck W or B... replace with <equal>?
-<Multi_key> <bar> <W> <K>  : "♔" U2654  # WHITE CHESS KING
-<Multi_key> <bar> <W> <Q>  : "♕" U2655  # WHITE CHESS QUEEN
-<Multi_key> <bar> <W> <R>  : "♖" U2656  # WHITE CHESS ROOK
-<Multi_key> <bar> <W> <B>  : "♗" U2657  # WHITE CHESS BISHOP
-<Multi_key> <bar> <W> <N>  : "♘" U2658  # WHITE CHESS KNIGHT
-<Multi_key> <bar> <W> <P>  : "♙" U2659  # WHITE CHESS PAWN
-<Multi_key> <bar> <B> <K>  : "♚" U265A  # BLACK CHESS KING
-<Multi_key> <bar> <B> <Q>  : "♛" U265B  # BLACK CHESS QUEEN
-<Multi_key> <bar> <B> <R>  : "♜" U265C  # BLACK CHESS ROOK
-<Multi_key> <bar> <B> <B>  : "♝" U265D  # BLACK CHESS BISHOP
-<Multi_key> <bar> <B> <N>  : "♞" U265E  # BLACK CHESS KNIGHT
-<Multi_key> <bar> <B> <P>  : "♟" U265F  # BLACK CHESS PAWN
+# FIXME: | will be an issue when we want double-struck W or B... replace with equal?
+Mk | W K  : "♔" U2654  # WHITE CHESS KING
+Mk | W Q  : "♕" U2655  # WHITE CHESS QUEEN
+Mk | W R  : "♖" U2656  # WHITE CHESS ROOK
+Mk | W B  : "♗" U2657  # WHITE CHESS BISHOP
+Mk | W N  : "♘" U2658  # WHITE CHESS KNIGHT
+Mk | W P  : "♙" U2659  # WHITE CHESS PAWN
+Mk | B K  : "♚" U265A  # BLACK CHESS KING
+Mk | B Q  : "♛" U265B  # BLACK CHESS QUEEN
+Mk | B R  : "♜" U265C  # BLACK CHESS ROOK
+Mk | B B  : "♝" U265D  # BLACK CHESS BISHOP
+Mk | B N  : "♞" U265E  # BLACK CHESS KNIGHT
+Mk | B P  : "♟" U265F  # BLACK CHESS PAWN
 
 # Checkers/Draughts
-<Multi_key> <bar> <W> <D> <M>  : "⛀" U26C0  # WHITE DRAUGHTS MAN
-<Multi_key> <bar> <W> <D> <K>  : "⛁" U26C1  # WHITE DRAUGHTS KING
-<Multi_key> <bar> <B> <D> <M>  : "⛂" U26C2  # BLACK DRAUGHTS MAN
-<Multi_key> <bar> <B> <D> <K>  : "⛃" U26C3  # BLACK DRAUGHTS KING
+Mk | W D M  : "⛀" U26C0  # WHITE DRAUGHTS MAN
+Mk | W D K  : "⛁" U26C1  # WHITE DRAUGHTS KING
+Mk | B D M  : "⛂" U26C2  # BLACK DRAUGHTS MAN
+Mk | B D K  : "⛃" U26C3  # BLACK DRAUGHTS KING
 
 # Shogi
-<Multi_key> <bar> <W> <S>  : "☖" U2616  # WHITE SHOGI PIECE
-<Multi_key> <bar> <B> <S>  : "☗" U2617  # BLACK SHOGI PIECE
-<Multi_key> <bar> <less> <W> <S> : "⛉" U26C9  # TURNED WHITE SHOGI PIECE
-<Multi_key> <bar> <less> <B> <S> : "⛊" U26CA  # TURNED BLACK SHOGI PIECE
+Mk | W S    : "☖" U2616  # WHITE SHOGI PIECE
+Mk | B S    : "☗" U2617  # BLACK SHOGI PIECE
+Mk | < W S  : "⛉" U26C9  # TURNED WHITE SHOGI PIECE
+Mk | < B S  : "⛊" U26CA  # TURNED BLACK SHOGI PIECE
 
 
 ## Temperature
-<Multi_key> <d> <e> <g> <C>     : "℃"   U2103   # DEGREE CELSIUS
-<Multi_key> <d> <e> <g> <F>     : "℉"   U2109   # DEGREE FAHRENHEIT
+Mk d e g C  : "℃" U2103 # DEGREE CELSIUS
+Mk d e g F  : "℉" U2109 # DEGREE FAHRENHEIT
 
 
 ## Emoji
-<Multi_key> <ampersand> <i> <d> <e> <a>       : "💡"  U1F4A1 # ELECTRIC LIGHT BULB
-<Multi_key> <ampersand> <a> <n> <g> <e> <r>   : "💢"  U1F4A2 # ANGER SYMBOL
-<Multi_key> <ampersand> <b> <o> <m> <b>       : "💣"  U1F4A3 # BOMB
-<Multi_key> <ampersand> <z> <z> <z>           : "💤"  U1F4A4 # SLEEPING SYMBOL
-<Multi_key> <ampersand> <p> <o> <w>           : "💥"  U1F4A5 # COLLISION SYMBOL
-<Multi_key> <ampersand> <s> <w> <e> <a> <t>   : "💦"  U1F4A6 # SPLASHING SWEAT SYMBOL
-<Multi_key> <ampersand> <d> <r> <o> <p>       : "💧"  U1F4A7 # DROPLET
-<Multi_key> <ampersand> <z> <i> <p>           : "💨"  U1F4A8 # DASH SYMBOL
-<Multi_key> <ampersand> <p> <o> <o>           : "💩"  U1F4A9 # PILE OF POO
-<Multi_key> <ampersand> <d> <i> <z> <z> <y>   : "💫"  U1F4AB # DIZZY SYMBOL
-<Multi_key> <ampersand> <dollar> <b> <a> <g>  : "💰"  U1F4B0 # MONEY BAG
-<Multi_key> <ampersand> <c> <a> <k> <e>       : "🍰"  U1F370 # SHORTCAKE
-<Multi_key> <ampersand> <b> <d> <a> <y>       : "🎂"  U1F382 # BIRTHDAY CAKE
-<Multi_key> <ampersand> <A> <O> <K>           : "👌"  U1F44C # OK HAND SIGN
-<Multi_key> <ampersand> <t> <h> <m> <u> <p>   : "👍"  U1F44D # THUMBS UP SIGN
-<Multi_key> <ampersand> <t> <h> <m> <d> <n>   : "👎"  U1F44E # THUMBS DOWN SIGN
-<Multi_key> <ampersand> <k> <i> <s> <s>       : "💋"  U1F48B # KISS MARK
+Mk & i d e a     : "💡"  U1F4A1 # ELECTRIC LIGHT BULB
+Mk & a n g e r   : "💢"  U1F4A2 # ANGER SYMBOL
+Mk & b o m b     : "💣"  U1F4A3 # BOMB
+Mk & z z z       : "💤"  U1F4A4 # SLEEPING SYMBOL
+Mk & p o w       : "💥"  U1F4A5 # COLLISION SYMBOL
+Mk & s w e a t   : "💦"  U1F4A6 # SPLASHING SWEAT SYMBOL
+Mk & d r o p     : "💧"  U1F4A7 # DROPLET
+Mk & z i p       : "💨"  U1F4A8 # DASH SYMBOL
+Mk & p o o       : "💩"  U1F4A9 # PILE OF POO
+Mk & d i z z y   : "💫"  U1F4AB # DIZZY SYMBOL
+Mk & $ b a g     : "💰"  U1F4B0 # MONEY BAG
+Mk & c a k e     : "🍰"  U1F370 # SHORTCAKE
+Mk & b d a y     : "🎂"  U1F382 # BIRTHDAY CAKE
+Mk & A O K       : "👌"  U1F44C # OK HAND SIGN
+Mk & t h m u p   : "👍"  U1F44D # THUMBS UP SIGN
+Mk & t h m d n   : "👎"  U1F44E # THUMBS DOWN SIGN
+Mk & k i s s     : "💋"  U1F48B # KISS MARK
 
 
 ## Clock faces
-<Multi_key> <parenleft> <1> <colon> <0> <0> <parenright> : "🕐" U1F550 # CLOCK FACE ONE OCLOCK
-<Multi_key> <parenleft> <2> <colon> <0> <0> <parenright> : "🕑" U1F551 # CLOCK FACE TWO OCLOCK
-<Multi_key> <parenleft> <3> <colon> <0> <0> <parenright> : "🕒" U1F552 # CLOCK FACE THREE OCLOCK
-<Multi_key> <parenleft> <4> <colon> <0> <0> <parenright> : "🕓" U1F553 # CLOCK FACE FOUR OCLOCK
-<Multi_key> <parenleft> <5> <colon> <0> <0> <parenright> : "🕔" U1F554 # CLOCK FACE FIVE OCLOCK
-<Multi_key> <parenleft> <6> <colon> <0> <0> <parenright> : "🕕" U1F555 # CLOCK FACE SIX OCLOCK
-<Multi_key> <parenleft> <7> <colon> <0> <0> <parenright> : "🕖" U1F556 # CLOCK FACE SEVEN OCLOCK
-<Multi_key> <parenleft> <8> <colon> <0> <0> <parenright> : "🕗" U1F557 # CLOCK FACE EIGHT OCLOCK
-<Multi_key> <parenleft> <9> <colon> <0> <0> <parenright> : "🕘" U1F558 # CLOCK FACE NINE OCLOCK
-<Multi_key> <parenleft> <1> <0> <colon> <0> <0> <parenright> : "🕙" U1F559 # CLOCK FACE TEN OCLOCK
-<Multi_key> <parenleft> <1> <1> <colon> <0> <0> <parenright> : "🕚" U1F55A # CLOCK FACE ELEVEN OCLOCK
-<Multi_key> <parenleft> <1> <2> <colon> <0> <0> <parenright> : "🕛" U1F55B # CLOCK FACE TWELVE OCLOCK
+Mk ( 1 : 0 0 )    : "🕐" U1F550 # CLOCK FACE ONE OCLOCK
+Mk ( 2 : 0 0 )    : "🕑" U1F551 # CLOCK FACE TWO OCLOCK
+Mk ( 3 : 0 0 )    : "🕒" U1F552 # CLOCK FACE THREE OCLOCK
+Mk ( 4 : 0 0 )    : "🕓" U1F553 # CLOCK FACE FOUR OCLOCK
+Mk ( 5 : 0 0 )    : "🕔" U1F554 # CLOCK FACE FIVE OCLOCK
+Mk ( 6 : 0 0 )    : "🕕" U1F555 # CLOCK FACE SIX OCLOCK
+Mk ( 7 : 0 0 )    : "🕖" U1F556 # CLOCK FACE SEVEN OCLOCK
+Mk ( 8 : 0 0 )    : "🕗" U1F557 # CLOCK FACE EIGHT OCLOCK
+Mk ( 9 : 0 0 )    : "🕘" U1F558 # CLOCK FACE NINE OCLOCK
+Mk ( 1 0 : 0 0 )  : "🕙" U1F559 # CLOCK FACE TEN OCLOCK
+Mk ( 1 1 : 0 0 )  : "🕚" U1F55A # CLOCK FACE ELEVEN OCLOCK
+Mk ( 1 2 : 0 0 )  : "🕛" U1F55B # CLOCK FACE TWELVE OCLOCK
 
-<Multi_key> <parenleft> <1> <colon> <3> <0> <parenright>     : "🕜" U1F55C # CLOCK FACE ONE-THIRTY
-<Multi_key> <parenleft> <2> <colon> <3> <0> <parenright>     : "🕝" U1F55D # CLOCK FACE TWO-THIRTY
-<Multi_key> <parenleft> <3> <colon> <3> <0> <parenright>     : "🕞" U1F55E # CLOCK FACE THREE-THIRTY
-<Multi_key> <parenleft> <4> <colon> <3> <0> <parenright>     : "🕟" U1F55F # CLOCK FACE FOUR-THIRTY
-<Multi_key> <parenleft> <5> <colon> <3> <0> <parenright>     : "🕠" U1F560 # CLOCK FACE FIVE-THIRTY
-<Multi_key> <parenleft> <6> <colon> <3> <0> <parenright>     : "🕡" U1F561 # CLOCK FACE SIX-THIRTY
-<Multi_key> <parenleft> <7> <colon> <3> <0> <parenright>     : "🕢" U1F562 # CLOCK FACE SEVEN-THIRTY
-<Multi_key> <parenleft> <8> <colon> <3> <0> <parenright>     : "🕣" U1F563 # CLOCK FACE EIGHT-THIRTY
-<Multi_key> <parenleft> <9> <colon> <3> <0> <parenright>     : "🕤" U1F564 # CLOCK FACE NINE-THIRTY
-<Multi_key> <parenleft> <1> <0> <colon> <3> <0> <parenright>     : "🕥" U1F565 # CLOCK FACE TEN-THIRTY
-<Multi_key> <parenleft> <1> <1> <colon> <3> <0> <parenright>     : "🕦" U1F566 # CLOCK FACE ELEVEN-THIRTY
-<Multi_key> <parenleft> <1> <2> <colon> <3> <0> <parenright>     : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY
+Mk ( 1 : 3 0 )    : "🕜" U1F55C # CLOCK FACE ONE-THIRTY
+Mk ( 2 : 3 0 )    : "🕝" U1F55D # CLOCK FACE TWO-THIRTY
+Mk ( 3 : 3 0 )    : "🕞" U1F55E # CLOCK FACE THREE-THIRTY
+Mk ( 4 : 3 0 )    : "🕟" U1F55F # CLOCK FACE FOUR-THIRTY
+Mk ( 5 : 3 0 )    : "🕠" U1F560 # CLOCK FACE FIVE-THIRTY
+Mk ( 6 : 3 0 )    : "🕡" U1F561 # CLOCK FACE SIX-THIRTY
+Mk ( 7 : 3 0 )    : "🕢" U1F562 # CLOCK FACE SEVEN-THIRTY
+Mk ( 8 : 3 0 )    : "🕣" U1F563 # CLOCK FACE EIGHT-THIRTY
+Mk ( 9 : 3 0 )    : "🕤" U1F564 # CLOCK FACE NINE-THIRTY
+Mk ( 1 0 : 3 0 )  : "🕥" U1F565 # CLOCK FACE TEN-THIRTY
+Mk ( 1 1 : 3 0 )  : "🕦" U1F566 # CLOCK FACE ELEVEN-THIRTY
+Mk ( 1 2 : 3 0 )  : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY

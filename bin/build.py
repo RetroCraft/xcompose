@@ -64,7 +64,7 @@ for file in glob.glob("*.xcomposet"):
                 if m and m.group(1) and len(val) == 1:
                     if m.group(1) != format(ord(val), 'x').upper():
                         fail = 'Unicode'
-                    desc = re.match(r'([^(]*).*', comment)
+                    desc = re.match(r'([^(*]*).*', comment)
                     if desc.group(1).strip() != unicodedata.name(val):
                         fail = 'Description'
                     if fail != '':
@@ -134,6 +134,7 @@ for key in listing.keys():
             continue
         pref+=" "+word
         if pref in listing:
+            conflict = True
             print(bcolors.FAIL + "Prefix conflict found: ("+pref+")["+listing[pref]+"] vs ("+key+")["+listing[key]+"]", bcolors.ENDC)
 if not conflict:
     print(bcolors.OKBLUE + "No prefix conflicts found" + bcolors.ENDC)
