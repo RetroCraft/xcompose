@@ -1,3 +1,5 @@
 .#*
 #~
-dead.xcompose
+xcompose
+
+build/
