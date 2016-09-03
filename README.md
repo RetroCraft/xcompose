@@ -43,22 +43,11 @@ I also included a few other potentially interesting Compose‐related
 stuff, such as a selection of standard X mappings, a script to
 generate deadkey variants of Compose files, &c.
 
- * doc/README:                 This.
-
- * xcompose:                   Abbreviations.
- * bin/make-dead-compose.rb:   You want to run this if you use a
-                               keyboard layout with deadkeys.
- * examples/dead.xcompose:     Example output of make-dead-keys.rb for
-                               everything in this package plus today’s
-                               Xorg Compose table.
-
- * doc/xorg-compose-extracts:  Selected, annotated reading material.
-
- * bin/*.rb:                   Misc Ruby XCompose parsers and
-                               validators.  Not likely to be
-                               interesting to anyone at the moment.
-
- * doc/license.txt:            “Public domain.”
+ * README.md:                 This.
+ * src/*.xcompose:            All the abbreviations
+ * bin/build.py:              Make an xcompose-usable file
+ * doc/mnemonics.md:          Abbreviation starts
+ * doc/license.txt:           “Public domain.”
 
 
 Installation
@@ -66,17 +55,7 @@ Installation
 
 1. Copy or git-clone this directory.
 
-2. Skip to the next step if you don’t use X deadkeys.  If you do use
-   them (for example, if you use an XKB layout like “us_intl”,
-   “us(intl)”, or “br”), let’s create deadkey versions of the mappings
-   now:
-
-    pointless-xcompose$ ./bin/make-dead-compose.rb \
-                        /usr/share/X11/locale/en_US.UTF-8/Compose \
-                        /path/to/pointless-xcompose/xcompose \
-                        > dead.xcompose
-
-   In the next step, use dead.xcompose instead of xcompose.
+2. Run bin/build.py to create an xcompose file. 
 
 3. Symlink xcompose to ~/.XCompose:
 
@@ -117,7 +96,7 @@ Installation
 Usage
 =====
 
-Read the included xcompose file to see what’s included.  The system’s
+Read the included xcompose files to see what’s included.  The system’s
 mappings are in /usr/share/X11/locale/$LANG/Compose (if there’s no
 such directory for your locale, look in
 /usr/share/X11/locale/locale.dir; for example my locale, en_GB.UTF-8

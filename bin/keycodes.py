@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+# TODO : Add non-qwerty characters
+keycodes = {
+    'Mk' : 'Multi_key',
+    '~' : 'asciitilde',
+    '`' : 'grave',
+    '!' : 'exclam',
+    '@' : 'at',
+    '#' : 'numbersign',
+    '$' : 'dollar',
+    '%' : 'percent',
+    '^' : 'asciicircum',
+    '&' : 'ampersand',
+    '*' : 'asterisk',
+    '(' : 'parenleft',
+    ')' : 'parenright',
+    '-' : 'minus',
+    '_' : 'underscore',
+    '=' : 'equals',
+    '+' : 'plus',
+    '{' : 'braceleft',
+    '}' : 'braceright',
+    '[' : 'bracketleft',
+    ']' : 'bracketright',
+    '|' : 'bar',
+    '\\' : 'backslash',
+    ';' : 'semicolon',
+    ':' : 'colon',
+    '\'' : 'apostrophe',
+    '"' : 'quotedbl',
+    ',' : 'comma',
+    '<' : 'less',
+    '.' : 'period',
+    '>' : 'greater',
+    '/' : 'slash',
+    '?' : 'question',
+    'sp' : 'space',
+
+    '**' : 'KP_Multiply'
+}
