@@ -17,15 +17,6 @@ Mk f p v  : "✎" U270E   # LOWER RIGHT PENCIL
 Mk f p >  : "✏" U270F   # PENCIL
 Mk f p ^  : "✐" U2710   # UPPER RIGHT PENCIL
 
-# Smiley faces
-
-Mk : )      : "☺" U263A # WHITE SMILING FACE
-Mk ! : )    : "☻" U263B # BLACK SMILING FACE
-# TODO: Conflict
-#Mk : ~     : "⍨"   U2368   # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
-#Mk : |     : "⸚"   U2E1A   # HYPHEN WITH DIAERESIS
-Mk : o o )  :  "°͜°"    # Funny smiley-face.
-
 # Those are archaic Cyrillic letters... but look so _perfect_ for use
 # in chat. And about the last, the "multiocular O"... Well, I don't
 # know what it can be used for, but given the description, how could I
@@ -138,7 +129,7 @@ Mk & m e r c u r : "☿" U263F # MERCURY (Wednesday)
 Mk & v e n u s   : "♀" U2640 # FEMALE SIGN
 Mk & j u p i t e : "♃" U2643 # JUPITER (Thursday)
 Mk & s a t u r n : "♄" U2644 # SATURN (Saturday)
-Mk & u r a n u s : "♅" U2645 # URANUS (FIXME: or ⛢ U26E2?)
+Mk & u r a n u s : "♅" U2645 # URANUS (FIXME or ⛢ U26E2?)
 Mk & n e p t u n : "♆" U2646 # NEPTUNE
 Mk & p l u t o   : "♇" U2647 # PLUTO (ok, it isn't a planet anymore, but we still love it.)
 

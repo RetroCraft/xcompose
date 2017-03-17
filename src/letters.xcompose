@@ -181,83 +181,79 @@ Mk s r .  : "℈" U2108   # SCRUPLE
 #Mk * . . . : "๛" UE5B   # THAI CHARACTER KHOMUT (end of chapter)
 
 # INTERNATIONAL PHONETIC ALPHABET
+Mk ( . )        : "◌"   U25CC   # DOTTED CIRCLE
+Mk [ . ]        : "⬚"   U2B1A   # DOTTED SQUARE
 
-Mk e <     : "ɘ"      U258 # LATIN SMALL LETTER REVERSED E (INTENTIONAL CONFLICT)
-
-Mk ( ): "◌" U25CC # DOTTED CIRCLE
-# FIXME: conflict
-#Mk bracketleft bracketright: "⬚" U2B1A # DOTTED SQUARE
-Mk k s                     : "ʘ"   U298           # LATIN LETTER BILABIAL CLICK (kiss sound)
-
-#To avoid namespace clashes, ^ is doubled (will I regret that?)
-Mk ^ ^ i       : "ⁱ"   U2071           # SUPERSCRIPT LATIN SMALL LETTER I
-Mk ^ ^ n       : "ⁿ"   U207F           # SUPERSCRIPT LATIN SMALL LETTER N
-#Maybe add: ˀˁ˃˂  Need to be able to talk about ʔˁ...
-Mk ^ ? . : "ˀ" U2C0 # MODIFIER LETTER GLOTTAL STOP
-Mk ^ ? ( : "ˁ"  U2C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
-
-Mk s h     : "ʃ" U283   # LATIN SMALL LETTER ESH
-Mk z h     : "ʒ" U292   # LATIN SMALL LETTER EZH
-Mk l h         : "ɬ" U26C   # LATIN SMALL LETTER L WITH BELT
-Mk l 3     : "ɮ" U26E   # LATIN SMALL LETTER LEZH
-Mk ? .   : "ʔ" U294   # LATIN LETTER GLOTTAL STOP
-Mk ? (  : "ʕ" U295   # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
-# Not great keystrokes...
-Mk ? v    : "ʖ" U296   # LATIN LETTER INVERTED GLOTTAL STOP
-Mk ? -    : "ʡ" U2A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
-Mk ? {  : "ʢ" U2A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
-# How about ɸ? φ isn’t the IPA glyph.
-Mk p h     : "ɸ" U278   # LATIN SMALL LETTER PHI
-Mk i h         : "ɪ" U26A   # LATIN LETTER SMALL CAPITAL I
-Mk u h     : "ʊ" U28A   # LATIN SMALL LETTER UPSILON
-Mk a h     : "ɑ" U251   # LATIN SMALL LETTER ALPHA
+# Vowels
+Mk @ < e        : "ɘ"   U258    # LATIN SMALL LETTER REVERSED E
+Mk I i         : "ɪ" U26A   # LATIN LETTER SMALL CAPITAL I
+Mk @ u     : "ʊ" U28A   # LATIN SMALL LETTER UPSILON
+Mk @ a     : "ɑ" U251   # LATIN SMALL LETTER ALPHA
 Mk e r     : "ɚ" U25A   # LATIN SMALL LETTER SCHWA WITH HOOK
-Mk o )    : "ɔ"  U254     # LATIN SMALL LETTER OPEN O
-Mk O )    : "Ɔ"  U186     # LATIN CAPITAL LETTER OPEN O
-Mk e h                 : "ɛ"   U25B   # LATIN SMALL LETTER OPEN E
-# Have to put the < at the beginning for these.
-# FIXME: prefix conflicts
-#Mk < e h   : "ɜ" U25C   # LATIN SMALL LETTER REVERSED OPEN E
-#Mk < e r   : "ɝ" U25D   # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
+Mk @ < c  : "ɔ"  U254     # LATIN SMALL LETTER OPEN O
+Mk @ < C  : "Ɔ"  U186     # LATIN CAPITAL LETTER OPEN O
+Mk @ e                 : "ɛ"   U25B   # LATIN SMALL LETTER OPEN E
+Mk < @ e  : "ɜ" U25C   # LATIN SMALL LETTER REVERSED OPEN E
+Mk @ ^                     : "ʌ"   U28C           # LATIN SMALL LETTER TURNED V
+Mk n n      : "ɯ" U26F   # LATIN SMALL LETTER TURNED M
+
+# Consonants
+Mk @ s          : "ʃ"   U283    # LATIN SMALL LETTER ESH
+Mk @ 3          : "ʒ"   U292    # LATIN SMALL LETTER EZH
+Mk @ l -          : "ɬ"   U26C    # LATIN SMALL LETTER L WITH BELT
+Mk @ l 3          : "ɮ"   U26E    # LATIN SMALL LETTER LEZH
+Mk @ ? .          : "ʔ"   U294    # LATIN LETTER GLOTTAL STOP
+Mk @ ? (          : "ʕ"   U295    # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
+Mk @ ? ?          : "ʖ"   U296    # LATIN LETTER INVERTED GLOTTAL STOP
+Mk @ ? -          : "ʡ"   U2A1    # LATIN LETTER GLOTTAL STOP WITH STROKE
+Mk @ ? {          : "ʢ"   U2A2    # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
+Mk @ p h        : "ɸ"   U278    # LATIN SMALL LETTER PHI
+Mk @ O .        : "ʘ"   U298    # LATIN LETTER BILABIAL CLICK (kiss sound)
+Mk r r                     : "ɹ"   U279           # LATIN SMALL LETTER TURNED R 
+Mk r d                     : "ɾ"   U27E           # LATIN SMALL LETTER R WITH FISHHOOK
+
+# Diactrics and Tiny Things
+#To avoid namespace clashes, ^ is doubled (will I regret that?)
+#Maybe add: ˀˁ˃˂  Need to be able to talk about ʔˁ...
+Mk ^ ^ i        : "ⁱ"   U2071           # SUPERSCRIPT LATIN SMALL LETTER I
+Mk ^ ^ n        : "ⁿ"   U207F           # SUPERSCRIPT LATIN SMALL LETTER N
+Mk ^ ?          : "ˀ"   U2C0 # MODIFIER LETTER GLOTTAL STOP
+Mk ^ < ?        : "ˁ"   U2C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
+
 # How are these keystrokes?
-Mk | '    : "ˈ" U2C8   # MODIFIER LETTER VERTICAL LINE
-Mk | ,   : "ˌ" U2CC   # MODIFIER LETTER LOW VERTICAL LINE
+Mk @ '    : "ˈ" U2C8   # MODIFIER LETTER VERTICAL LINE
+Mk @ ,   : "ˌ" U2CC   # MODIFIER LETTER LOW VERTICAL LINE
 Mk | _    : "̩"  U329   # COMBINING VERTICAL LINE BELOW
 # Harmonize with other combiners.
 Mk \ _ |  : "̩"  U329   # COMBINING VERTICAL LINE BELOW
-Mk r r                     : "ɹ"   U279           # LATIN SMALL LETTER TURNED R: voiced alveolar approximant (American English (at least) R)
-Mk r d                     : "ɾ"   U27E           # LATIN SMALL LETTER R WITH FISHHOOK: voiced alveolar flap or tap (American English intervocalic allophone of d, or Spanish r)
-# FIXME: conflicts
-#Mk v v                     : "ʌ"   U28C           # LATIN SMALL LETTER TURNED V
-#Mk u i      : "ɯ" U26F   # LATIN SMALL LETTER TURNED M
-# doubling a letter seems to be mostly used for turning
 # FIXME: conflict
 # Mk w w     : "ʍ" U28D   # LATIN SMALL LETTER TURNED W
 Mk a a     : "ɐ" U250   # LATIN SMALL LETTER TURNED A (INTENTIONAL CONFLICT)
 # I'll use capitals for a different double
 # FIXME: conflict
+# Also handy for writing urls: http://ʬw.omniglot.com/
 #Mk W W      : "ʬ" U2AC   # LATIN LETTER BILABIAL PERCUSSIVE
 # FIXME: conflict
-#Mk : +           : "ː" U2D0   # MODIFIER LETTER TRIANGULAR COLON
-# Also handy for writing urls: http://ʬw.omniglot.com/
+Mk @ :           : "ː" U2D0   # MODIFIER LETTER TRIANGULAR COLON
 # ɣ? ᴥ?  Important enough to add? ᴥ is cool just as a "latin" letter.
 Mk g h           : "ɣ"   U263     # LATIN SMALL LETTER GAMMA
 Mk a i n       : "ᴥ"   U1D25     # LATIN LETTER AIN
+
 # Sometimes it's a "tail", sometimes a "hook", and sometimes a "retroflex hook"
 # These conflict with system definitions for letters with cedilla, but those can be obtained by typing the , first
+Mk b '      : "ɓ"   U253     # LATIN SMALL LETTER B WITH HOOK
 Mk d ,       : "ɖ"   U256     # LATIN SMALL LETTER D WITH TAIL (INTENTIONAL CONFLICT)
+Mk d '      : "ɗ"   U257     # LATIN SMALL LETTER D WITH HOOK
+# This is used for functions, folders, etc.  Yeah, the hook's facing wrong.
+Mk f ,       : "ƒ"   U192     # LATIN SMALL LETTER F WITH HOOK
+Mk g '      : "ɠ"   U260     # LATIN SMALL LETTER G WITH HOOK
+Mk g g       : "ɡ"   U261     # LATIN SMALL LETTER SCRIPT G
+Mk G '      : "ʛ"   U29B     # LATIN LETTER SMALL CAPITAL G WITH HOOK
+Mk h '      : "ɦ"   U266     # LATIN SMALL LETTER H WITH HOOK
 Mk l ,       : "ɭ"   U26D     # LATIN SMALL LETTER L WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
 Mk n ,       : "ɳ"   U273     # LATIN SMALL LETTER N WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
 Mk s ,       : "ʂ"   U282     # LATIN SMALL LETTER S WITH HOOK (INTENTIONAL CONFLICT)
 Mk t ,       : "ʈ"   U288     # LATIN SMALL LETTER T WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
 Mk z ,       : "ʐ"   U290     # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
-# This is used for functions, folders, etc.  Yeah, the hook's facing wrong.
-Mk f ,       : "ƒ"   U192     # LATIN SMALL LETTER F WITH HOOK
-# Sigh, might as well do implosives.  Which is also sometimes a hook.
-Mk b '      : "ɓ"   U253     # LATIN SMALL LETTER B WITH HOOK
-Mk d '      : "ɗ"   U257     # LATIN SMALL LETTER D WITH HOOK
-Mk g '      : "ɠ"   U260     # LATIN SMALL LETTER G WITH HOOK
-Mk g g       : "ɡ"   U261     # LATIN SMALL LETTER SCRIPT G
-# The h looks the same...
-Mk h '      : "ɦ"   U266     # LATIN SMALL LETTER H WITH HOOK
-Mk G '      : "ʛ"   U29B     # LATIN LETTER SMALL CAPITAL G WITH HOOK
+# FIXME: Prefix
+# Mk < @ e ,  : "ɝ" U25D   # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK

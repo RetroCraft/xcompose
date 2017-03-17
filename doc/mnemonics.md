@@ -13,3 +13,4 @@ Keys with general meanings
 | Key | Compose | Use |
 | :---: | :---: | :--- |
 | `!` | `<exclam>` | Negation or inversion (colorwise or symbolwise) |
+| duplicated letter (i.e. `aa`) | --- | Upside-down letter (i.e. ə for `ee`) |

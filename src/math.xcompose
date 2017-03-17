@@ -33,13 +33,13 @@ Mk ! <        : "≮" U226E # NOT LESS-THAN
 Mk ! >        : "≯" U226F # NOT GREATER-THAN
 Mk { {        : "≈" U2248 # ALMOST EQUAL TO
 
-
 ## Set operators
 Mk { E      : "∈" U2208 # ELEMENT OF
 Mk { ! E    : "∉" U2209 # NOT AN ELEMENT OF
 Mk { (      : "⊂" U2282 # SUBSET OF
 Mk { )      : "⊃" U2283 # SUPERSET OF
 Mk { ! { (  : "⊄" U2284 # NOT A SUBSET OF
+Mk { ! } )  : "⊅" U2285 # NOT A SUPERSET OF
 Mk { = (    : "⊆" U2286 # SUBSET OF OR EQUAL TO
 Mk { = )    : "⊇" U2287 # SUPERSET OF OR EQUAL TO
 Mk { ^      : "∩" U2229 # INTERSECTION

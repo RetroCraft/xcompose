@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 import unicodedata
-from itertools import chain
+import emoji
 
-for i in chain(range(0x1f600, 0x1f650), range(0x1f680, 0x1f700), range(0x1f900, 0x1fa00)):
+for e in emoji.unicode_codes.UNICODE_EMOJI:
     try:
-        print('#<Multi_key> <colon>                 : "{0}" U{1} # {2}'.format(chr(i), format(i, 'x').upper(), unicodedata.name(chr(i))))
+        print('#Mk :                 : "{0}" U{1} # {2}'.format(e, format(ord(e), 'x').upper(), unicodedata.name(e)))
     except Exception as e:
         continue

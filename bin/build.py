@@ -43,6 +43,8 @@ for file in glob.glob("*.xcompose"):
                     print(bcolors.FAIL + 'Error parsing value', line.strip() + bcolors.ENDC)
                     continue
                 keys = m1.group(1).strip().split(' ')
+                if (len(keys) > 9):
+                    print(bcolors.WARNING + 'Line too long', keys, bcolors.ENDC)
                 val = m.group(1).strip('"')
                 if not m.group(2):
                     code = ''

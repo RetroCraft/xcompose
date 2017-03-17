@@ -245,6 +245,8 @@ Mk apostrophe apostrophe   : "’"   U2019 # RIGHT SINGLE QUOTATION MARK (INTENT
 # ‟Greek, second level” (opening high-reversed-9)
 # »Slovenian«
 # 〝ＣＪＫ〞, 「ＣＪＫ」, 『ＣＪＫ』,【ＣＪＫ】,《ＣＪＫ》,〔ＣＪＫ〕 &c. &c.
+Mk " [    : "“" U201C # LEFT DOUBLE QUOTATION MARK
+Mk " ]    : "”" U201D # RIGHT DOUBLE QUOTATION MARK
 
 # Spelled out
 # ===========
