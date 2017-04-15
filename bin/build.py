@@ -2,6 +2,7 @@
 
 import re, glob, os, unicodedata, itertools, argparse
 from keycodes import keycodes
+from subprocess import call
 
 class bcolors:
     HEADER = '\033[95m'
@@ -43,8 +44,10 @@ for file in glob.glob("*.xcompose"):
                     print(bcolors.FAIL + 'Error parsing value', line.strip() + bcolors.ENDC)
                     continue
                 keys = m1.group(1).strip().split(' ')
-                if (len(keys) > 9):
-                    print(bcolors.WARNING + 'Line too long', keys, bcolors.ENDC)
+                # if (len(keys) > 14):
+                #     continue
+                # if (len(keys) > 9):
+                #     print(bcolors.WARNING + 'Line too long', keys, bcolors.ENDC)
                 val = m.group(1).strip('"')
                 if not m.group(2):
                     code = ''
@@ -117,8 +120,8 @@ for line in itertools.chain(locale.readlines(), out.readlines()):
         conflict = True
         if val != listing[name]:
             print(bcolors.FAIL + "Exact conflict found: ("+name+" )["+listing[name]+"]["+val+"]" + bcolors.ENDC)
-        else:
-            print(bcolors.WARNING + "Redundant definition: ("+name+" )["+val+"]" + bcolors.ENDC)
+        # else:
+        #     print(bcolors.WARNING + "Redundant definition: ("+name+" )["+val+"]" + bcolors.ENDC)
     else:
         listing[name] = val
 if not conflict:
@@ -143,4 +146,7 @@ if not conflict:
 print(bcolors.UNDERLINE + bcolors.HEADER + "End prefix check" + bcolors.ENDC)
 
 num_lines = sum(1 for line in open(args.output)) - 1
+
 print(bcolors.OKGREEN + "Final xcompose file has" + bcolors.BOLD, num_lines, "definitions" + bcolors.ENDC)
+
+call('sort -u xcompose | tee xcompose | wc -l', shell=True)

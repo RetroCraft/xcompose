@@ -28,6 +28,7 @@ keycodes = {
     ';' : 'semicolon',
     ':' : 'colon',
     '\'' : 'apostrophe',
+    '’' : 'apostrophe',
     '"' : 'quotedbl',
     ',' : 'comma',
     '<' : 'less',
