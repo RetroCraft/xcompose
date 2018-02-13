@@ -3,3 +3,7 @@
 xcompose
 build/
 bin/__pycache__/
+
+.*
+!.gitignore
+!.local.vimrc
