@@ -17,7 +17,7 @@ keycodes = {
     ')' : 'parenright',
     '-' : 'minus',
     '_' : 'underscore',
-    '=' : 'equals',
+    '=' : 'equal',
     '+' : 'plus',
     '{' : 'braceleft',
     '}' : 'braceright',

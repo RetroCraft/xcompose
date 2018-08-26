@@ -39,7 +39,7 @@ for file in glob.glob("*.xcompose"):
                 if not m1 or not m1.group(1) or not m1.group(2):
                     print(bcolors.FAIL + 'Error parsing line', line.strip() + bcolors.ENDC)
                     continue
-                m = re.match(r'"?(\S+)"?\s*(\S+)?\s*#?(.*)?', m1.group(2))
+                m = re.match(r'"?(.+)"?\s*(\S+)?\s*#?(.*)?', m1.group(2))
                 if not m or not m.group(1):
                     print(bcolors.FAIL + 'Error parsing value', line.strip() + bcolors.ENDC)
                     continue
@@ -149,4 +149,4 @@ num_lines = sum(1 for line in open(args.output)) - 1
 
 print(bcolors.OKGREEN + "Final xcompose file has" + bcolors.BOLD, num_lines, "definitions" + bcolors.ENDC)
 
-call('sort -u xcompose | tee xcompose | wc -l', shell=True)
+# call('sort -u xcompose | tee xcompose | wc -l', shell=True)
