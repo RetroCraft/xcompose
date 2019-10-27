@@ -55,9 +55,8 @@ Mk % O      : "‱" U2031 # PER TEN THOUSAND SIGN
 Mk space ,  : "⁣" U2063 # INVISIBLE SEPARATOR (INTENTIONAL CONFLICT)
 
 # v = ↓ = vertical
-Mk v . .    : "⋮" U22EE # VERTICAL ELLIPSIS
-# FIXME: prefix conflict
-#Mk c . .  : "⋯" U22EF   # MIDLINE HORIZONTAL ELLIPSIS
+Mk . | .    : "⋮" U22EE # VERTICAL ELLIPSIS
+Mk { . . .  : "⋯" U22EF   # MIDLINE HORIZONTAL ELLIPSIS
 Mk . / .    : "⋰" U22F0   # UP RIGHT DIAGONAL ELLIPSIS
 # To avoid conflict with \. for combining dot
 Mk . \ .    : "⋱" U22F1   # DOWN RIGHT DIAGONAL ELLIPSIS
@@ -100,10 +99,10 @@ Mk 4 s q    : "∜"  U221C # FOURTH ROOT
 Mk / \      : "∧"  U2227 # LOGICAL AND
 Mk \ /      : "∨"  U2228 # LOGICAL OR
 Mk \ _ /    : "⊻"  U22BB # XOR
-# FIXME: conflict
-#Mk * o   : "∘"  U2218            # RING OPERATOR (function composition)
-Mk * x          : "⨯"  U2A2F # VECTOR OR CROSS PRODUCT
-Mk * .          : "⋅"  U22C5 # DOT OPERATOR (dot product)
+
+Mk { O   				: "∘"  U2218 # RING OPERATOR (function composition)
+Mk v x          : "⨯"  U2A2F # VECTOR OR CROSS PRODUCT
+Mk v .          : "⋅"  U22C5 # DOT OPERATOR (dot product)
 Mk 0 /          : "∅"  U2205 # EMPTY SET
 Mk / 0          : "∅"  U2205 # EMPTY SET
 Mk = T E        : "∃"  U2203 # THERE EXISTS
@@ -113,18 +112,16 @@ Mk Q E D        : "∎"  U220E # END OF PROOF
 Mk { a l e f    : "ℵ"  U2135 # ALEF SYMBOL
 Mk { 0 a l e f  : "ℵ₀"       # ALEF NULL (MULTIPLE CHARS)
 Mk { 1 a l e f  : "ℵ₁"       # ALEF ONE (MULTIPLE CHARS)
-Mk ** **        : "∗"  U2217 # ASTERISK OPERATOR
-Mk ( + )        : "⊕"  U2295 # CIRCLED PLUS
-# FIXME: prefix conflict
-#Mk ( - )    : "⊖"  U2296    # CIRCLED MINUS
-Mk ( x x )      : "⊗"  U2297 # CIRCLED TIMES
-Mk ( / )        : "⊘"  U2298 # CIRCLED DIVISION SLASH
-# FIXME: conflict
-#Mk ( * ) : "⊛"  U229B    # CIRCLED ASTERISK OPERATOR
+Mk { *          : "∗"  U2217 # ASTERISK OPERATOR
+Mk ( +          : "⊕"  U2295 # CIRCLED PLUS
+Mk ( -          : "⊖"  U2296 # CIRCLED MINUS (INTENTIONAL CONFLICT)
+Mk ( *          : "⊗"  U2297 # CIRCLED TIMES
+Mk ( /          : "⊘"  U2298 # CIRCLED DIVISION SLASH
+Mk ( **         : "⊛"  U229B # CIRCLED ASTERISK OPERATOR
 # )- conflicts with system for }.
 Mk ) _          : "⟌" U27CC # LONG DIVISION
-Mk . quotedbl   : "∴" U2234 # THEREFORE
-Mk quotedbl .   : "∵" U2235 # BECAUSE
+Mk . "   				: "∴" U2234 # THEREFORE
+Mk " .   				: "∵" U2235 # BECAUSE
 # Ordinal indicators, for feminine and masculine, used in Romance languages
 Mk a -          : "ª" UAA   # FEMININE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
 Mk o -          : "º" UBA   # MASCULINE ORDINAL INDICATOR (INTENTIONAL CONFLICT)

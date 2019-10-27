@@ -25,10 +25,10 @@ Mk a -    : "ā" U101 # LATIN SMALL LETTER A WITH MACRON (INTENTIONAL CONFLICT)
 # FIXME: Submit the following to freedesktop.org, as they're consistent with existing shortcuts
 Mk - AE                : "Ǣ"   U1E2 # LATIN CAPITAL LETTER AE WITH MACRON
 Mk - ae                : "ǣ"   U1E3 # LATIN SMALL LETTER AE WITH MACRON
-Mk - Y                       : "Ȳ"   U232 # LATIN CAPITAL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
-Mk - y                       : "ȳ"   U233 # LATIN SMALL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
-Mk - G                       : "Ḡ"   U1E20 # LATIN CAPITAL LETTER G WITH MACRON
-Mk - g                       : "ḡ"   U1E21 # LATIN SMALL LETTER G WITH MACRON
+Mk - Y                 : "Ȳ"   U232 # LATIN CAPITAL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
+Mk - y                 : "ȳ"   U233 # LATIN SMALL LETTER Y WITH MACRON (INTENTIONAL CONFLICT)
+Mk - G                 : "Ḡ"   U1E20 # LATIN CAPITAL LETTER G WITH MACRON
+Mk - g                 : "ḡ"   U1E21 # LATIN SMALL LETTER G WITH MACRON
 
 Mk - Greek_alpha       : "ᾱ"   U1FB1 # GREEK SMALL LETTER ALPHA WITH MACRON
 Mk - Greek_ALPHA       : "Ᾱ"   U1FB9 # GREEK CAPITAL LETTER ALPHA WITH MACRON
@@ -134,47 +134,47 @@ Mk _ -       : "₋"   U208B    # SUBSCRIPT MINUS
 
 # Roman numerals
 # Percent for numerical mnemonic
-Mk % 1   : "ⅰ" U2170   # SMALL ROMAN NUMERAL ONE
-Mk % 2   : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
-Mk % 3   : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
-Mk % 4   : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
-Mk % 5   : "ⅴ" U2174   # SMALL ROMAN NUMERAL FIVE
-Mk % 6   : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
-Mk % 7   : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
-Mk % 8   : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
-Mk % 9   : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
-Mk % x   : "ⅹ" U2179   # SMALL ROMAN NUMERAL TEN
-Mk % _ 1  : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
-Mk % _ 2  : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
-Mk % l   : "ⅼ" U217C   # SMALL ROMAN NUMERAL FIFTY
-Mk % c   : "ⅽ" U217D   # SMALL ROMAN NUMERAL ONE HUNDRED
-Mk % d   : "ⅾ" U217E   # SMALL ROMAN NUMERAL FIVE HUNDRED
-Mk % m   : "ⅿ" U217F   # SMALL ROMAN NUMERAL ONE THOUSAND
-Mk % 0 1   : "Ⅰ" U2160   # ROMAN NUMERAL ONE
-Mk % 0 2   : "Ⅱ" U2161   # ROMAN NUMERAL TWO
-Mk % 0 3   : "Ⅲ" U2162   # ROMAN NUMERAL THREE
-Mk % 0 4   : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
-Mk % 0 5   : "Ⅴ" U2164   # ROMAN NUMERAL FIVE
-Mk % 0 6   : "Ⅵ" U2165   # ROMAN NUMERAL SIX
-Mk % 0 7   : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
-Mk % 0 8   : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
-Mk % 0 9   : "Ⅸ" U2168   # ROMAN NUMERAL NINE
-Mk % 0 x   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
+Mk % 1      : "ⅰ" U2170   # SMALL ROMAN NUMERAL ONE
+Mk % 2      : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
+Mk % 3      : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
+Mk % 4      : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
+Mk % 5      : "ⅴ" U2174   # SMALL ROMAN NUMERAL FIVE
+Mk % 6      : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
+Mk % 7      : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
+Mk % 8      : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
+Mk % 9      : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
+Mk % x      : "ⅹ" U2179   # SMALL ROMAN NUMERAL TEN
+Mk % _ 1    : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
+Mk % _ 2    : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
+Mk % l      : "ⅼ" U217C   # SMALL ROMAN NUMERAL FIFTY
+Mk % c      : "ⅽ" U217D   # SMALL ROMAN NUMERAL ONE HUNDRED
+Mk % d      : "ⅾ" U217E   # SMALL ROMAN NUMERAL FIVE HUNDRED
+Mk % m      : "ⅿ" U217F   # SMALL ROMAN NUMERAL ONE THOUSAND
+Mk % 0 1    : "Ⅰ" U2160   # ROMAN NUMERAL ONE
+Mk % 0 2    : "Ⅱ" U2161   # ROMAN NUMERAL TWO
+Mk % 0 3    : "Ⅲ" U2162   # ROMAN NUMERAL THREE
+Mk % 0 4    : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
+Mk % 0 5    : "Ⅴ" U2164   # ROMAN NUMERAL FIVE
+Mk % 0 6    : "Ⅵ" U2165   # ROMAN NUMERAL SIX
+Mk % 0 7    : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
+Mk % 0 8    : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
+Mk % 0 9    : "Ⅸ" U2168   # ROMAN NUMERAL NINE
+Mk % 0 x    : "Ⅹ" U2169   # ROMAN NUMERAL TEN
 Mk % _ 0 1  : "Ⅺ" U216A # ROMAN NUMERAL ELEVEN
 Mk % _ 0 2  : "Ⅻ" U216B # ROMAN NUMERAL TWELVE
-Mk % 0 l   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
-Mk % 0 c   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
-Mk % 0 d   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
-Mk % 0 m   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
-Mk % X   : "Ⅹ" U2169   # ROMAN NUMERAL TEN
-Mk % L   : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
-Mk % C   : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
-Mk % D   : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
-Mk % M   : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
+Mk % 0 l    : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
+Mk % 0 c    : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
+Mk % 0 d    : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
+Mk % 0 m    : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
+Mk % X      : "Ⅹ" U2169   # ROMAN NUMERAL TEN
+Mk % L      : "Ⅼ" U216C   # ROMAN NUMERAL FIFTY
+Mk % C      : "Ⅽ" U216D   # ROMAN NUMERAL ONE HUNDRED
+Mk % D      : "Ⅾ" U216E   # ROMAN NUMERAL FIVE HUNDRED
+Mk % M      : "Ⅿ" U216F   # ROMAN NUMERAL ONE THOUSAND
 
-Mk R x     : "℞" U211E   # PRESCRIPTION TAKE
+Mk R x      : "℞" U211E   # PRESCRIPTION TAKE
 Mk o z .    : "℥" U2125   # OUNCE SIGN
-Mk s r .  : "℈" U2108   # SCRUPLE
+Mk s r .    : "℈" U2108   # SCRUPLE
 # There are all kinds of awesome combining characters in the U+0300 page.
 # There are a bunch of other awesome combining characters like U+20E0
 # FIXME: conflict
@@ -186,20 +186,20 @@ Mk [ . ]        : "⬚"   U2B1A   # DOTTED SQUARE
 
 # Vowels
 Mk @ < e        : "ɘ"   U258    # LATIN SMALL LETTER REVERSED E
-Mk I i         : "ɪ" U26A   # LATIN LETTER SMALL CAPITAL I
-Mk @ u     : "ʊ" U28A   # LATIN SMALL LETTER UPSILON
-Mk @ a     : "ɑ" U251   # LATIN SMALL LETTER ALPHA
-Mk e r     : "ɚ" U25A   # LATIN SMALL LETTER SCHWA WITH HOOK
-Mk @ < c  : "ɔ"  U254     # LATIN SMALL LETTER OPEN O
-Mk @ < C  : "Ɔ"  U186     # LATIN CAPITAL LETTER OPEN O
-Mk @ e                 : "ɛ"   U25B   # LATIN SMALL LETTER OPEN E
-Mk < @ e  : "ɜ" U25C   # LATIN SMALL LETTER REVERSED OPEN E
-Mk @ ^                     : "ʌ"   U28C           # LATIN SMALL LETTER TURNED V
-Mk n n      : "ɯ" U26F   # LATIN SMALL LETTER TURNED M
+Mk I i          : "ɪ" U26A   # LATIN LETTER SMALL CAPITAL I
+Mk @ u          : "ʊ" U28A   # LATIN SMALL LETTER UPSILON
+Mk @ a          : "ɑ" U251   # LATIN SMALL LETTER ALPHA
+Mk e r          : "ɚ" U25A   # LATIN SMALL LETTER SCHWA WITH HOOK
+Mk @ < c        : "ɔ"  U254     # LATIN SMALL LETTER OPEN O
+Mk @ < C        : "Ɔ"  U186     # LATIN CAPITAL LETTER OPEN O
+Mk @ e          : "ɛ"   U25B   # LATIN SMALL LETTER OPEN E
+Mk < @ e        : "ɜ" U25C   # LATIN SMALL LETTER REVERSED OPEN E
+Mk @ ^          : "ʌ"   U28C           # LATIN SMALL LETTER TURNED V
+Mk n n          : "ɯ" U26F   # LATIN SMALL LETTER TURNED M
 
 # Consonants
-Mk @ s          : "ʃ"   U283    # LATIN SMALL LETTER ESH
-Mk @ 3          : "ʒ"   U292    # LATIN SMALL LETTER EZH
+Mk @ s            : "ʃ"   U283    # LATIN SMALL LETTER ESH
+Mk @ 3            : "ʒ"   U292    # LATIN SMALL LETTER EZH
 Mk @ l -          : "ɬ"   U26C    # LATIN SMALL LETTER L WITH BELT
 Mk @ l 3          : "ɮ"   U26E    # LATIN SMALL LETTER LEZH
 Mk @ ? .          : "ʔ"   U294    # LATIN LETTER GLOTTAL STOP
@@ -207,10 +207,10 @@ Mk @ ? (          : "ʕ"   U295    # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
 Mk @ ? ?          : "ʖ"   U296    # LATIN LETTER INVERTED GLOTTAL STOP
 Mk @ ? -          : "ʡ"   U2A1    # LATIN LETTER GLOTTAL STOP WITH STROKE
 Mk @ ? {          : "ʢ"   U2A2    # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
-Mk @ p h        : "ɸ"   U278    # LATIN SMALL LETTER PHI
-Mk @ O .        : "ʘ"   U298    # LATIN LETTER BILABIAL CLICK (kiss sound)
-Mk r r                     : "ɹ"   U279           # LATIN SMALL LETTER TURNED R 
-Mk r d                     : "ɾ"   U27E           # LATIN SMALL LETTER R WITH FISHHOOK
+Mk @ p h          : "ɸ"   U278    # LATIN SMALL LETTER PHI
+Mk @ O .          : "ʘ"   U298    # LATIN LETTER BILABIAL CLICK (kiss sound)
+Mk r r            : "ɹ"   U279           # LATIN SMALL LETTER TURNED R 
+Mk r d            : "ɾ"   U27E           # LATIN SMALL LETTER R WITH FISHHOOK
 
 # Diactrics and Tiny Things
 #To avoid namespace clashes, ^ is doubled (will I regret that?)
@@ -222,10 +222,10 @@ Mk ^ < ?        : "ˁ"   U2C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 
 # How are these keystrokes?
 Mk @ '    : "ˈ" U2C8   # MODIFIER LETTER VERTICAL LINE
-Mk @ ,   : "ˌ" U2CC   # MODIFIER LETTER LOW VERTICAL LINE
-Mk | _    : "̩"  U329   # COMBINING VERTICAL LINE BELOW
+Mk @ ,   	: "ˌ" U2CC   # MODIFIER LETTER LOW VERTICAL LINE
+Mk | _  				: "̩"  U329   # COMBINING VERTICAL LINE BELOW
 # Harmonize with other combiners.
-Mk \ _ |  : "̩"  U329   # COMBINING VERTICAL LINE BELOW
+Mk \ _ |  		: "̩"  U329   # COMBINING VERTICAL LINE BELOW
 # FIXME: conflict
 # Mk w w     : "ʍ" U28D   # LATIN SMALL LETTER TURNED W
 Mk a a     : "ɐ" U250   # LATIN SMALL LETTER TURNED A (INTENTIONAL CONFLICT)
@@ -236,24 +236,31 @@ Mk a a     : "ɐ" U250   # LATIN SMALL LETTER TURNED A (INTENTIONAL CONFLICT)
 # FIXME: conflict
 Mk @ :           : "ː" U2D0   # MODIFIER LETTER TRIANGULAR COLON
 # ɣ? ᴥ?  Important enough to add? ᴥ is cool just as a "latin" letter.
-Mk g h           : "ɣ"   U263     # LATIN SMALL LETTER GAMMA
-Mk a i n       : "ᴥ"   U1D25     # LATIN LETTER AIN
+Mk g h          : "ɣ"   U263     # LATIN SMALL LETTER GAMMA
+Mk a i n       	: "ᴥ"   U1D25     # LATIN LETTER AIN
 
 # Sometimes it's a "tail", sometimes a "hook", and sometimes a "retroflex hook"
 # These conflict with system definitions for letters with cedilla, but those can be obtained by typing the , first
-Mk b '      : "ɓ"   U253     # LATIN SMALL LETTER B WITH HOOK
-Mk d ,       : "ɖ"   U256     # LATIN SMALL LETTER D WITH TAIL (INTENTIONAL CONFLICT)
+Mk b '     	: "ɓ"   U253     # LATIN SMALL LETTER B WITH HOOK
+Mk d ,      : "ɖ"   U256     # LATIN SMALL LETTER D WITH TAIL (INTENTIONAL CONFLICT)
 Mk d '      : "ɗ"   U257     # LATIN SMALL LETTER D WITH HOOK
 # This is used for functions, folders, etc.  Yeah, the hook's facing wrong.
-Mk f ,       : "ƒ"   U192     # LATIN SMALL LETTER F WITH HOOK
+Mk f ,      : "ƒ"   U192     # LATIN SMALL LETTER F WITH HOOK
 Mk g '      : "ɠ"   U260     # LATIN SMALL LETTER G WITH HOOK
-Mk g g       : "ɡ"   U261     # LATIN SMALL LETTER SCRIPT G
+Mk g g      : "ɡ"   U261     # LATIN SMALL LETTER SCRIPT G
 Mk G '      : "ʛ"   U29B     # LATIN LETTER SMALL CAPITAL G WITH HOOK
 Mk h '      : "ɦ"   U266     # LATIN SMALL LETTER H WITH HOOK
-Mk l ,       : "ɭ"   U26D     # LATIN SMALL LETTER L WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-Mk n ,       : "ɳ"   U273     # LATIN SMALL LETTER N WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-Mk s ,       : "ʂ"   U282     # LATIN SMALL LETTER S WITH HOOK (INTENTIONAL CONFLICT)
-Mk t ,       : "ʈ"   U288     # LATIN SMALL LETTER T WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
-Mk z ,       : "ʐ"   U290     # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
+Mk l ,      : "ɭ"   U26D     # LATIN SMALL LETTER L WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk n ,      : "ɳ"   U273     # LATIN SMALL LETTER N WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk s ,      : "ʂ"   U282     # LATIN SMALL LETTER S WITH HOOK (INTENTIONAL CONFLICT)
+Mk t ,      : "ʈ"   U288     # LATIN SMALL LETTER T WITH RETROFLEX HOOK (INTENTIONAL CONFLICT)
+Mk z ,      : "ʐ"   U290     # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
 # FIXME: Prefix
 # Mk < @ e ,  : "ɝ" U25D   # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
+
+Mk B /      : "Ƀ" U243    # LATIN CAPITAL LETTER B WITH STROKE
+Mk / B      : "Ƀ" U243    # LATIN CAPITAL LETTER B WITH STROKE
+Mk R /      : "Ɍ" U24C    # LATIN CAPITAL LETTER R WITH STROKE
+Mk / R      : "Ɍ" U24C    # LATIN CAPITAL LETTER R WITH STROKE
+Mk r /      : "ɍ" U24D    # LATIN SMALL LETTER R WITH STROKE
+Mk / r      : "ɍ" U24D    # LATIN SMALL LETTER R WITH STROKE
