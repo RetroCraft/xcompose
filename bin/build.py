@@ -22,12 +22,12 @@ parser.add_argument('-o', '--output', help='output file to build to (default xco
 args = parser.parse_args()
 
 print(bcolors.UNDERLINE + bcolors.HEADER + "Begin build" + bcolors.ENDC)
-out = open(args.output, 'w+')
+out = open(args.output, 'w+', encoding='utf8')
 out.write('include "/usr/share/X11/locale/' + args.locale + '/Compose"\n')
 os.chdir("src")
 for file in glob.glob("*.xcompose"):
     print("Building file", file)
-    with open(file) as f:
+    with open(file, encoding='utf8') as f:
         for line in f.readlines():
             # If line is nonexistant, comment, or blank, skip
             if not line or line[0] == '#' or not line.strip():
@@ -39,7 +39,7 @@ for file in glob.glob("*.xcompose"):
                 if not m1 or not m1.group(1) or not m1.group(2):
                     print(bcolors.FAIL + 'Error parsing line', line.strip() + bcolors.ENDC)
                     continue
-                m = re.match(r'"?(.+)"?\s*(\S+)?\s*#?(.*)?', m1.group(2))
+                m = re.match(r'"?(\S+)"?\s*(\S+)?\s*#?(.*)?', m1.group(2))
                 if not m or not m.group(1):
                     print(bcolors.FAIL + 'Error parsing value', line.strip() + bcolors.ENDC)
                     continue

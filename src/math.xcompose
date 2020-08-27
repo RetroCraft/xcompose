@@ -23,27 +23,28 @@ Mk / .: "⁄" U2044 # FRACTION SLASH
 ## Comparison
 # The order here is more intuitive for programmers than the X
 # versions.
-Mk ! =        : "≠" U2260 # NOT EQUAL TO
+Mk p r o p		: "∝" U221D # PROPORTIONAL TO
 Mk ~ =        : "≅" U2245 # APPROXIMATELY EQUAL TO
-Mk ! { =      : "≆" U2246 # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
-Mk ! { ! =    : "≇" U2247 # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+Mk ! ~ =      : "≆" U2246 # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+Mk ! ~ ! =    : "≇" U2247 # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+Mk ~ ~        : "≈" U2248 # ALMOST EQUAL TO
+Mk ! =        : "≠" U2260 # NOT EQUAL TO
 Mk / <        : "≮" U226E # NOT LESS-THAN (INTENTIONAL CONFLICT)
 Mk / >        : "≯" U226F # NOT GREATER-THAN
 Mk ! <        : "≮" U226E # NOT LESS-THAN
 Mk ! >        : "≯" U226F # NOT GREATER-THAN
-Mk { {        : "≈" U2248 # ALMOST EQUAL TO
 
 ## Set operators
-Mk { E      : "∈" U2208 # ELEMENT OF
-Mk { ! E    : "∉" U2209 # NOT AN ELEMENT OF
-Mk { (      : "⊂" U2282 # SUBSET OF
-Mk { )      : "⊃" U2283 # SUPERSET OF
-Mk { ! { (  : "⊄" U2284 # NOT A SUBSET OF
-Mk { ! } )  : "⊅" U2285 # NOT A SUPERSET OF
-Mk { = (    : "⊆" U2286 # SUBSET OF OR EQUAL TO
-Mk { = )    : "⊇" U2287 # SUPERSET OF OR EQUAL TO
-Mk { ^      : "∩" U2229 # INTERSECTION
-Mk { U      : "∪" U222A # UNION
+Mk \ E      : "∈" U2208 # ELEMENT OF
+Mk \ ! E    : "∉" U2209 # NOT AN ELEMENT OF
+Mk \ (      : "⊂" U2282 # SUBSET OF
+Mk \ )      : "⊃" U2283 # SUPERSET OF
+Mk \ ! (  : "⊄" U2284 # NOT A SUBSET OF
+Mk \ ! )  : "⊅" U2285 # NOT A SUPERSET OF
+Mk \ ! = (    : "⊆" U2286 # SUBSET OF OR EQUAL TO
+Mk \ ! = )    : "⊇" U2287 # SUPERSET OF OR EQUAL TO
+Mk \ ^      : "∩" U2229 # INTERSECTION
+Mk \ U      : "∪" U222A # UNION
 
 Mk [ ]      : "∎" U220E # END OF PROOF (INTENTIONAL CONFLICT)
 
@@ -56,7 +57,7 @@ Mk space ,  : "⁣" U2063 # INVISIBLE SEPARATOR (INTENTIONAL CONFLICT)
 
 # v = ↓ = vertical
 Mk . | .    : "⋮" U22EE # VERTICAL ELLIPSIS
-Mk { . . .  : "⋯" U22EF   # MIDLINE HORIZONTAL ELLIPSIS
+Mk \ . . .  : "⋯" U22EF   # MIDLINE HORIZONTAL ELLIPSIS
 Mk . / .    : "⋰" U22F0   # UP RIGHT DIAGONAL ELLIPSIS
 # To avoid conflict with \. for combining dot
 Mk . \ .    : "⋱" U22F1   # DOWN RIGHT DIAGONAL ELLIPSIS
@@ -100,7 +101,7 @@ Mk / \      : "∧"  U2227 # LOGICAL AND
 Mk \ /      : "∨"  U2228 # LOGICAL OR
 Mk \ _ /    : "⊻"  U22BB # XOR
 
-Mk { O   				: "∘"  U2218 # RING OPERATOR (function composition)
+Mk \ O   				: "∘"  U2218 # RING OPERATOR (function composition)
 Mk v x          : "⨯"  U2A2F # VECTOR OR CROSS PRODUCT
 Mk v .          : "⋅"  U22C5 # DOT OPERATOR (dot product)
 Mk 0 /          : "∅"  U2205 # EMPTY SET
@@ -109,10 +110,10 @@ Mk = T E        : "∃"  U2203 # THERE EXISTS
 Mk = ! < E E    : "∄"  U2204 # THERE DOES NOT EXIST
 Mk A A          : "∀"  U2200 # FOR ALL (INTENTIONAL CONFLICT)
 Mk Q E D        : "∎"  U220E # END OF PROOF
-Mk { a l e f    : "ℵ"  U2135 # ALEF SYMBOL
-Mk { 0 a l e f  : "ℵ₀"       # ALEF NULL (MULTIPLE CHARS)
-Mk { 1 a l e f  : "ℵ₁"       # ALEF ONE (MULTIPLE CHARS)
-Mk { *          : "∗"  U2217 # ASTERISK OPERATOR
+Mk \ a l e f    : "ℵ"  U2135 # ALEF SYMBOL
+Mk \ 0 a l e f  : "ℵ₀"       # ALEF NULL (MULTIPLE CHARS)
+Mk \ 1 a l e f  : "ℵ₁"       # ALEF ONE (MULTIPLE CHARS)
+Mk \ *          : "∗"  U2217 # ASTERISK OPERATOR
 Mk ( +          : "⊕"  U2295 # CIRCLED PLUS
 Mk ( -          : "⊖"  U2296 # CIRCLED MINUS (INTENTIONAL CONFLICT)
 Mk ( *          : "⊗"  U2297 # CIRCLED TIMES
@@ -126,22 +127,22 @@ Mk " .   				: "∵" U2235 # BECAUSE
 Mk a -          : "ª" UAA   # FEMININE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
 Mk o -          : "º" UBA   # MASCULINE ORDINAL INDICATOR (INTENTIONAL CONFLICT)
 
-Mk { s u m        : "∑" U2211 # N-ARY SUMMATION
-Mk { i n t        : "∫" U222B # INTEGRAL
-Mk { u i n t      : "⨛" U2A1B # INTEGRAL WITH OVERBAR
-Mk { l i n t      : "⨜" U2A1C # INTEGRAL WITH UNDERBAR
-Mk { i i n t      : "∬" U222C # DOUBLE INTEGRAL
-Mk { i i i n t    : "∭" U222D # TRIPLE INTEGRAL
-Mk { i i i i n t  : "⨌" U2A0C # QUADRUPLE INTEGRAL OPERATOR
-Mk { o i n t      : "∮" U222E # CONTOUR INTEGRAL
-Mk { p i n t      : "⨕" U2A15 # INTEGRAL AROUND A POINT OPERATOR 
-Mk { c P i n t    : "⨓" U2A13 # LINE INTEGRATION WITH SEMICIRCULAR PATH AROUND POLE 
-Mk { o i i n t    : "∯" U222F # SURFACE INTEGRAL
-Mk { o i i i n t  : "∰" U2230 # VOLUME INTEGRAL
-Mk { g i n t      : "⨘" U2A18 # INTEGRAL WITH TIMES SIGN 
-Mk { s i n t      : "⨋" U2A0B # SUMMATION WITH INTEGRAL
-Mk { d e l        : "∇" U2207 # NABLA
-Mk { p a r t      : "∂" U2202 # PARTIAL DIFFERENTIAL
+Mk \ s u m        : "∑" U2211 # N-ARY SUMMATION
+Mk \ i n t        : "∫" U222B # INTEGRAL
+Mk \ u i n t      : "⨛" U2A1B # INTEGRAL WITH OVERBAR
+Mk \ l i n t      : "⨜" U2A1C # INTEGRAL WITH UNDERBAR
+Mk \ i i n t      : "∬" U222C # DOUBLE INTEGRAL
+Mk \ i i i n t    : "∭" U222D # TRIPLE INTEGRAL
+Mk \ i i i i n t  : "⨌" U2A0C # QUADRUPLE INTEGRAL OPERATOR
+Mk \ o i n t      : "∮" U222E # CONTOUR INTEGRAL
+Mk \ p i n t      : "⨕" U2A15 # INTEGRAL AROUND A POINT OPERATOR 
+Mk \ c P i n t    : "⨓" U2A13 # LINE INTEGRATION WITH SEMICIRCULAR PATH AROUND POLE 
+Mk \ o i i n t    : "∯" U222F # SURFACE INTEGRAL
+Mk \ o i i i n t  : "∰" U2230 # VOLUME INTEGRAL
+Mk \ g i n t      : "⨘" U2A18 # INTEGRAL WITH TIMES SIGN 
+Mk \ s i n t      : "⨋" U2A0B # SUMMATION WITH INTEGRAL
+Mk \ d e l        : "∇" U2207 # NABLA
+Mk \ p a r t      : "∂" U2202 # PARTIAL DIFFERENTIAL
 # Would we prefer 20D1 COMBINING RIGHT HARPOON ABOVE?
 Mk ^ >            : "⃗"  U20D7 # COMBINING RIGHT ARROW ABOVE (vector)
 # TODO: There's a whole passel of these guys starting at U+1D538 but I have no fonts for those.

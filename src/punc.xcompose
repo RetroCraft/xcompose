@@ -263,7 +263,7 @@ Mk p a l m  : "⸙" U2E19 # PALM BRANCH
 #Mk p h u l : "⁕" U2055 # FLOWER PUNCTUATION MARK
 
 # not sure why anyone would want this, but it’s nostalgic
-Mk | |    : "¦" U00A6 # BROKEN BAR
+Mk | |    : "¦" UA6 # BROKEN BAR
 
 ## Brackets
 # TODO: There are lots more brackets to consider: 
